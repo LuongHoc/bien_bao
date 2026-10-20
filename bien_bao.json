@@ -1,0 +1,2042 @@
+{
+  "0": {
+    "ten": "DP.127a - Hết tốc độ tối đa cho phép theo biển ghép (theo phương tiện, trên từng làn)",
+    "nhom": "Biển báo cấm (biển hết lệnh cấm)",
+    "dac_diem": "Hình chữ nhật, nền xanh lam, chia thành nhiều ô dọc theo từng làn. Mỗi ô có hình các loại xe màu trắng và một biển tốc độ (hình tròn, ghi số) bị gạch bằng vạch chéo màu đen.",
+    "y_nghia": "Báo hết đoạn đường quy định tốc độ tối đa riêng cho từng loại xe trên từng làn (các biển tốc độ trên biển đã bị gạch chéo). Kể từ biển này, các xe chạy theo tốc độ tối đa quy định chung."
+  },
+  "1": {
+    "ten": "DP.127b - Hết tốc độ tối đa cho phép theo biển ghép (trên từng làn)",
+    "nhom": "Biển báo cấm (biển hết lệnh cấm)",
+    "dac_diem": "Hình chữ nhật, nền xanh lam, chia thành nhiều ô dọc theo từng làn. Mỗi ô có mũi tên trắng chỉ hướng làn và một biển tốc độ (hình tròn, ghi số) bị gạch bằng vạch chéo màu đen.",
+    "y_nghia": "Báo hết đoạn đường quy định tốc độ tối đa riêng cho từng làn (các biển tốc độ trên biển đã bị gạch chéo). Kể từ biển này, các xe chạy theo tốc độ tối đa quy định chung."
+  },
+  "2": {
+    "ten": "DP.127c - Hết tốc độ tối đa cho phép theo biển ghép",
+    "nhom": "Biển báo cấm (biển hết lệnh cấm)",
+    "dac_diem": "Hình chữ nhật, nền xanh lam, chia thành nhiều ô dọc theo từng làn, có các biển tốc độ và hình các loại xe; một vạch chéo màu đen lớn gạch qua toàn bộ biển.",
+    "y_nghia": "Báo hết đoạn đường quy định tốc độ tối đa theo từng làn, từng loại xe (toàn bộ biển bị gạch chéo). Kể từ biển này, các xe chạy theo tốc độ tối đa quy định chung."
+  },
+  "3": {
+    "ten": "DP.133 - Hết cấm vượt",
+    "nhom": "Biển báo cấm (biển hết lệnh cấm)",
+    "dac_diem": "Hình tròn, viền xanh lam, nền trắng; hình hai xe ô tô màu đen, có các vạch chéo song song màu đen đè lên.",
+    "y_nghia": "Báo hết đoạn đường cấm vượt (biển cấm vượt đặt trước đó không còn hiệu lực). Kể từ biển này, các xe được phép vượt nhau nhưng phải bảo đảm an toàn."
+  },
+  "4": {
+    "ten": "DP.134 - Hết tốc độ tối đa cho phép",
+    "nhom": "Biển báo cấm (biển hết lệnh cấm)",
+    "dac_diem": "Hình tròn, viền xanh lam, nền trắng; con số tốc độ tối đa trước đó (ví dụ 50), có các vạch chéo song song màu đen đè lên.",
+    "y_nghia": "Báo hết đoạn đường bị giới hạn tốc độ tối đa (biển tròn viền đỏ có ghi số tốc độ đặt trước đó không còn hiệu lực). Kể từ biển này, các xe được chạy với tốc độ tối đa theo quy định chung của pháp luật."
+  },
+  "5": {
+    "ten": "DP.135 - Hết tất cả các lệnh cấm",
+    "nhom": "Biển báo cấm (biển hết lệnh cấm)",
+    "dac_diem": "Hình tròn, viền xanh lam, nền trắng; chỉ có các vạch chéo song song màu đen, không có hình vẽ.",
+    "y_nghia": "Báo hết đoạn đường mà nhiều biển cấm (cấm vượt, hạn chế tốc độ tối đa...) cùng hết hiệu lực."
+  },
+  "6": {
+    "ten": "I.401 - Bắt đầu đường ưu tiên",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình vuông đặt chéo (hình thoi), nền vàng, viền trắng; bên trong không có hình vẽ.",
+    "y_nghia": "Báo hiệu bắt đầu đoạn đường ưu tiên; xe đi trên đường này được quyền ưu tiên đi trước tại các nơi giao nhau."
+  },
+  "7": {
+    "ten": "I.402 - Hết đoạn đường ưu tiên",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình vuông đặt chéo, nền vàng, viền trắng; có vạch chéo màu đen đè lên.",
+    "y_nghia": "Báo hiệu hết đoạn đường ưu tiên."
+  },
+  "8": {
+    "ten": "I.405a - Đường cụt",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình đường cụt: đường thẳng màu trắng, đầu đường bị chặn bằng vạch đỏ.",
+    "y_nghia": "Chỉ dẫn đường phía trước là đường cụt, không có lối đi tiếp."
+  },
+  "9": {
+    "ten": "I.405b - Đường cụt (phía bên phải)",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: đường cụt (phía bên phải).",
+    "y_nghia": "Chỉ dẫn đường nhánh bên phải là đường cụt."
+  },
+  "10": {
+    "ten": "I.405c - Đường cụt (phía bên trái)",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: đường cụt (phía bên trái).",
+    "y_nghia": "Chỉ dẫn đường nhánh bên trái là đường cụt."
+  },
+  "11": {
+    "ten": "I.406 - Được ưu tiên qua đường hẹp",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; mũi tên trắng (hướng được ưu tiên) và mũi tên đỏ ngược chiều.",
+    "y_nghia": "Xe đi theo hướng đặt biển được quyền ưu tiên đi trước qua đoạn đường hẹp; xe đi ngược chiều phải nhường đường."
+  },
+  "12": {
+    "ten": "I.407a - Đường một chiều",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; mũi tên trắng chỉ hướng đi thẳng.",
+    "y_nghia": "Chỉ dẫn đoạn đường chạy một chiều; chỉ cho phép xe đi theo chiều mũi tên."
+  },
+  "13": {
+    "ten": "I.407b - Đường một chiều (hướng rẽ phải)",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: đường một chiều (hướng rẽ phải).",
+    "y_nghia": "Chỉ dẫn đường phía bên phải là đường một chiều theo chiều mũi tên."
+  },
+  "14": {
+    "ten": "I.407c - Đường một chiều (hướng rẽ trái)",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: đường một chiều (hướng rẽ trái).",
+    "y_nghia": "Chỉ dẫn đường phía bên trái là đường một chiều theo chiều mũi tên."
+  },
+  "15": {
+    "ten": "I.408 - Nơi đỗ xe",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; chữ P lớn màu trắng.",
+    "y_nghia": "Chỉ dẫn nơi được phép đỗ xe."
+  },
+  "16": {
+    "ten": "I.408a - Nơi đỗ xe một phần trên hè phố",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; chữ P màu trắng và hình xe đỗ một phần lên hè phố.",
+    "y_nghia": "Chỉ dẫn nơi được phép đỗ xe, một phần thân xe được đỗ trên hè phố."
+  },
+  "17": {
+    "ten": "I.409 - Chỗ quay xe",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; mũi tên quay đầu màu trắng.",
+    "y_nghia": "Chỉ dẫn vị trí được phép quay đầu xe."
+  },
+  "18": {
+    "ten": "I.410 - Khu vực quay xe",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; sơ đồ khu vực quay đầu xe màu trắng.",
+    "y_nghia": "Chỉ dẫn khu vực được phép quay đầu xe theo hình vẽ trên biển."
+  },
+  "19": {
+    "ten": "I.413a - Đường phía trước có làn đường dành cho ô tô khách",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: đường phía trước có làn đường dành cho ô tô khách.",
+    "y_nghia": "Chỉ dẫn đường phía trước có làn đường dành riêng cho xe ô tô khách."
+  },
+  "20": {
+    "ten": "I.413b - Rẽ ra đường có làn đường dành cho ô tô khách (bên phải)",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: rẽ ra đường có làn đường dành cho ô tô khách (bên phải).",
+    "y_nghia": "Chỉ dẫn đường rẽ phải phía trước có làn đường dành riêng cho xe ô tô khách."
+  },
+  "21": {
+    "ten": "I.413c - Rẽ ra đường có làn đường dành cho ô tô khách (bên trái)",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: rẽ ra đường có làn đường dành cho ô tô khách (bên trái).",
+    "y_nghia": "Chỉ dẫn đường rẽ trái phía trước có làn đường dành riêng cho xe ô tô khách."
+  },
+  "22": {
+    "ten": "I.414a - Chỉ hướng đường",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: chỉ hướng đường.",
+    "y_nghia": "Chỉ dẫn hướng đi đến các địa danh, tuyến đường tại nơi giao nhau theo nội dung ghi trên biển."
+  },
+  "23": {
+    "ten": "I.414b - Chỉ hướng đường",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: chỉ hướng đường.",
+    "y_nghia": "Chỉ dẫn hướng đi đến các địa danh, tuyến đường tại nơi giao nhau theo nội dung ghi trên biển."
+  },
+  "24": {
+    "ten": "I.414c - Chỉ hướng đường",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: chỉ hướng đường.",
+    "y_nghia": "Chỉ dẫn hướng đi đến các địa danh, tuyến đường tại nơi giao nhau theo nội dung ghi trên biển."
+  },
+  "25": {
+    "ten": "I.414d - Chỉ hướng đường",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: chỉ hướng đường.",
+    "y_nghia": "Chỉ dẫn hướng đi đến các địa danh, tuyến đường tại nơi giao nhau theo nội dung ghi trên biển."
+  },
+  "26": {
+    "ten": "I.415 - Mũi tên chỉ hướng đi",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: mũi tên chỉ hướng đi.",
+    "y_nghia": "Chỉ dẫn hướng đi đến một địa điểm theo chiều mũi tên."
+  },
+  "27": {
+    "ten": "I.416 - Lối đi đường vòng tránh",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: lối đi đường vòng tránh.",
+    "y_nghia": "Chỉ dẫn lối đi vòng tránh khi đường phía trước tạm thời bị cấm hoặc đang sửa chữa."
+  },
+  "28": {
+    "ten": "I.417a - Chỉ dẫn hướng đi tại nơi giao nhau",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: chỉ dẫn hướng đi tại nơi giao nhau.",
+    "y_nghia": "Chỉ dẫn hướng đi của các tuyến đường tại nơi giao nhau phía trước theo hình vẽ trên biển."
+  },
+  "29": {
+    "ten": "I.417b - Chỉ dẫn hướng đi tại nơi giao nhau",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: chỉ dẫn hướng đi tại nơi giao nhau.",
+    "y_nghia": "Chỉ dẫn hướng đi của các tuyến đường tại nơi giao nhau phía trước theo hình vẽ trên biển."
+  },
+  "30": {
+    "ten": "I.417c - Chỉ dẫn hướng đi tại nơi giao nhau",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: chỉ dẫn hướng đi tại nơi giao nhau.",
+    "y_nghia": "Chỉ dẫn hướng đi của các tuyến đường tại nơi giao nhau phía trước theo hình vẽ trên biển."
+  },
+  "31": {
+    "ten": "I.418 - Lối đi ở những vị trí cấm rẽ",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: lối đi ở những vị trí cấm rẽ.",
+    "y_nghia": "Chỉ dẫn lối đi thay thế ở nơi giao nhau có cấm rẽ."
+  },
+  "32": {
+    "ten": "I.419a - Chỉ dẫn địa giới hành chính",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: chỉ dẫn địa giới hành chính.",
+    "y_nghia": "Chỉ dẫn ranh giới giữa các địa phương (tỉnh, huyện...)."
+  },
+  "33": {
+    "ten": "I.419b - Chỉ dẫn địa giới hành chính (mẫu khác)",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: chỉ dẫn địa giới hành chính (mẫu khác).",
+    "y_nghia": "Chỉ dẫn ranh giới giữa các địa phương."
+  },
+  "34": {
+    "ten": "I.422a - Di tích lịch sử",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: di tích lịch sử.",
+    "y_nghia": "Chỉ dẫn nơi có di tích lịch sử, danh lam thắng cảnh."
+  },
+  "35": {
+    "ten": "I.422b - Di tích lịch sử (mẫu khác)",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: di tích lịch sử (mẫu khác).",
+    "y_nghia": "Chỉ dẫn nơi có di tích lịch sử, danh lam thắng cảnh."
+  },
+  "36": {
+    "ten": "I.423a - Đường người đi bộ sang ngang",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình tam giác trắng có hình người đi bộ trên vạch kẻ đường.",
+    "y_nghia": "Chỉ dẫn vị trí phần đường dành cho người đi bộ sang ngang; người lái xe phải nhường đường cho người đi bộ."
+  },
+  "37": {
+    "ten": "I.423b - Đường người đi bộ sang ngang (mẫu khác)",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình người đi bộ trên vạch kẻ đường (mẫu khác).",
+    "y_nghia": "Chỉ dẫn vị trí phần đường dành cho người đi bộ sang ngang."
+  },
+  "38": {
+    "ten": "I.423c - Đường người đi bộ sang ngang (mẫu khác)",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: đường người đi bộ sang ngang (mẫu khác).",
+    "y_nghia": "Chỉ dẫn vị trí dành cho người đi bộ sang ngang."
+  },
+  "39": {
+    "ten": "I.424a - Cầu vượt qua đường cho người đi bộ",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: cầu vượt qua đường cho người đi bộ.",
+    "y_nghia": "Chỉ dẫn vị trí cầu vượt dành cho người đi bộ qua đường."
+  },
+  "40": {
+    "ten": "I.424b - Hầm chui qua đường cho người đi bộ",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: hầm chui qua đường cho người đi bộ.",
+    "y_nghia": "Chỉ dẫn vị trí hầm chui dành cho người đi bộ qua đường."
+  },
+  "41": {
+    "ten": "I.424c - Cầu vượt qua đường cho người đi bộ (mẫu khác)",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: cầu vượt qua đường cho người đi bộ (mẫu khác).",
+    "y_nghia": "Chỉ dẫn vị trí cầu vượt dành cho người đi bộ."
+  },
+  "42": {
+    "ten": "I.424d - Hầm chui qua đường cho người đi bộ (mẫu khác)",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: hầm chui qua đường cho người đi bộ (mẫu khác).",
+    "y_nghia": "Chỉ dẫn vị trí hầm chui dành cho người đi bộ."
+  },
+  "43": {
+    "ten": "I.425 - Bệnh viện",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; chữ H màu trắng hoặc ký hiệu bệnh viện.",
+    "y_nghia": "Chỉ dẫn sắp đến nơi có bệnh viện; người lái xe chú ý giữ yên lặng, nhường đường cho xe cứu thương."
+  },
+  "44": {
+    "ten": "I.426 - Trạm cấp cứu",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; ô vuông trắng có dấu chữ thập màu đỏ.",
+    "y_nghia": "Chỉ dẫn nơi có trạm cấp cứu."
+  },
+  "45": {
+    "ten": "I.427a - Trạm sửa chữa",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình chiếc cờ lê (dụng cụ sửa chữa).",
+    "y_nghia": "Chỉ dẫn nơi có trạm sửa chữa xe."
+  },
+  "46": {
+    "ten": "I.427b - Trạm kiểm tra tải trọng xe",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: trạm kiểm tra tải trọng xe.",
+    "y_nghia": "Chỉ dẫn nơi đặt trạm kiểm tra tải trọng xe."
+  },
+  "47": {
+    "ten": "I.428 - Biển chỉ dẫn nơi phục vụ, tiện ích",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn nơi phục vụ, tiện ích.",
+    "y_nghia": "Chỉ dẫn vị trí nơi phục vụ hoặc tiện ích cho người tham gia giao thông (theo hình vẽ trên biển)."
+  },
+  "48": {
+    "ten": "I.428b - Biển chỉ dẫn nơi phục vụ, tiện ích",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn nơi phục vụ, tiện ích.",
+    "y_nghia": "Chỉ dẫn vị trí nơi phục vụ hoặc tiện ích cho người tham gia giao thông (theo hình vẽ trên biển)."
+  },
+  "49": {
+    "ten": "I.428c - Biển chỉ dẫn nơi phục vụ, tiện ích",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn nơi phục vụ, tiện ích.",
+    "y_nghia": "Chỉ dẫn vị trí nơi phục vụ hoặc tiện ích cho người tham gia giao thông (theo hình vẽ trên biển)."
+  },
+  "50": {
+    "ten": "I.429 - Biển chỉ dẫn nơi phục vụ, tiện ích",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn nơi phục vụ, tiện ích.",
+    "y_nghia": "Chỉ dẫn vị trí nơi phục vụ hoặc tiện ích cho người tham gia giao thông (theo hình vẽ trên biển)."
+  },
+  "51": {
+    "ten": "I.430 - Biển chỉ dẫn nơi phục vụ, tiện ích",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn nơi phục vụ, tiện ích.",
+    "y_nghia": "Chỉ dẫn vị trí nơi phục vụ hoặc tiện ích cho người tham gia giao thông (theo hình vẽ trên biển)."
+  },
+  "52": {
+    "ten": "I.431 - Biển chỉ dẫn nơi phục vụ, tiện ích",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn nơi phục vụ, tiện ích.",
+    "y_nghia": "Chỉ dẫn vị trí nơi phục vụ hoặc tiện ích cho người tham gia giao thông (theo hình vẽ trên biển)."
+  },
+  "53": {
+    "ten": "I.432 - Biển chỉ dẫn nơi phục vụ, tiện ích",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn nơi phục vụ, tiện ích.",
+    "y_nghia": "Chỉ dẫn vị trí nơi phục vụ hoặc tiện ích cho người tham gia giao thông (theo hình vẽ trên biển)."
+  },
+  "54": {
+    "ten": "I.433a - Biển chỉ dẫn nơi phục vụ, tiện ích",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn nơi phục vụ, tiện ích.",
+    "y_nghia": "Chỉ dẫn vị trí nơi phục vụ hoặc tiện ích cho người tham gia giao thông (theo hình vẽ trên biển)."
+  },
+  "55": {
+    "ten": "I.433b - Biển chỉ dẫn nơi phục vụ, tiện ích",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn nơi phục vụ, tiện ích.",
+    "y_nghia": "Chỉ dẫn vị trí nơi phục vụ hoặc tiện ích cho người tham gia giao thông (theo hình vẽ trên biển)."
+  },
+  "56": {
+    "ten": "I.433c - Biển chỉ dẫn nơi phục vụ, tiện ích",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn nơi phục vụ, tiện ích.",
+    "y_nghia": "Chỉ dẫn vị trí nơi phục vụ hoặc tiện ích cho người tham gia giao thông (theo hình vẽ trên biển)."
+  },
+  "57": {
+    "ten": "I.433d - Biển chỉ dẫn nơi phục vụ, tiện ích",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn nơi phục vụ, tiện ích.",
+    "y_nghia": "Chỉ dẫn vị trí nơi phục vụ hoặc tiện ích cho người tham gia giao thông (theo hình vẽ trên biển)."
+  },
+  "58": {
+    "ten": "I.433e - Biển chỉ dẫn nơi phục vụ, tiện ích",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn nơi phục vụ, tiện ích.",
+    "y_nghia": "Chỉ dẫn vị trí nơi phục vụ hoặc tiện ích cho người tham gia giao thông (theo hình vẽ trên biển)."
+  },
+  "59": {
+    "ten": "I.434a - Bến xe buýt",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình xe buýt màu trắng.",
+    "y_nghia": "Chỉ dẫn vị trí điểm dừng, đón trả khách của xe buýt."
+  },
+  "60": {
+    "ten": "I.434b - Bến xe điện",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình xe điện màu trắng.",
+    "y_nghia": "Chỉ dẫn vị trí điểm dừng, đón trả khách của xe điện."
+  },
+  "61": {
+    "ten": "I.435 - Biển chỉ dẫn nơi phục vụ, tiện ích",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn nơi phục vụ, tiện ích.",
+    "y_nghia": "Chỉ dẫn vị trí nơi phục vụ hoặc tiện ích cho người tham gia giao thông (theo hình vẽ trên biển)."
+  },
+  "62": {
+    "ten": "I.436 - Biển chỉ dẫn nơi phục vụ, tiện ích",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn nơi phục vụ, tiện ích.",
+    "y_nghia": "Chỉ dẫn vị trí nơi phục vụ hoặc tiện ích cho người tham gia giao thông (theo hình vẽ trên biển)."
+  },
+  "63": {
+    "ten": "I.437 - Đường cao tốc",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình đường cao tốc có cầu vượt.",
+    "y_nghia": "Chỉ dẫn bắt đầu đường cao tốc; áp dụng các quy định riêng khi đi trên đường cao tốc."
+  },
+  "64": {
+    "ten": "I.439 - Tên cầu",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: tên cầu.",
+    "y_nghia": "Chỉ dẫn tên cầu và tên sông, kênh mà cầu đi qua."
+  },
+  "65": {
+    "ten": "I.440 - Đoạn đường đang thi công",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: đoạn đường đang thi công.",
+    "y_nghia": "Chỉ dẫn đoạn đường đang thi công, kèm thông tin về phạm vi và thời gian thi công."
+  },
+  "66": {
+    "ten": "I.441a - Báo hiệu phía trước có công trường thi công",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: báo hiệu phía trước có công trường thi công.",
+    "y_nghia": "Chỉ dẫn phía trước có công trường thi công và cách bố trí làn đường để đi qua."
+  },
+  "67": {
+    "ten": "I.441arework - Báo hiệu phía trước có công trường thi công (mẫu vẽ lại)",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: báo hiệu phía trước có công trường thi công (mẫu vẽ lại).",
+    "y_nghia": "Chỉ dẫn phía trước có công trường thi công và cách bố trí làn đường để đi qua."
+  },
+  "68": {
+    "ten": "I.441b - Báo hiệu phía trước có công trường thi công",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: báo hiệu phía trước có công trường thi công.",
+    "y_nghia": "Chỉ dẫn phía trước có công trường thi công và cách bố trí làn đường để đi qua."
+  },
+  "69": {
+    "ten": "I.441c - Báo hiệu phía trước có công trường thi công",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: báo hiệu phía trước có công trường thi công.",
+    "y_nghia": "Chỉ dẫn phía trước có công trường thi công và cách bố trí làn đường để đi qua."
+  },
+  "70": {
+    "ten": "I.442 - Chợ",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: chợ.",
+    "y_nghia": "Chỉ dẫn phía trước có chợ; chú ý người và phương tiện qua lại."
+  },
+  "71": {
+    "ten": "I.443 - Xe kéo rơ-moóc",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: xe kéo rơ-moóc.",
+    "y_nghia": "Chỉ dẫn liên quan đến xe kéo rơ-moóc theo hình vẽ trên biển."
+  },
+  "72": {
+    "ten": "I.444a - Biển chỉ dẫn địa điểm",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn địa điểm.",
+    "y_nghia": "Chỉ dẫn vị trí một địa điểm (khu dân cư, nhà ga, sân bay, cơ quan...) theo hình vẽ/chữ trên biển."
+  },
+  "73": {
+    "ten": "I.444b - Biển chỉ dẫn địa điểm",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn địa điểm.",
+    "y_nghia": "Chỉ dẫn vị trí một địa điểm (khu dân cư, nhà ga, sân bay, cơ quan...) theo hình vẽ/chữ trên biển."
+  },
+  "74": {
+    "ten": "I.444c - Biển chỉ dẫn địa điểm",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn địa điểm.",
+    "y_nghia": "Chỉ dẫn vị trí một địa điểm (khu dân cư, nhà ga, sân bay, cơ quan...) theo hình vẽ/chữ trên biển."
+  },
+  "75": {
+    "ten": "I.444d - Biển chỉ dẫn địa điểm",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn địa điểm.",
+    "y_nghia": "Chỉ dẫn vị trí một địa điểm (khu dân cư, nhà ga, sân bay, cơ quan...) theo hình vẽ/chữ trên biển."
+  },
+  "76": {
+    "ten": "I.444e - Biển chỉ dẫn địa điểm",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn địa điểm.",
+    "y_nghia": "Chỉ dẫn vị trí một địa điểm (khu dân cư, nhà ga, sân bay, cơ quan...) theo hình vẽ/chữ trên biển."
+  },
+  "77": {
+    "ten": "I.444f - Biển chỉ dẫn địa điểm",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn địa điểm.",
+    "y_nghia": "Chỉ dẫn vị trí một địa điểm (khu dân cư, nhà ga, sân bay, cơ quan...) theo hình vẽ/chữ trên biển."
+  },
+  "78": {
+    "ten": "I.444g - Biển chỉ dẫn địa điểm",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn địa điểm.",
+    "y_nghia": "Chỉ dẫn vị trí một địa điểm (khu dân cư, nhà ga, sân bay, cơ quan...) theo hình vẽ/chữ trên biển."
+  },
+  "79": {
+    "ten": "I.444h - Biển chỉ dẫn địa điểm",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn địa điểm.",
+    "y_nghia": "Chỉ dẫn vị trí một địa điểm (khu dân cư, nhà ga, sân bay, cơ quan...) theo hình vẽ/chữ trên biển."
+  },
+  "80": {
+    "ten": "I.444i - Biển chỉ dẫn địa điểm",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn địa điểm.",
+    "y_nghia": "Chỉ dẫn vị trí một địa điểm (khu dân cư, nhà ga, sân bay, cơ quan...) theo hình vẽ/chữ trên biển."
+  },
+  "81": {
+    "ten": "I.444j - Biển chỉ dẫn địa điểm",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn địa điểm.",
+    "y_nghia": "Chỉ dẫn vị trí một địa điểm (khu dân cư, nhà ga, sân bay, cơ quan...) theo hình vẽ/chữ trên biển."
+  },
+  "82": {
+    "ten": "I.444k - Biển chỉ dẫn địa điểm",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn địa điểm.",
+    "y_nghia": "Chỉ dẫn vị trí một địa điểm (khu dân cư, nhà ga, sân bay, cơ quan...) theo hình vẽ/chữ trên biển."
+  },
+  "83": {
+    "ten": "I.444l - Biển chỉ dẫn địa điểm",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn địa điểm.",
+    "y_nghia": "Chỉ dẫn vị trí một địa điểm (khu dân cư, nhà ga, sân bay, cơ quan...) theo hình vẽ/chữ trên biển."
+  },
+  "84": {
+    "ten": "I.444m - Biển chỉ dẫn địa điểm",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn địa điểm.",
+    "y_nghia": "Chỉ dẫn vị trí một địa điểm (khu dân cư, nhà ga, sân bay, cơ quan...) theo hình vẽ/chữ trên biển."
+  },
+  "85": {
+    "ten": "I.445a - Biển chỉ dẫn kiểu bố trí làn đường",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn kiểu bố trí làn đường.",
+    "y_nghia": "Chỉ dẫn cách bố trí các làn đường phía trước (tăng, giảm, nhập làn...) theo hình vẽ trên biển."
+  },
+  "86": {
+    "ten": "I.445b - Biển chỉ dẫn kiểu bố trí làn đường",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn kiểu bố trí làn đường.",
+    "y_nghia": "Chỉ dẫn cách bố trí các làn đường phía trước (tăng, giảm, nhập làn...) theo hình vẽ trên biển."
+  },
+  "87": {
+    "ten": "I.445c - Biển chỉ dẫn kiểu bố trí làn đường",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn kiểu bố trí làn đường.",
+    "y_nghia": "Chỉ dẫn cách bố trí các làn đường phía trước (tăng, giảm, nhập làn...) theo hình vẽ trên biển."
+  },
+  "88": {
+    "ten": "I.445d - Biển chỉ dẫn kiểu bố trí làn đường",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn kiểu bố trí làn đường.",
+    "y_nghia": "Chỉ dẫn cách bố trí các làn đường phía trước (tăng, giảm, nhập làn...) theo hình vẽ trên biển."
+  },
+  "89": {
+    "ten": "I.445e - Biển chỉ dẫn kiểu bố trí làn đường",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn kiểu bố trí làn đường.",
+    "y_nghia": "Chỉ dẫn cách bố trí các làn đường phía trước (tăng, giảm, nhập làn...) theo hình vẽ trên biển."
+  },
+  "90": {
+    "ten": "I.445f - Biển chỉ dẫn kiểu bố trí làn đường",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn kiểu bố trí làn đường.",
+    "y_nghia": "Chỉ dẫn cách bố trí các làn đường phía trước (tăng, giảm, nhập làn...) theo hình vẽ trên biển."
+  },
+  "91": {
+    "ten": "I.445g - Biển chỉ dẫn kiểu bố trí làn đường",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn kiểu bố trí làn đường.",
+    "y_nghia": "Chỉ dẫn cách bố trí các làn đường phía trước (tăng, giảm, nhập làn...) theo hình vẽ trên biển."
+  },
+  "92": {
+    "ten": "I.445h - Biển chỉ dẫn kiểu bố trí làn đường",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn kiểu bố trí làn đường.",
+    "y_nghia": "Chỉ dẫn cách bố trí các làn đường phía trước (tăng, giảm, nhập làn...) theo hình vẽ trên biển."
+  },
+  "93": {
+    "ten": "I.446 - Nơi đỗ xe dành cho người khuyết tật",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình người ngồi xe lăn và chữ P.",
+    "y_nghia": "Chỉ dẫn nơi đỗ xe dành riêng cho người khuyết tật."
+  },
+  "94": {
+    "ten": "I.447a - Biển chỉ dẫn cầu vượt liên thông",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn cầu vượt liên thông.",
+    "y_nghia": "Chỉ dẫn hướng đi tại nút giao có cầu vượt liên thông theo hình vẽ trên biển."
+  },
+  "95": {
+    "ten": "I.447b - Biển chỉ dẫn cầu vượt liên thông",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn cầu vượt liên thông.",
+    "y_nghia": "Chỉ dẫn hướng đi tại nút giao có cầu vượt liên thông theo hình vẽ trên biển."
+  },
+  "96": {
+    "ten": "I.447c - Biển chỉ dẫn cầu vượt liên thông",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn cầu vượt liên thông.",
+    "y_nghia": "Chỉ dẫn hướng đi tại nút giao có cầu vượt liên thông theo hình vẽ trên biển."
+  },
+  "97": {
+    "ten": "I.447d - Biển chỉ dẫn cầu vượt liên thông",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn cầu vượt liên thông.",
+    "y_nghia": "Chỉ dẫn hướng đi tại nút giao có cầu vượt liên thông theo hình vẽ trên biển."
+  },
+  "98": {
+    "ten": "I.448 - Làn đường cứu nạn (làn thoát xe khẩn cấp)",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình làn đường dốc ngược dùng để thoát xe khẩn cấp.",
+    "y_nghia": "Chỉ dẫn làn đường dùng cho xe gặp sự cố (mất phanh...) thoát ra khẩn cấp."
+  },
+  "99": {
+    "ten": "I.449 - Biển chỉ dẫn",
+    "nhom": "Biển chỉ dẫn",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình vẽ hoặc chữ màu trắng minh họa nội dung: biển chỉ dẫn.",
+    "y_nghia": "Biển chỉ dẫn cung cấp thông tin cho người tham gia giao thông theo nội dung trên biển."
+  },
+  "100": {
+    "ten": "P.101 - Đường cấm",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; bên trong để trống, không có hình vẽ.",
+    "y_nghia": "Cấm tất cả các loại phương tiện (cơ giới và thô sơ) đi lại cả hai hướng, trừ các xe được ưu tiên theo quy định."
+  },
+  "101": {
+    "ten": "P.102 - Cấm đi ngược chiều",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, nền đỏ; ở giữa có một vạch ngang màu trắng.",
+    "y_nghia": "Cấm các loại xe (cơ giới và thô sơ) đi vào theo chiều đặt biển, trừ các xe được ưu tiên theo quy định. Người đi bộ được phép đi trên vỉa hè hoặc lề đường."
+  },
+  "102": {
+    "ten": "P.103a - Cấm xe ô tô",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; hình xe ô tô màu đen, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Cấm các loại xe ô tô (kể cả xe máy 3 bánh có thùng) đi qua, trừ xe được ưu tiên. Biển không cấm xe mô tô hai bánh, xe gắn máy."
+  },
+  "103": {
+    "ten": "P.103b - Cấm xe ô tô rẽ phải",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; hình xe ô tô và mũi tên rẽ phải màu đen, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Cấm các loại xe ô tô rẽ phải tại nơi đường giao nhau, trừ xe được ưu tiên theo quy định."
+  },
+  "104": {
+    "ten": "P.103c - Cấm xe ô tô rẽ trái",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; hình xe ô tô và mũi tên rẽ trái màu đen, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Cấm các loại xe ô tô rẽ trái tại nơi đường giao nhau, trừ xe được ưu tiên theo quy định."
+  },
+  "105": {
+    "ten": "P.104 - Cấm xe máy",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; hình xe mô tô có người lái màu đen, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Cấm xe mô tô và xe gắn máy đi qua, trừ xe được ưu tiên theo quy định."
+  },
+  "106": {
+    "ten": "P.105 - Cấm xe ô tô và xe máy",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; hình xe ô tô và xe mô tô màu đen, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Cấm các loại xe ô tô và xe mô tô, xe gắn máy đi qua, trừ xe được ưu tiên theo quy định."
+  },
+  "107": {
+    "ten": "P.106a - Cấm xe ô tô tải",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; hình xe ô tô tải màu đen, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Cấm các loại xe ô tô tải đi qua (kể cả máy kéo, xe máy chuyên dùng), trừ xe được ưu tiên theo quy định."
+  },
+  "108": {
+    "ten": "P.106b - Cấm xe ô tô tải có khối lượng chuyên chở lớn hơn giá trị ghi trên biển",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; hình xe ô tô tải màu đen, trên thùng xe ghi số tấn khối lượng chuyên chở (ví dụ 2,5 t), có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Cấm các xe ô tô tải có khối lượng chuyên chở (theo giấy chứng nhận kiểm định) lớn hơn con số ghi trên biển đi qua."
+  },
+  "109": {
+    "ten": "P.106c - Cấm xe chở hàng nguy hiểm",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; hình xe tải chở hàng nguy hiểm (có biển báo hàng nguy hiểm màu cam), có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Cấm các xe chở hàng nguy hiểm (chất nổ, chất dễ cháy, chất độc...) đi qua."
+  },
+  "110": {
+    "ten": "P.107 - Cấm xe ô tô khách và xe ô tô tải",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; hình xe ô tô khách và xe ô tô tải màu đen, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Cấm các loại xe ô tô chở khách và xe ô tô tải đi qua, trừ xe được ưu tiên theo quy định."
+  },
+  "111": {
+    "ten": "P.107a - Cấm xe ô tô khách",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; hình xe ô tô khách màu đen, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Cấm các loại xe ô tô chở khách đi qua, trừ xe được ưu tiên theo quy định."
+  },
+  "112": {
+    "ten": "P.107b - Cấm xe ô tô taxi",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; hình xe ô tô có biển chữ TAXI, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Cấm các loại xe ô tô taxi đi qua."
+  },
+  "113": {
+    "ten": "P.108 - Cấm xe kéo rơ-moóc",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; hình xe ô tô kéo rơ-moóc màu đen, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Cấm các loại xe cơ giới kéo theo rơ-moóc đi qua."
+  },
+  "114": {
+    "ten": "P.108a - Cấm xe sơ-mi rơ-moóc",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; hình xe đầu kéo sơ-mi rơ-moóc màu đen, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Cấm các loại xe sơ-mi rơ-moóc và xe kéo rơ-moóc đi qua."
+  },
+  "115": {
+    "ten": "P.109 - Cấm máy kéo",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; hình máy kéo màu đen, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Cấm các loại máy kéo (kể cả máy kéo nhỏ) đi qua."
+  },
+  "116": {
+    "ten": "P.110a - Cấm xe đạp",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; hình xe đạp màu đen, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Cấm xe đạp đi qua. Biển không cấm người dắt xe đạp."
+  },
+  "117": {
+    "ten": "P.110b - Cấm xe đạp thồ",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; hình xe đạp thồ chở hàng màu đen, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Cấm xe đạp thồ đi qua. Biển không cấm người dắt loại xe này."
+  },
+  "118": {
+    "ten": "P.111a - Cấm xe gắn máy",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; hình xe gắn máy màu đen, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Cấm xe gắn máy đi qua. Biển không cấm người dắt xe."
+  },
+  "119": {
+    "ten": "P.111b - Cấm xe ba bánh loại có động cơ",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; hình xe ba bánh có động cơ màu đen, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Cấm các loại xe ba bánh có động cơ (xe lôi máy, xích lô máy...) đi qua."
+  },
+  "120": {
+    "ten": "P.111c - Cấm xe ba bánh loại có động cơ",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; hình xe ba bánh có động cơ màu đen (mẫu khác), có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Cấm các loại xe ba bánh có động cơ (xe lôi máy, xích lô máy...) đi qua."
+  },
+  "121": {
+    "ten": "P.111d - Cấm xe ba bánh loại không có động cơ",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; hình xe xích lô (xe ba bánh không động cơ) màu đen, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Cấm các loại xe ba bánh không có động cơ (xích lô...) đi qua."
+  },
+  "122": {
+    "ten": "P.112 - Cấm người đi bộ",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; hình người đi bộ màu đen, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Cấm người đi bộ qua lại trên đoạn đường hoặc phần đường có đặt biển."
+  },
+  "123": {
+    "ten": "P.113 - Cấm xe người kéo, đẩy",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; hình người kéo xe màu đen, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Cấm các loại xe do người kéo, đẩy (xe cút kít, xe thồ...) đi qua."
+  },
+  "124": {
+    "ten": "P.114 - Cấm xe súc vật kéo",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; hình xe do súc vật kéo màu đen, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Cấm các loại xe do súc vật kéo đi qua, kể cả súc vật chở hàng."
+  },
+  "125": {
+    "ten": "P.115 - Hạn chế khối lượng toàn bộ xe",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; ở giữa ghi số tấn khối lượng toàn bộ xe cho phép (ví dụ 10t).",
+    "y_nghia": "Cấm các xe có khối lượng toàn bộ (cả xe và hàng) lớn hơn con số ghi trên biển đi qua."
+  },
+  "126": {
+    "ten": "P.116 - Hạn chế tải trọng trên trục xe",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; hình trục bánh xe và số tấn tải trọng trục cho phép.",
+    "y_nghia": "Cấm các xe có tải trọng phân bố trên một trục bất kỳ lớn hơn con số ghi trên biển đi qua."
+  },
+  "127": {
+    "ten": "P.117 - Hạn chế chiều cao",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; ở giữa ghi số mét chiều cao cho phép, phía trên và dưới có hai mũi tên chỉ vào nhau.",
+    "y_nghia": "Cấm các xe (kể cả hàng hóa trên xe) có chiều cao vượt quá con số ghi trên biển đi qua."
+  },
+  "128": {
+    "ten": "P.118 - Hạn chế chiều ngang xe",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; ở giữa ghi số mét chiều ngang cho phép, hai bên có hai mũi tên chỉ vào nhau.",
+    "y_nghia": "Cấm các xe (kể cả hàng hóa trên xe) có chiều ngang vượt quá con số ghi trên biển đi qua."
+  },
+  "129": {
+    "ten": "P.119 - Hạn chế chiều dài xe",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; hình xe ô tô và số mét chiều dài cho phép.",
+    "y_nghia": "Cấm các xe (kể cả hàng hóa trên xe) có chiều dài vượt quá con số ghi trên biển đi qua."
+  },
+  "130": {
+    "ten": "P.120 - Hạn chế chiều dài xe ô tô, máy kéo kéo moóc hoặc sơ-mi rơ-moóc",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; hình đoàn xe kéo moóc và số mét chiều dài cho phép.",
+    "y_nghia": "Cấm các đoàn xe (xe kéo moóc, sơ-mi rơ-moóc) có tổng chiều dài vượt quá con số ghi trên biển đi qua."
+  },
+  "131": {
+    "ten": "P.121 - Cự ly tối thiểu giữa hai xe",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; hình hai xe ô tô đi nối tiếp nhau, ở giữa ghi số mét cự ly tối thiểu.",
+    "y_nghia": "Các xe phải giữ khoảng cách với xe chạy liền trước không nhỏ hơn con số (mét) ghi trên biển."
+  },
+  "132": {
+    "ten": "P.122 - Dừng lại",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình bát giác đều (8 cạnh), nền đỏ, viền trắng; ở giữa có chữ STOP màu trắng.",
+    "y_nghia": "Các xe phải dừng lại hoàn toàn trước vạch dừng, quan sát và chỉ được đi tiếp khi đảm bảo an toàn."
+  },
+  "133": {
+    "ten": "P.123a - Cấm rẽ trái",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; mũi tên rẽ trái màu đen, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Cấm các loại xe rẽ trái tại nơi đường giao nhau, trừ xe được ưu tiên."
+  },
+  "134": {
+    "ten": "P.123b - Cấm rẽ phải",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; mũi tên rẽ phải màu đen, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Cấm các loại xe rẽ phải tại nơi đường giao nhau, trừ xe được ưu tiên."
+  },
+  "135": {
+    "ten": "P.124a1 - Cấm quay đầu xe",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; mũi tên quay đầu (hình chữ U ngược) màu đen, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Cấm các loại xe quay đầu (theo kiểu chữ U)."
+  },
+  "136": {
+    "ten": "P.124a2 - Cấm quay đầu xe (mẫu chiều ngược lại)",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; mũi tên quay đầu theo chiều ngược lại màu đen, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Cấm các loại xe quay đầu xe theo chiều mũi tên trên biển."
+  },
+  "137": {
+    "ten": "P.124b1 - Cấm xe ô tô quay đầu xe",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; hình xe ô tô và mũi tên quay đầu màu đen, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Cấm các loại xe ô tô quay đầu (theo kiểu chữ U)."
+  },
+  "138": {
+    "ten": "P.124b2 - Cấm xe ô tô quay đầu xe (mẫu chiều ngược lại)",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; hình xe ô tô và mũi tên quay đầu theo chiều ngược lại, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Cấm các loại xe ô tô quay đầu xe theo chiều mũi tên trên biển."
+  },
+  "139": {
+    "ten": "P.124c - Cấm rẽ trái và quay đầu xe",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; mũi tên rẽ trái kết hợp mũi tên quay đầu màu đen, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Cấm các loại xe rẽ trái và quay đầu xe."
+  },
+  "140": {
+    "ten": "P.124d - Cấm rẽ phải và quay đầu xe",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; mũi tên rẽ phải kết hợp mũi tên quay đầu màu đen, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Cấm các loại xe rẽ phải và quay đầu xe."
+  },
+  "141": {
+    "ten": "P.124e - Cấm xe ô tô rẽ trái và quay đầu xe",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; hình xe ô tô, mũi tên rẽ trái và quay đầu, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Cấm các loại xe ô tô rẽ trái và quay đầu xe."
+  },
+  "142": {
+    "ten": "P.124f - Cấm xe ô tô rẽ phải và quay đầu xe",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; hình xe ô tô, mũi tên rẽ phải và quay đầu, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Cấm các loại xe ô tô rẽ phải và quay đầu xe."
+  },
+  "143": {
+    "ten": "P.125 - Cấm vượt",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; hai xe ô tô đi song song: xe bên trái màu đỏ, xe bên phải màu đen.",
+    "y_nghia": "Cấm các loại xe cơ giới vượt nhau, trừ các xe được ưu tiên. Được phép vượt xe mô tô hai bánh, xe gắn máy."
+  },
+  "144": {
+    "ten": "P.126 - Cấm xe ô tô tải vượt",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; xe ô tô tải màu đỏ bên trái và xe ô tô màu đen bên phải đi song song.",
+    "y_nghia": "Cấm các loại xe ô tô tải có khối lượng chuyên chở lớn hơn 3.500 kg (kể cả máy kéo, xe máy chuyên dùng) vượt xe cơ giới khác."
+  },
+  "145": {
+    "ten": "P.127-100 - Tốc độ tối đa cho phép 100 km/h",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; ở giữa ghi con số 100 (km/h) màu đen.",
+    "y_nghia": "Cấm các loại xe cơ giới chạy với tốc độ vượt quá 100 km/h. Hiệu lực đến khi gặp biển hết hạn chế tốc độ hoặc biển hạn chế tốc độ khác."
+  },
+  "146": {
+    "ten": "P.127-110 - Tốc độ tối đa cho phép 110 km/h",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; ở giữa ghi con số 110 (km/h) màu đen.",
+    "y_nghia": "Cấm các loại xe cơ giới chạy với tốc độ vượt quá 110 km/h. Hiệu lực đến khi gặp biển hết hạn chế tốc độ hoặc biển hạn chế tốc độ khác."
+  },
+  "147": {
+    "ten": "P.127-120 - Tốc độ tối đa cho phép 120 km/h",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; ở giữa ghi con số 120 (km/h) màu đen.",
+    "y_nghia": "Cấm các loại xe cơ giới chạy với tốc độ vượt quá 120 km/h. Hiệu lực đến khi gặp biển hết hạn chế tốc độ hoặc biển hạn chế tốc độ khác."
+  },
+  "148": {
+    "ten": "P.127-20 - Tốc độ tối đa cho phép 20 km/h",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; ở giữa ghi con số 20 (km/h) màu đen.",
+    "y_nghia": "Cấm các loại xe cơ giới chạy với tốc độ vượt quá 20 km/h. Hiệu lực đến khi gặp biển hết hạn chế tốc độ hoặc biển hạn chế tốc độ khác."
+  },
+  "149": {
+    "ten": "P.127-30 - Tốc độ tối đa cho phép 30 km/h",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; ở giữa ghi con số 30 (km/h) màu đen.",
+    "y_nghia": "Cấm các loại xe cơ giới chạy với tốc độ vượt quá 30 km/h. Hiệu lực đến khi gặp biển hết hạn chế tốc độ hoặc biển hạn chế tốc độ khác."
+  },
+  "150": {
+    "ten": "P.127-40 - Tốc độ tối đa cho phép 40 km/h",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; ở giữa ghi con số 40 (km/h) màu đen.",
+    "y_nghia": "Cấm các loại xe cơ giới chạy với tốc độ vượt quá 40 km/h. Hiệu lực đến khi gặp biển hết hạn chế tốc độ hoặc biển hạn chế tốc độ khác."
+  },
+  "151": {
+    "ten": "P.127-5 - Tốc độ tối đa cho phép 5 km/h",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; ở giữa ghi con số 5 (km/h) màu đen.",
+    "y_nghia": "Cấm các loại xe cơ giới chạy với tốc độ vượt quá 5 km/h. Hiệu lực đến khi gặp biển hết hạn chế tốc độ hoặc biển hạn chế tốc độ khác."
+  },
+  "152": {
+    "ten": "P.127-50 - Tốc độ tối đa cho phép 50 km/h",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; ở giữa ghi con số 50 (km/h) màu đen.",
+    "y_nghia": "Cấm các loại xe cơ giới chạy với tốc độ vượt quá 50 km/h. Hiệu lực đến khi gặp biển hết hạn chế tốc độ hoặc biển hạn chế tốc độ khác."
+  },
+  "153": {
+    "ten": "P.127-60 - Tốc độ tối đa cho phép 60 km/h",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; ở giữa ghi con số 60 (km/h) màu đen.",
+    "y_nghia": "Cấm các loại xe cơ giới chạy với tốc độ vượt quá 60 km/h. Hiệu lực đến khi gặp biển hết hạn chế tốc độ hoặc biển hạn chế tốc độ khác."
+  },
+  "154": {
+    "ten": "P.127-70 - Tốc độ tối đa cho phép 70 km/h",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; ở giữa ghi con số 70 (km/h) màu đen.",
+    "y_nghia": "Cấm các loại xe cơ giới chạy với tốc độ vượt quá 70 km/h. Hiệu lực đến khi gặp biển hết hạn chế tốc độ hoặc biển hạn chế tốc độ khác."
+  },
+  "155": {
+    "ten": "P.127-80 - Tốc độ tối đa cho phép 80 km/h",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; ở giữa ghi con số 80 (km/h) màu đen.",
+    "y_nghia": "Cấm các loại xe cơ giới chạy với tốc độ vượt quá 80 km/h. Hiệu lực đến khi gặp biển hết hạn chế tốc độ hoặc biển hạn chế tốc độ khác."
+  },
+  "156": {
+    "ten": "P.127-90 - Tốc độ tối đa cho phép 90 km/h",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; ở giữa ghi con số 90 (km/h) màu đen.",
+    "y_nghia": "Cấm các loại xe cơ giới chạy với tốc độ vượt quá 90 km/h. Hiệu lực đến khi gặp biển hết hạn chế tốc độ hoặc biển hạn chế tốc độ khác."
+  },
+  "157": {
+    "ten": "P.127a - Tốc độ tối đa cho phép về ban đêm",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; ở giữa ghi con số tốc độ tối đa, dùng kèm biển phụ ghi thời gian ban đêm.",
+    "y_nghia": "Hạn chế tốc độ tối đa vào ban đêm theo con số ghi trên biển (thời gian ban đêm ghi trên biển phụ)."
+  },
+  "158": {
+    "ten": "P.127b - Biển ghép tốc độ tối đa cho phép trên từng làn đường",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình chữ nhật, nền xanh lam, chia thành nhiều ô dọc, mỗi ô ứng với một làn đường. Trong mỗi ô có mũi tên trắng chỉ hướng làn và một biển tròn viền đỏ ghi tốc độ tối đa của làn đó (ví dụ 80 – 60 – 50).",
+    "y_nghia": "Là biển ghép (nhiều biển tốc độ ghép chung trên một tấm biển), quy định tốc độ tối đa riêng cho từng làn đường. Xe chạy trên làn nào phải tuân thủ tốc độ tối đa ghi trên ô của làn đó."
+  },
+  "159": {
+    "ten": "P.127c - Biển ghép tốc độ tối đa cho phép theo phương tiện, trên từng làn đường",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình chữ nhật, nền xanh lam, chia thành nhiều ô dọc, mỗi ô ứng với một làn đường. Trong mỗi ô có một biển tròn viền đỏ ghi tốc độ tối đa và hình các loại xe màu trắng (ô tô con, xe khách, xe máy, xe đạp...) được đi trên làn đó.",
+    "y_nghia": "Là biển ghép quy định tốc độ tối đa cho từng loại xe trên từng làn đường. Loại xe nào đi trên làn nào phải tuân thủ tốc độ tối đa ghi trên ô của làn đó."
+  },
+  "160": {
+    "ten": "P.128 - Cấm sử dụng còi",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; hình chiếc còi (kèn) màu đen, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Cấm các loại xe sử dụng còi trong khu vực đặt biển."
+  },
+  "161": {
+    "ten": "P.129 - Kiểm tra",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; vạch ngang màu đen và dòng chữ KIỂM TRA.",
+    "y_nghia": "Báo nơi đặt trạm kiểm tra; các loại xe phải dừng lại để làm thủ tục kiểm tra theo quy định."
+  },
+  "162": {
+    "ten": "P.130 - Cấm dừng xe và đỗ xe",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền xanh lam; hai vạch chéo màu đỏ bắt chéo nhau thành hình chữ X.",
+    "y_nghia": "Cấm các loại xe cơ giới dừng và đỗ ở phía đường có đặt biển, trừ xe được ưu tiên."
+  },
+  "163": {
+    "ten": "P.131a - Cấm đỗ xe",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền xanh lam; một vạch chéo màu đỏ.",
+    "y_nghia": "Cấm các loại xe cơ giới đỗ ở phía đường có đặt biển; xe được phép dừng trong thời gian ngắn để người lên xuống, xếp dỡ hàng."
+  },
+  "164": {
+    "ten": "P.131b - Cấm đỗ xe vào ngày lẻ",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền xanh lam; một vạch chéo màu đỏ và một vạch dọc màu trắng (ngày lẻ).",
+    "y_nghia": "Cấm các loại xe cơ giới đỗ ở phía đường có đặt biển vào các ngày lẻ."
+  },
+  "165": {
+    "ten": "P.131c - Cấm đỗ xe vào ngày chẵn",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền xanh lam; một vạch chéo màu đỏ và hai vạch dọc màu trắng (ngày chẵn).",
+    "y_nghia": "Cấm các loại xe cơ giới đỗ ở phía đường có đặt biển vào các ngày chẵn."
+  },
+  "166": {
+    "ten": "P.132 - Nhường đường cho xe cơ giới đi ngược chiều qua đường hẹp",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; mũi tên màu đỏ hướng lên và mũi tên màu đen hướng xuống đặt cạnh nhau.",
+    "y_nghia": "Xe đi theo hướng đặt biển phải nhường đường cho xe cơ giới đi ngược chiều qua đoạn đường hẹp hoặc cầu hẹp."
+  },
+  "167": {
+    "ten": "P.136 - Cấm đi thẳng",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; mũi tên đi thẳng màu đen, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Cấm các loại xe đi thẳng; xe chỉ được rẽ trái hoặc rẽ phải."
+  },
+  "168": {
+    "ten": "P.137 - Cấm rẽ trái, rẽ phải",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; mũi tên rẽ trái và mũi tên rẽ phải màu đen, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Cấm các loại xe rẽ trái và rẽ phải; xe chỉ được đi thẳng."
+  },
+  "169": {
+    "ten": "P.138 - Cấm đi thẳng, rẽ trái",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; mũi tên đi thẳng và mũi tên rẽ trái màu đen, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Cấm các loại xe đi thẳng và rẽ trái; xe chỉ được rẽ phải."
+  },
+  "170": {
+    "ten": "P.139 - Cấm đi thẳng, rẽ phải",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; mũi tên đi thẳng và mũi tên rẽ phải màu đen, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Cấm các loại xe đi thẳng và rẽ phải; xe chỉ được rẽ trái."
+  },
+  "171": {
+    "ten": "P.140 - Cấm xe công nông và các loại xe tương tự",
+    "nhom": "Biển báo cấm",
+    "dac_diem": "Hình tròn, viền đỏ, nền trắng; hình xe công nông màu đen, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Cấm xe công nông và các loại xe tự chế tương tự đi qua."
+  },
+  "172": {
+    "ten": "R.301a - Hướng đi phải theo: chỉ được đi thẳng",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình tròn, nền xanh lam; một mũi tên trắng chỉ hướng đi thẳng.",
+    "y_nghia": "Các xe chỉ được đi thẳng theo hướng mũi tên trên biển."
+  },
+  "173": {
+    "ten": "R.301b - Hướng đi phải theo: chỉ được rẽ phải",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình tròn, nền xanh lam; mũi tên trắng chỉ hướng rẽ phải.",
+    "y_nghia": "Các xe chỉ được rẽ phải theo hướng mũi tên trên biển."
+  },
+  "174": {
+    "ten": "R.301c - Hướng đi phải theo: chỉ được rẽ trái",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình tròn, nền xanh lam; mũi tên trắng chỉ hướng rẽ trái.",
+    "y_nghia": "Các xe chỉ được rẽ trái theo hướng mũi tên trên biển."
+  },
+  "175": {
+    "ten": "R.301d - Hướng đi phải theo: chỉ được rẽ phải (biển đặt sau nơi giao nhau)",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình tròn, nền xanh lam; mũi tên trắng rẽ phải (đặt sau nơi giao nhau).",
+    "y_nghia": "Các xe chỉ được rẽ phải (biển đặt sau nơi giao nhau) theo hướng mũi tên trên biển."
+  },
+  "176": {
+    "ten": "R.301e - Hướng đi phải theo: chỉ được rẽ trái (biển đặt sau nơi giao nhau)",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình tròn, nền xanh lam; mũi tên trắng rẽ trái (đặt sau nơi giao nhau).",
+    "y_nghia": "Các xe chỉ được rẽ trái (biển đặt sau nơi giao nhau) theo hướng mũi tên trên biển."
+  },
+  "177": {
+    "ten": "R.301f - Hướng đi phải theo: chỉ được đi thẳng hoặc rẽ phải",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình tròn, nền xanh lam; mũi tên trắng chỉ đi thẳng và rẽ phải.",
+    "y_nghia": "Các xe chỉ được đi thẳng hoặc rẽ phải theo hướng mũi tên trên biển."
+  },
+  "178": {
+    "ten": "R.301g - Hướng đi phải theo: chỉ được đi thẳng hoặc rẽ trái",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình tròn, nền xanh lam; mũi tên trắng chỉ đi thẳng và rẽ trái.",
+    "y_nghia": "Các xe chỉ được đi thẳng hoặc rẽ trái theo hướng mũi tên trên biển."
+  },
+  "179": {
+    "ten": "R.301i - Hướng đi phải theo: chỉ được rẽ trái hoặc rẽ phải",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình tròn, nền xanh lam; mũi tên trắng chỉ rẽ trái và rẽ phải.",
+    "y_nghia": "Các xe chỉ được rẽ trái hoặc rẽ phải theo hướng mũi tên trên biển."
+  },
+  "180": {
+    "ten": "R.302a - Hướng phải đi vòng chướng ngại vật sang phải",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình tròn, nền xanh lam; mũi tên trắng chéo xuống phía bên phải.",
+    "y_nghia": "Các xe phải đi vòng sang bên phải chướng ngại vật."
+  },
+  "181": {
+    "ten": "R.302b - Hướng phải đi vòng chướng ngại vật sang trái",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình tròn, nền xanh lam; mũi tên trắng chéo xuống phía bên trái.",
+    "y_nghia": "Các xe phải đi vòng sang bên trái chướng ngại vật."
+  },
+  "182": {
+    "ten": "R.302c - Hướng phải đi vòng chướng ngại vật sang hai bên",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình tròn, nền xanh lam; hai mũi tên trắng chéo xuống hai bên.",
+    "y_nghia": "Các xe được đi vòng sang bên trái hoặc bên phải chướng ngại vật."
+  },
+  "183": {
+    "ten": "R.303 - Nơi giao nhau chạy theo vòng xuyến",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình tròn, nền xanh lam; ba mũi tên màu trắng nối đuôi nhau tạo thành vòng tròn.",
+    "y_nghia": "Các xe phải chạy vòng theo đảo an toàn ở nơi giao nhau, theo chiều mũi tên."
+  },
+  "184": {
+    "ten": "R.304 - Đường dành cho xe thô sơ",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình tròn, nền xanh lam; hình xe đạp màu trắng (xe thô sơ).",
+    "y_nghia": "Đường dành riêng cho xe thô sơ; các xe cơ giới không được đi vào, trừ xe ưu tiên."
+  },
+  "185": {
+    "ten": "R.305 - Đường dành cho người đi bộ",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình tròn, nền xanh lam; hình người đi bộ màu trắng.",
+    "y_nghia": "Đường dành riêng cho người đi bộ; các loại xe không được đi vào, trừ xe ưu tiên."
+  },
+  "186": {
+    "ten": "R.306 - Tốc độ tối thiểu cho phép",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình tròn, nền xanh lam; ở giữa ghi con số tốc độ tối thiểu màu trắng.",
+    "y_nghia": "Các xe cơ giới phải chạy với tốc độ không nhỏ hơn con số (km/h) ghi trên biển."
+  },
+  "187": {
+    "ten": "R.307 - Hết hạn chế tốc độ tối thiểu",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình tròn, nền xanh lam; con số tốc độ tối thiểu màu trắng, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Báo hết đoạn đường hạn chế tốc độ tối thiểu."
+  },
+  "188": {
+    "ten": "R.308a - Tuyến đường cầu vượt cắt qua (đi thẳng hoặc rẽ trái)",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình tròn, nền xanh lam; mũi tên trắng chỉ hướng đi thẳng và hướng rẽ trái qua cầu vượt.",
+    "y_nghia": "Báo trước tuyến đường có cầu vượt cắt qua, các xe có thể đi thẳng hoặc theo chỉ dẫn để rẽ trái."
+  },
+  "189": {
+    "ten": "R.308b - Tuyến đường cầu vượt cắt qua (đi thẳng hoặc rẽ phải)",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình tròn, nền xanh lam; mũi tên trắng chỉ hướng đi thẳng và hướng rẽ phải qua cầu vượt.",
+    "y_nghia": "Báo trước tuyến đường có cầu vượt cắt qua, các xe có thể đi thẳng hoặc theo chỉ dẫn để rẽ phải."
+  },
+  "190": {
+    "ten": "R.309 - Ấn còi",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình tròn, nền xanh lam; hình chiếc còi (kèn) màu trắng.",
+    "y_nghia": "Các xe cơ giới phải ấn còi khi đi qua vị trí đặt biển."
+  },
+  "191": {
+    "ten": "R.310a - Hướng đi phải theo cho các xe chở hàng nguy hiểm",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình tròn, nền xanh lam; mũi tên trắng chỉ hướng đi dành cho xe chở hàng nguy hiểm, kèm ký hiệu hàng nguy hiểm.",
+    "y_nghia": "Các xe chở hàng nguy hiểm phải đi theo hướng mũi tên trên biển."
+  },
+  "192": {
+    "ten": "R.310b - Hướng đi phải theo cho các xe chở hàng nguy hiểm",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình tròn, nền xanh lam; mũi tên trắng chỉ hướng đi dành cho xe chở hàng nguy hiểm, kèm ký hiệu hàng nguy hiểm.",
+    "y_nghia": "Các xe chở hàng nguy hiểm phải đi theo hướng mũi tên trên biển."
+  },
+  "193": {
+    "ten": "R.310c - Hướng đi phải theo cho các xe chở hàng nguy hiểm",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình tròn, nền xanh lam; mũi tên trắng chỉ hướng đi dành cho xe chở hàng nguy hiểm, kèm ký hiệu hàng nguy hiểm.",
+    "y_nghia": "Các xe chở hàng nguy hiểm phải đi theo hướng mũi tên trên biển."
+  },
+  "194": {
+    "ten": "R.403a - Đường dành cho xe ô tô",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình xe ô tô màu trắng.",
+    "y_nghia": "Đường dành riêng cho xe ô tô; các loại xe khác không được đi vào."
+  },
+  "195": {
+    "ten": "R.403b - Đường dành cho xe ô tô và xe máy",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình xe ô tô và xe máy màu trắng.",
+    "y_nghia": "Đường dành riêng cho xe ô tô và xe máy; các loại xe khác không được đi vào."
+  },
+  "196": {
+    "ten": "R.403c - Đường dành cho xe buýt",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình xe buýt màu trắng.",
+    "y_nghia": "Đường dành riêng cho xe buýt; các loại xe khác không được đi vào."
+  },
+  "197": {
+    "ten": "R.403d - Đường dành cho xe ô tô con",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình xe ô tô con màu trắng.",
+    "y_nghia": "Đường dành riêng cho xe ô tô con; các loại xe khác không được đi vào."
+  },
+  "198": {
+    "ten": "R.403e - Đường dành cho xe máy",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình xe máy màu trắng.",
+    "y_nghia": "Đường dành riêng cho xe máy; các loại xe khác không được đi vào."
+  },
+  "199": {
+    "ten": "R.403f - Đường dành cho xe máy và xe đạp",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình xe máy và xe đạp màu trắng.",
+    "y_nghia": "Đường dành riêng cho xe máy và xe đạp; các loại xe khác không được đi vào."
+  },
+  "200": {
+    "ten": "R.403g - Đường dành cho (cần bổ sung loại xe)",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình loại xe được phép đi, màu trắng.",
+    "y_nghia": "Đường dành riêng cho (cần bổ sung loại xe); các loại xe khác không được đi vào."
+  },
+  "201": {
+    "ten": "R.403h - Đường dành cho (cần bổ sung loại xe)",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình loại xe được phép đi, màu trắng.",
+    "y_nghia": "Đường dành riêng cho (cần bổ sung loại xe); các loại xe khác không được đi vào."
+  },
+  "202": {
+    "ten": "R.403k - Đường dành cho (cần bổ sung loại xe)",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình loại xe được phép đi, màu trắng.",
+    "y_nghia": "Đường dành riêng cho (cần bổ sung loại xe); các loại xe khác không được đi vào."
+  },
+  "203": {
+    "ten": "R.404a - Hết đường dành cho xe ô tô",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình xe ô tô màu trắng, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Báo hết đoạn đường dành riêng cho xe ô tô."
+  },
+  "204": {
+    "ten": "R.404b - Hết đường dành cho xe ô tô và xe máy",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình xe ô tô và xe máy màu trắng, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Báo hết đoạn đường dành riêng cho xe ô tô và xe máy."
+  },
+  "205": {
+    "ten": "R.404c - Hết đường dành cho xe buýt",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình xe buýt màu trắng, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Báo hết đoạn đường dành riêng cho xe buýt."
+  },
+  "206": {
+    "ten": "R.404d - Hết đường dành cho xe ô tô con",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình xe ô tô con màu trắng, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Báo hết đoạn đường dành riêng cho xe ô tô con."
+  },
+  "207": {
+    "ten": "R.404e - Hết đường dành cho xe máy",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình xe máy màu trắng, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Báo hết đoạn đường dành riêng cho xe máy."
+  },
+  "208": {
+    "ten": "R.404f - Hết đường dành cho xe máy và xe đạp",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình xe máy và xe đạp màu trắng, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Báo hết đoạn đường dành riêng cho xe máy và xe đạp."
+  },
+  "209": {
+    "ten": "R.404g - Hết đường dành cho (cần bổ sung loại xe)",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình loại xe, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Báo hết đoạn đường dành riêng cho (cần bổ sung loại xe)."
+  },
+  "210": {
+    "ten": "R.404h - Hết đường dành cho (cần bổ sung loại xe)",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình loại xe, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Báo hết đoạn đường dành riêng cho (cần bổ sung loại xe)."
+  },
+  "211": {
+    "ten": "R.404k - Hết đường dành cho (cần bổ sung loại xe)",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình loại xe, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Báo hết đoạn đường dành riêng cho (cần bổ sung loại xe)."
+  },
+  "212": {
+    "ten": "R.411 - Hướng đi trên mỗi làn đường theo vạch kẻ đường",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; các mũi tên trắng chỉ hướng đi trên từng làn đường.",
+    "y_nghia": "Chỉ dẫn hướng đi trên từng làn đường; xe đi trên làn nào phải theo hướng mũi tên của làn đó."
+  },
+  "213": {
+    "ten": "R.412a - Làn đường dành riêng cho từng loại xe",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; vạch chia làn và hình loại xe được đi trên làn dành riêng, màu trắng.",
+    "y_nghia": "Làn đường chỉ dành riêng cho loại xe có hình vẽ trên biển; các loại xe khác không được đi vào làn này."
+  },
+  "214": {
+    "ten": "R.412b - Làn đường dành riêng cho từng loại xe",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; vạch chia làn và hình loại xe được đi trên làn dành riêng, màu trắng.",
+    "y_nghia": "Làn đường chỉ dành riêng cho loại xe có hình vẽ trên biển; các loại xe khác không được đi vào làn này."
+  },
+  "215": {
+    "ten": "R.412c - Làn đường dành riêng cho từng loại xe",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; vạch chia làn và hình loại xe được đi trên làn dành riêng, màu trắng.",
+    "y_nghia": "Làn đường chỉ dành riêng cho loại xe có hình vẽ trên biển; các loại xe khác không được đi vào làn này."
+  },
+  "216": {
+    "ten": "R.412d - Làn đường dành riêng cho từng loại xe",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; vạch chia làn và hình loại xe được đi trên làn dành riêng, màu trắng.",
+    "y_nghia": "Làn đường chỉ dành riêng cho loại xe có hình vẽ trên biển; các loại xe khác không được đi vào làn này."
+  },
+  "217": {
+    "ten": "R.412e - Làn đường dành riêng cho từng loại xe",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; vạch chia làn và hình loại xe được đi trên làn dành riêng, màu trắng.",
+    "y_nghia": "Làn đường chỉ dành riêng cho loại xe có hình vẽ trên biển; các loại xe khác không được đi vào làn này."
+  },
+  "218": {
+    "ten": "R.412f - Làn đường dành riêng cho từng loại xe",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; vạch chia làn và hình loại xe được đi trên làn dành riêng, màu trắng.",
+    "y_nghia": "Làn đường chỉ dành riêng cho loại xe có hình vẽ trên biển; các loại xe khác không được đi vào làn này."
+  },
+  "219": {
+    "ten": "R.412g - Làn đường dành riêng cho từng loại xe",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; vạch chia làn và hình loại xe được đi trên làn dành riêng, màu trắng.",
+    "y_nghia": "Làn đường chỉ dành riêng cho loại xe có hình vẽ trên biển; các loại xe khác không được đi vào làn này."
+  },
+  "220": {
+    "ten": "R.412h - Làn đường dành riêng cho từng loại xe",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; vạch chia làn và hình loại xe được đi trên làn dành riêng, màu trắng.",
+    "y_nghia": "Làn đường chỉ dành riêng cho loại xe có hình vẽ trên biển; các loại xe khác không được đi vào làn này."
+  },
+  "221": {
+    "ten": "R.412i - Làn đường dành riêng cho từng loại xe",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; vạch chia làn và hình loại xe được đi trên làn dành riêng, màu trắng.",
+    "y_nghia": "Làn đường chỉ dành riêng cho loại xe có hình vẽ trên biển; các loại xe khác không được đi vào làn này."
+  },
+  "222": {
+    "ten": "R.412j - Làn đường dành riêng cho từng loại xe",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; vạch chia làn và hình loại xe được đi trên làn dành riêng, màu trắng.",
+    "y_nghia": "Làn đường chỉ dành riêng cho loại xe có hình vẽ trên biển; các loại xe khác không được đi vào làn này."
+  },
+  "223": {
+    "ten": "R.412k - Làn đường dành riêng cho từng loại xe",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; vạch chia làn và hình loại xe được đi trên làn dành riêng, màu trắng.",
+    "y_nghia": "Làn đường chỉ dành riêng cho loại xe có hình vẽ trên biển; các loại xe khác không được đi vào làn này."
+  },
+  "224": {
+    "ten": "R.412l - Làn đường dành riêng cho từng loại xe",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; vạch chia làn và hình loại xe được đi trên làn dành riêng, màu trắng.",
+    "y_nghia": "Làn đường chỉ dành riêng cho loại xe có hình vẽ trên biển; các loại xe khác không được đi vào làn này."
+  },
+  "225": {
+    "ten": "R.412m - Làn đường dành riêng cho từng loại xe",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; vạch chia làn và hình loại xe được đi trên làn dành riêng, màu trắng.",
+    "y_nghia": "Làn đường chỉ dành riêng cho loại xe có hình vẽ trên biển; các loại xe khác không được đi vào làn này."
+  },
+  "226": {
+    "ten": "R.412n - Làn đường dành riêng cho từng loại xe",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; vạch chia làn và hình loại xe được đi trên làn dành riêng, màu trắng.",
+    "y_nghia": "Làn đường chỉ dành riêng cho loại xe có hình vẽ trên biển; các loại xe khác không được đi vào làn này."
+  },
+  "227": {
+    "ten": "R.412o - Làn đường dành riêng cho từng loại xe",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; vạch chia làn và hình loại xe được đi trên làn dành riêng, màu trắng.",
+    "y_nghia": "Làn đường chỉ dành riêng cho loại xe có hình vẽ trên biển; các loại xe khác không được đi vào làn này."
+  },
+  "228": {
+    "ten": "R.412p - Làn đường dành riêng cho từng loại xe",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; vạch chia làn và hình loại xe được đi trên làn dành riêng, màu trắng.",
+    "y_nghia": "Làn đường chỉ dành riêng cho loại xe có hình vẽ trên biển; các loại xe khác không được đi vào làn này."
+  },
+  "229": {
+    "ten": "R.415a - Biển gộp làn đường theo phương tiện",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; sơ đồ các làn đường gộp lại, kèm hình phương tiện trên từng làn.",
+    "y_nghia": "Chỉ dẫn các làn đường được gộp lại và loại phương tiện được đi trên từng làn."
+  },
+  "230": {
+    "ten": "R.415b - Biển gộp làn đường theo phương tiện (mẫu khác)",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; sơ đồ các làn đường gộp lại, kèm hình phương tiện (mẫu khác).",
+    "y_nghia": "Chỉ dẫn các làn đường được gộp lại và loại phương tiện được đi trên từng làn."
+  },
+  "231": {
+    "ten": "R.420 - Bắt đầu khu đông dân cư",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình các ngôi nhà màu trắng (khu dân cư).",
+    "y_nghia": "Báo bắt đầu đoạn đường qua khu đông dân cư; người lái xe phải chấp hành các quy định về tốc độ và an toàn trong khu đông dân cư."
+  },
+  "232": {
+    "ten": "R.421 - Hết khu đông dân cư",
+    "nhom": "Biển hiệu lệnh",
+    "dac_diem": "Hình chữ nhật hoặc hình vuông, nền xanh lam; hình các ngôi nhà màu trắng, có vạch chéo màu đỏ đè lên.",
+    "y_nghia": "Báo hết đoạn đường qua khu đông dân cư."
+  },
+  "233": {
+    "ten": "S.501 - Phạm vi tác dụng của biển",
+    "nhom": "Biển phụ",
+    "dac_diem": "Hình chữ nhật, nền trắng, viền đen; ghi chiều dài đoạn đường biển chính có hiệu lực (ví dụ 500 m) kèm mũi tên hai đầu.",
+    "y_nghia": "Thuyết minh chiều dài đoạn đường mà biển chính có hiệu lực."
+  },
+  "234": {
+    "ten": "S.502 - Khoảng cách đến đối tượng báo hiệu",
+    "nhom": "Biển phụ",
+    "dac_diem": "Hình chữ nhật, nền trắng, viền đen; ghi khoảng cách đến đối tượng báo hiệu (ví dụ 100 m).",
+    "y_nghia": "Thuyết minh khoảng cách từ vị trí đặt biển đến đối tượng mà biển chính báo hiệu."
+  },
+  "235": {
+    "ten": "S.503a - Hướng tác dụng của biển",
+    "nhom": "Biển phụ",
+    "dac_diem": "Hình chữ nhật, nền trắng, viền đen; mũi tên màu đen chỉ hướng tác dụng của biển chính (sang trái, sang phải hoặc hai bên).",
+    "y_nghia": "Thuyết minh hướng tác dụng (bên trái, bên phải, hai bên...) của biển chính theo mũi tên trên biển."
+  },
+  "236": {
+    "ten": "S.503b - Hướng tác dụng của biển",
+    "nhom": "Biển phụ",
+    "dac_diem": "Hình chữ nhật, nền trắng, viền đen; mũi tên màu đen chỉ hướng tác dụng của biển chính (sang trái, sang phải hoặc hai bên).",
+    "y_nghia": "Thuyết minh hướng tác dụng (bên trái, bên phải, hai bên...) của biển chính theo mũi tên trên biển."
+  },
+  "237": {
+    "ten": "S.503c - Hướng tác dụng của biển",
+    "nhom": "Biển phụ",
+    "dac_diem": "Hình chữ nhật, nền trắng, viền đen; mũi tên màu đen chỉ hướng tác dụng của biển chính (sang trái, sang phải hoặc hai bên).",
+    "y_nghia": "Thuyết minh hướng tác dụng (bên trái, bên phải, hai bên...) của biển chính theo mũi tên trên biển."
+  },
+  "238": {
+    "ten": "S.503d - Hướng tác dụng của biển",
+    "nhom": "Biển phụ",
+    "dac_diem": "Hình chữ nhật, nền trắng, viền đen; mũi tên màu đen chỉ hướng tác dụng của biển chính (sang trái, sang phải hoặc hai bên).",
+    "y_nghia": "Thuyết minh hướng tác dụng (bên trái, bên phải, hai bên...) của biển chính theo mũi tên trên biển."
+  },
+  "239": {
+    "ten": "S.503e - Hướng tác dụng của biển",
+    "nhom": "Biển phụ",
+    "dac_diem": "Hình chữ nhật, nền trắng, viền đen; mũi tên màu đen chỉ hướng tác dụng của biển chính (sang trái, sang phải hoặc hai bên).",
+    "y_nghia": "Thuyết minh hướng tác dụng (bên trái, bên phải, hai bên...) của biển chính theo mũi tên trên biển."
+  },
+  "240": {
+    "ten": "S.503f - Hướng tác dụng của biển",
+    "nhom": "Biển phụ",
+    "dac_diem": "Hình chữ nhật, nền trắng, viền đen; mũi tên màu đen chỉ hướng tác dụng của biển chính (sang trái, sang phải hoặc hai bên).",
+    "y_nghia": "Thuyết minh hướng tác dụng (bên trái, bên phải, hai bên...) của biển chính theo mũi tên trên biển."
+  },
+  "241": {
+    "ten": "S.504 - Làn đường",
+    "nhom": "Biển phụ",
+    "dac_diem": "Hình chữ nhật, nền trắng, viền đen; sơ đồ các làn đường, làn được áp dụng có mũi tên đánh dấu.",
+    "y_nghia": "Thuyết minh biển chính chỉ áp dụng cho làn đường được chỉ trên biển."
+  },
+  "242": {
+    "ten": "S.505a - Loại xe",
+    "nhom": "Biển phụ",
+    "dac_diem": "Hình chữ nhật, nền trắng, viền đen; hình loại xe mà biển chính áp dụng.",
+    "y_nghia": "Thuyết minh biển chính chỉ áp dụng cho loại xe có hình vẽ trên biển."
+  },
+  "243": {
+    "ten": "S.505b - Loại xe (áp dụng cho nhiều loại xe)",
+    "nhom": "Biển phụ",
+    "dac_diem": "Hình chữ nhật, nền trắng, viền đen; hình các loại xe mà biển chính áp dụng.",
+    "y_nghia": "Thuyết minh biển chính áp dụng cho các loại xe có hình vẽ trên biển."
+  },
+  "244": {
+    "ten": "S.505c - Loại xe (mẫu khác)",
+    "nhom": "Biển phụ",
+    "dac_diem": "Hình chữ nhật, nền trắng, viền đen; hình loại xe áp dụng (mẫu khác).",
+    "y_nghia": "Thuyết minh loại xe mà biển chính áp dụng."
+  },
+  "245": {
+    "ten": "S.506a - Hướng đường ưu tiên",
+    "nhom": "Biển phụ",
+    "dac_diem": "Hình chữ nhật, nền trắng, viền đen; sơ đồ nơi giao nhau, nét đậm là hướng đường ưu tiên.",
+    "y_nghia": "Thuyết minh hướng của đường ưu tiên tại nơi giao nhau (nét đậm là đường ưu tiên)."
+  },
+  "246": {
+    "ten": "S.506b - Hướng đường ưu tiên (mẫu khác)",
+    "nhom": "Biển phụ",
+    "dac_diem": "Hình chữ nhật, nền trắng, viền đen; sơ đồ nơi giao nhau, nét đậm là hướng đường ưu tiên (mẫu khác).",
+    "y_nghia": "Thuyết minh hướng của đường ưu tiên tại nơi giao nhau."
+  },
+  "247": {
+    "ten": "S.507 - Hướng rẽ",
+    "nhom": "Biển phụ",
+    "dac_diem": "Hình chữ nhật, nền trắng, viền đen; mũi tên cong chỉ hướng rẽ của đường.",
+    "y_nghia": "Thuyết minh hướng rẽ của đường cong, dùng kèm biển báo chỗ ngoặt nguy hiểm."
+  },
+  "248": {
+    "ten": "S.508a - Biểu thị thời gian",
+    "nhom": "Biển phụ",
+    "dac_diem": "Hình chữ nhật, nền trắng, viền đen; ghi khung thời gian biển chính có hiệu lực (ví dụ 7h-9h).",
+    "y_nghia": "Thuyết minh khoảng thời gian trong ngày mà biển chính có hiệu lực."
+  },
+  "249": {
+    "ten": "S.508b - Biểu thị thời gian (mẫu khác)",
+    "nhom": "Biển phụ",
+    "dac_diem": "Hình chữ nhật, nền trắng, viền đen; ghi khung thời gian (mẫu khác).",
+    "y_nghia": "Thuyết minh khoảng thời gian mà biển chính có hiệu lực."
+  },
+  "250": {
+    "ten": "S.509a - Thuyết minh biển chính",
+    "nhom": "Biển phụ",
+    "dac_diem": "Hình chữ nhật, nền trắng, viền đen; dòng chữ thuyết minh cho biển chính.",
+    "y_nghia": "Giải thích thêm nội dung của biển chính (ví dụ chiều cao an toàn)."
+  },
+  "251": {
+    "ten": "S.509b - Thuyết minh biển chính (mẫu khác)",
+    "nhom": "Biển phụ",
+    "dac_diem": "Hình chữ nhật, nền trắng, viền đen; dòng chữ thuyết minh cho biển chính (mẫu khác).",
+    "y_nghia": "Giải thích thêm nội dung của biển chính."
+  },
+  "252": {
+    "ten": "S.510 - Biển phụ thuyết minh điều kiện đường",
+    "nhom": "Biển phụ",
+    "dac_diem": "Hình chữ nhật, nền trắng, viền đen; dòng chữ thuyết minh điều kiện đường.",
+    "y_nghia": "Thuyết minh thêm về điều kiện đường (ví dụ đường trơn) cho biển chính."
+  },
+  "253": {
+    "ten": "S.510b - Biển phụ thuyết minh điều kiện đường (mẫu khác)",
+    "nhom": "Biển phụ",
+    "dac_diem": "Hình chữ nhật, nền trắng, viền đen; dòng chữ thuyết minh điều kiện đường (mẫu khác).",
+    "y_nghia": "Thuyết minh thêm về điều kiện đường cho biển chính."
+  },
+  "254": {
+    "ten": "W.201a - Chỗ ngoặt nguy hiểm vòng bên trái",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình đường cong vòng sang trái màu đen.",
+    "y_nghia": "Báo trước sắp đến chỗ ngoặt nguy hiểm vòng sang trái. Giảm tốc độ, không vượt xe."
+  },
+  "255": {
+    "ten": "W.201b - Chỗ ngoặt nguy hiểm vòng bên phải",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình đường cong vòng sang phải màu đen.",
+    "y_nghia": "Báo trước sắp đến chỗ ngoặt nguy hiểm vòng sang phải. Giảm tốc độ, không vượt xe."
+  },
+  "256": {
+    "ten": "W.201c - Chỗ ngoặt nguy hiểm có nguy cơ lật xe bên phải khi đường cong vòng bên trái",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; đường cong vòng sang trái và hình xe bị nghiêng về bên phải.",
+    "y_nghia": "Báo trước chỗ ngoặt vòng sang trái có nguy cơ lật xe. Giảm tốc độ, đặc biệt với xe chở hàng cồng kềnh."
+  },
+  "257": {
+    "ten": "W.201d - Chỗ ngoặt nguy hiểm có nguy cơ lật xe bên trái khi đường cong vòng bên phải",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; đường cong vòng sang phải và hình xe bị nghiêng về bên trái.",
+    "y_nghia": "Báo trước chỗ ngoặt vòng sang phải có nguy cơ lật xe. Giảm tốc độ, đặc biệt với xe chở hàng cồng kềnh."
+  },
+  "258": {
+    "ten": "W.202a - Nhiều chỗ ngoặt nguy hiểm liên tiếp (chỗ đầu tiên sang trái)",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình đường uốn lượn nhiều khúc, khúc đầu tiên sang trái.",
+    "y_nghia": "Báo trước đoạn đường có nhiều chỗ ngoặt liên tiếp, chỗ đầu tiên vòng sang trái."
+  },
+  "259": {
+    "ten": "W.202b - Nhiều chỗ ngoặt nguy hiểm liên tiếp (chỗ đầu tiên sang phải)",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình đường uốn lượn nhiều khúc, khúc đầu tiên sang phải.",
+    "y_nghia": "Báo trước đoạn đường có nhiều chỗ ngoặt liên tiếp, chỗ đầu tiên vòng sang phải."
+  },
+  "260": {
+    "ten": "W.203a - Đường bị hẹp cả hai bên",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hai vạch đen thu hẹp vào ở cả hai bên.",
+    "y_nghia": "Báo trước đoạn đường bị thu hẹp đột ngột cả hai bên."
+  },
+  "261": {
+    "ten": "W.203b - Đường bị hẹp về phía trái",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hai vạch đen, vạch bên trái thu hẹp vào.",
+    "y_nghia": "Báo trước đoạn đường bị thu hẹp về phía bên trái."
+  },
+  "262": {
+    "ten": "W.203c - Đường bị hẹp về phía phải",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hai vạch đen, vạch bên phải thu hẹp vào.",
+    "y_nghia": "Báo trước đoạn đường bị thu hẹp về phía bên phải."
+  },
+  "263": {
+    "ten": "W.204 - Đường hai chiều",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hai mũi tên đen ngược chiều nhau (một hướng lên, một hướng xuống).",
+    "y_nghia": "Báo trước đoạn đường đang đi một chiều sắp chuyển sang đoạn đường hai chiều."
+  },
+  "264": {
+    "ten": "W.205a - Đường giao nhau cùng cấp (ngã tư)",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình chữ thập (+) màu đen – ngã tư.",
+    "y_nghia": "Báo trước sắp đến nơi giao nhau cùng cấp dạng ngã tư."
+  },
+  "265": {
+    "ten": "W.205b - Đường giao nhau cùng cấp (ngã ba bên phải)",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình ngã ba có đường nhánh bên phải.",
+    "y_nghia": "Báo trước sắp đến nơi giao nhau dạng ngã ba có đường nhánh bên phải."
+  },
+  "266": {
+    "ten": "W.205c - Đường giao nhau cùng cấp (ngã ba bên trái)",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình ngã ba có đường nhánh bên trái.",
+    "y_nghia": "Báo trước sắp đến nơi giao nhau dạng ngã ba có đường nhánh bên trái."
+  },
+  "267": {
+    "ten": "W.205d - Đường giao nhau cùng cấp (ngã ba chữ T)",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình chữ T màu đen.",
+    "y_nghia": "Báo trước sắp đến nơi giao nhau dạng chữ T."
+  },
+  "268": {
+    "ten": "W.205e - Đường giao nhau cùng cấp (ngã ba chữ Y)",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình chữ Y màu đen.",
+    "y_nghia": "Báo trước sắp đến nơi giao nhau dạng chữ Y."
+  },
+  "269": {
+    "ten": "W.206 - Giao nhau chạy theo vòng xuyến",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; ba mũi tên đen nối đuôi nhau thành vòng tròn.",
+    "y_nghia": "Báo trước sắp đến nơi giao nhau có bố trí đảo an toàn, các xe phải chạy vòng."
+  },
+  "270": {
+    "ten": "W.207a - Giao nhau với đường không ưu tiên",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; vạch đen đậm là đường ưu tiên, vạch đen mảnh là đường nhánh không ưu tiên (vị trí đường nhánh khác nhau theo từng biển).",
+    "y_nghia": "Báo trước sắp đến nơi giao nhau với đường không ưu tiên (vị trí đường nhánh như hình vẽ). Xe trên đường đang đi được quyền ưu tiên nhưng vẫn phải chú ý quan sát."
+  },
+  "271": {
+    "ten": "W.207b - Giao nhau với đường không ưu tiên",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; vạch đen đậm là đường ưu tiên, vạch đen mảnh là đường nhánh không ưu tiên (vị trí đường nhánh khác nhau theo từng biển).",
+    "y_nghia": "Báo trước sắp đến nơi giao nhau với đường không ưu tiên (vị trí đường nhánh như hình vẽ). Xe trên đường đang đi được quyền ưu tiên nhưng vẫn phải chú ý quan sát."
+  },
+  "272": {
+    "ten": "W.207c - Giao nhau với đường không ưu tiên",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; vạch đen đậm là đường ưu tiên, vạch đen mảnh là đường nhánh không ưu tiên (vị trí đường nhánh khác nhau theo từng biển).",
+    "y_nghia": "Báo trước sắp đến nơi giao nhau với đường không ưu tiên (vị trí đường nhánh như hình vẽ). Xe trên đường đang đi được quyền ưu tiên nhưng vẫn phải chú ý quan sát."
+  },
+  "273": {
+    "ten": "W.207d - Giao nhau với đường không ưu tiên",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; vạch đen đậm là đường ưu tiên, vạch đen mảnh là đường nhánh không ưu tiên (vị trí đường nhánh khác nhau theo từng biển).",
+    "y_nghia": "Báo trước sắp đến nơi giao nhau với đường không ưu tiên (vị trí đường nhánh như hình vẽ). Xe trên đường đang đi được quyền ưu tiên nhưng vẫn phải chú ý quan sát."
+  },
+  "274": {
+    "ten": "W.207e - Giao nhau với đường không ưu tiên",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; vạch đen đậm là đường ưu tiên, vạch đen mảnh là đường nhánh không ưu tiên (vị trí đường nhánh khác nhau theo từng biển).",
+    "y_nghia": "Báo trước sắp đến nơi giao nhau với đường không ưu tiên (vị trí đường nhánh như hình vẽ). Xe trên đường đang đi được quyền ưu tiên nhưng vẫn phải chú ý quan sát."
+  },
+  "275": {
+    "ten": "W.207f - Giao nhau với đường không ưu tiên",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; vạch đen đậm là đường ưu tiên, vạch đen mảnh là đường nhánh không ưu tiên (vị trí đường nhánh khác nhau theo từng biển).",
+    "y_nghia": "Báo trước sắp đến nơi giao nhau với đường không ưu tiên (vị trí đường nhánh như hình vẽ). Xe trên đường đang đi được quyền ưu tiên nhưng vẫn phải chú ý quan sát."
+  },
+  "276": {
+    "ten": "W.207g - Giao nhau với đường không ưu tiên",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; vạch đen đậm là đường ưu tiên, vạch đen mảnh là đường nhánh không ưu tiên (vị trí đường nhánh khác nhau theo từng biển).",
+    "y_nghia": "Báo trước sắp đến nơi giao nhau với đường không ưu tiên (vị trí đường nhánh như hình vẽ). Xe trên đường đang đi được quyền ưu tiên nhưng vẫn phải chú ý quan sát."
+  },
+  "277": {
+    "ten": "W.207h - Giao nhau với đường không ưu tiên",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; vạch đen đậm là đường ưu tiên, vạch đen mảnh là đường nhánh không ưu tiên (vị trí đường nhánh khác nhau theo từng biển).",
+    "y_nghia": "Báo trước sắp đến nơi giao nhau với đường không ưu tiên (vị trí đường nhánh như hình vẽ). Xe trên đường đang đi được quyền ưu tiên nhưng vẫn phải chú ý quan sát."
+  },
+  "278": {
+    "ten": "W.207i - Giao nhau với đường không ưu tiên",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; vạch đen đậm là đường ưu tiên, vạch đen mảnh là đường nhánh không ưu tiên (vị trí đường nhánh khác nhau theo từng biển).",
+    "y_nghia": "Báo trước sắp đến nơi giao nhau với đường không ưu tiên (vị trí đường nhánh như hình vẽ). Xe trên đường đang đi được quyền ưu tiên nhưng vẫn phải chú ý quan sát."
+  },
+  "279": {
+    "ten": "W.207j - Giao nhau với đường không ưu tiên",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; vạch đen đậm là đường ưu tiên, vạch đen mảnh là đường nhánh không ưu tiên (vị trí đường nhánh khác nhau theo từng biển).",
+    "y_nghia": "Báo trước sắp đến nơi giao nhau với đường không ưu tiên (vị trí đường nhánh như hình vẽ). Xe trên đường đang đi được quyền ưu tiên nhưng vẫn phải chú ý quan sát."
+  },
+  "280": {
+    "ten": "W.207k - Giao nhau với đường không ưu tiên",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; vạch đen đậm là đường ưu tiên, vạch đen mảnh là đường nhánh không ưu tiên (vị trí đường nhánh khác nhau theo từng biển).",
+    "y_nghia": "Báo trước sắp đến nơi giao nhau với đường không ưu tiên (vị trí đường nhánh như hình vẽ). Xe trên đường đang đi được quyền ưu tiên nhưng vẫn phải chú ý quan sát."
+  },
+  "281": {
+    "ten": "W.207l - Giao nhau với đường không ưu tiên",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; vạch đen đậm là đường ưu tiên, vạch đen mảnh là đường nhánh không ưu tiên (vị trí đường nhánh khác nhau theo từng biển).",
+    "y_nghia": "Báo trước sắp đến nơi giao nhau với đường không ưu tiên (vị trí đường nhánh như hình vẽ). Xe trên đường đang đi được quyền ưu tiên nhưng vẫn phải chú ý quan sát."
+  },
+  "282": {
+    "ten": "W.207m - Giao nhau với đường không ưu tiên",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; vạch đen đậm là đường ưu tiên, vạch đen mảnh là đường nhánh không ưu tiên (vị trí đường nhánh khác nhau theo từng biển).",
+    "y_nghia": "Báo trước sắp đến nơi giao nhau với đường không ưu tiên (vị trí đường nhánh như hình vẽ). Xe trên đường đang đi được quyền ưu tiên nhưng vẫn phải chú ý quan sát."
+  },
+  "283": {
+    "ten": "W.208 - Giao nhau với đường ưu tiên",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều đặt ngược (đỉnh quay xuống), viền đỏ, nền vàng; bên trong không có hình vẽ.",
+    "y_nghia": "Báo trước sắp đến nơi giao nhau với đường ưu tiên; phải giảm tốc độ, nhường đường cho xe đi trên đường ưu tiên."
+  },
+  "284": {
+    "ten": "W.209 - Giao nhau có tín hiệu đèn",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình cột đèn tín hiệu ba màu đỏ – vàng – xanh.",
+    "y_nghia": "Báo trước nơi giao nhau có điều khiển giao thông bằng đèn tín hiệu."
+  },
+  "285": {
+    "ten": "W.210 - Giao nhau với đường sắt có rào chắn",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình hàng rào chắn (barie).",
+    "y_nghia": "Báo trước sắp đến chỗ giao nhau với đường sắt có rào chắn và người gác."
+  },
+  "286": {
+    "ten": "W.211a - Giao nhau với đường sắt không có rào chắn",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình đầu máy tàu hỏa màu đen.",
+    "y_nghia": "Báo trước sắp đến chỗ giao nhau với đường sắt không có rào chắn; phải dừng lại quan sát trước khi đi qua."
+  },
+  "287": {
+    "ten": "W.211b - Giao nhau với đường tàu điện",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình tàu điện màu đen.",
+    "y_nghia": "Báo trước sắp đến chỗ giao nhau với đường tàu điện."
+  },
+  "288": {
+    "ten": "W.212 - Cầu hẹp",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hai vạch đen thu hẹp lại như mặt cầu hẹp.",
+    "y_nghia": "Báo trước sắp đến cầu hẹp (mặt cầu hẹp hơn mặt đường)."
+  },
+  "289": {
+    "ten": "W.213 - Cầu tạm",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình cây cầu tạm màu đen.",
+    "y_nghia": "Báo trước sắp đến cầu tạm; phải giảm tốc độ, đi cẩn thận."
+  },
+  "290": {
+    "ten": "W.214 - Cầu quay - cầu cất",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình cây cầu có nhịp được quay hoặc nâng lên.",
+    "y_nghia": "Báo trước sắp đến cầu quay hoặc cầu cất (cầu có thể quay hoặc nâng lên cho tàu thuyền qua)."
+  },
+  "291": {
+    "ten": "W.215a - Kè, vực sâu phía trước",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình mép đường sát kè, vực sâu ở phía trước.",
+    "y_nghia": "Báo trước sắp đến đoạn đường sát kè, vực sâu phía trước."
+  },
+  "292": {
+    "ten": "W.215b - Kè, vực sâu bên đường phía bên trái",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình kè, vực sâu ở bên trái đường.",
+    "y_nghia": "Báo trước đoạn đường có kè, vực sâu ở phía bên trái."
+  },
+  "293": {
+    "ten": "W.215c - Kè, vực sâu bên đường phía bên phải",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình kè, vực sâu ở bên phải đường.",
+    "y_nghia": "Báo trước đoạn đường có kè, vực sâu ở phía bên phải."
+  },
+  "294": {
+    "ten": "W.216a - Đường ngầm",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình xe ô tô đi qua đoạn đường ngập nước.",
+    "y_nghia": "Báo trước sắp đến đoạn đường ngầm (đường tràn qua suối, sông)."
+  },
+  "295": {
+    "ten": "W.216b - Đường ngầm có nguy cơ lũ quét",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình xe đi qua đường ngập nước kèm ký hiệu dòng nước lũ.",
+    "y_nghia": "Báo trước sắp đến đường ngầm có nguy cơ lũ quét; không đi qua khi nước dâng cao."
+  },
+  "296": {
+    "ten": "W.217 - Bến phà",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình chiếc phà trên mặt nước.",
+    "y_nghia": "Báo trước sắp đến bến phà."
+  },
+  "297": {
+    "ten": "W.218 - Cửa chui",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình cửa chui (vòm cổng) màu đen.",
+    "y_nghia": "Báo trước sắp đến đoạn đường đi qua cửa chui (gầm cầu, cổng hẹp, thấp)."
+  },
+  "298": {
+    "ten": "W.219 - Dốc xuống nguy hiểm",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình con dốc đi xuống, ghi độ dốc (%).",
+    "y_nghia": "Báo trước sắp đến đoạn đường xuống dốc nguy hiểm; về số thấp, giảm tốc độ."
+  },
+  "299": {
+    "ten": "W.220 - Dốc lên nguy hiểm",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình con dốc đi lên, ghi độ dốc (%).",
+    "y_nghia": "Báo trước sắp đến đoạn đường lên dốc nguy hiểm."
+  },
+  "300": {
+    "ten": "W.221a - Đường có ổ gà, sống trâu",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình mặt đường lồi lõm (ổ gà, sống trâu).",
+    "y_nghia": "Báo trước đoạn đường có ổ gà, lồi lõm, sống trâu; phải giảm tốc độ."
+  },
+  "301": {
+    "ten": "W.221b - Đường có sóng mấp mô nhân tạo",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình các gờ mấp mô liên tiếp trên mặt đường.",
+    "y_nghia": "Báo trước đoạn đường có gờ giảm tốc (sóng mấp mô nhân tạo); phải giảm tốc độ."
+  },
+  "302": {
+    "ten": "W.222a - Đường trơn",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình xe ô tô bị trượt với vệt bánh xe ngoằn ngoèo.",
+    "y_nghia": "Báo trước đoạn đường có thể trơn trượt; tránh phanh gấp, đánh lái đột ngột."
+  },
+  "303": {
+    "ten": "W.222b - Lề đường nguy hiểm",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình xe ô tô ở mép đường bị sụt lở.",
+    "y_nghia": "Báo trước đoạn đường có lề đường yếu, nguy hiểm; không đi sát lề."
+  },
+  "304": {
+    "ten": "W.223a - Vách núi nguy hiểm (bên trái)",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình vách núi dựng đứng ở bên trái đường.",
+    "y_nghia": "Báo trước đoạn đường đi sát vách núi nguy hiểm ở bên trái."
+  },
+  "305": {
+    "ten": "W.223b - Vách núi nguy hiểm (bên phải)",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình vách núi dựng đứng ở bên phải đường.",
+    "y_nghia": "Báo trước đoạn đường đi sát vách núi nguy hiểm ở bên phải."
+  },
+  "306": {
+    "ten": "W.224 - Đường người đi bộ cắt ngang",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình người đi bộ trên vạch kẻ đường.",
+    "y_nghia": "Báo trước sắp đến phần đường dành cho người đi bộ sang ngang; giảm tốc độ, nhường đường cho người đi bộ."
+  },
+  "307": {
+    "ten": "W.225 - Trẻ em",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình hai trẻ em đang đi.",
+    "y_nghia": "Báo trước đoạn đường thường có trẻ em đi qua hoặc tụ tập (gần trường học, khu vui chơi)."
+  },
+  "308": {
+    "ten": "W.226 - Đường người đi xe đạp cắt ngang",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình người đi xe đạp.",
+    "y_nghia": "Báo trước nơi có người đi xe đạp cắt ngang đường."
+  },
+  "309": {
+    "ten": "W.227 - Công trường",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình người công nhân đang làm việc với xẻng.",
+    "y_nghia": "Báo trước đoạn đường đang thi công, sửa chữa."
+  },
+  "310": {
+    "ten": "W.228a - Đá lở",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình đá lở rơi từ vách núi.",
+    "y_nghia": "Báo trước đoạn đường có thể có đá lở; chú ý quan sát, không dừng đỗ."
+  },
+  "311": {
+    "ten": "W.228b - Sỏi đá bắn lên",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình sỏi đá bắn lên.",
+    "y_nghia": "Báo trước đoạn đường có sỏi đá có thể bắn lên khi xe chạy; giảm tốc độ, giữ khoảng cách."
+  },
+  "312": {
+    "ten": "W.228c - Nền đường yếu",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình nền đường yếu, sụt lún.",
+    "y_nghia": "Báo trước đoạn đường có nền đất yếu, dễ sụt lún."
+  },
+  "313": {
+    "ten": "W.228d - Đá lở (phía phải)",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình đá lở rơi từ vách núi (phía ngược lại).",
+    "y_nghia": "Báo trước đoạn đường có thể có đá lở (mẫu biển chiều ngược lại)."
+  },
+  "314": {
+    "ten": "W.229 - Dải máy bay lên xuống",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình chiếc máy bay.",
+    "y_nghia": "Báo trước đoạn đường đi qua khu vực máy bay lên xuống ở độ cao thấp."
+  },
+  "315": {
+    "ten": "W.230 - Gia súc",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình con bò (gia súc).",
+    "y_nghia": "Báo trước đoạn đường thường có gia súc thả rông hoặc lùa qua đường."
+  },
+  "316": {
+    "ten": "W.231 - Thú rừng vượt qua đường",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình con hươu (thú rừng).",
+    "y_nghia": "Báo trước đoạn đường thường có thú rừng chạy qua."
+  },
+  "317": {
+    "ten": "W.232 - Gió ngang",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình túi gió (cờ gió) bay ngang.",
+    "y_nghia": "Báo trước đoạn đường thường có gió ngang thổi mạnh."
+  },
+  "318": {
+    "ten": "W.233 - Nguy hiểm khác",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; dấu chấm than (!) màu đen.",
+    "y_nghia": "Cảnh báo phía trước có nguy hiểm mà không có biển cảnh báo riêng."
+  },
+  "319": {
+    "ten": "W.234 - Giao nhau với đường hai chiều",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hai mũi tên ngược chiều tại nơi giao nhau.",
+    "y_nghia": "Báo trước sắp đến nơi giao nhau giữa đường một chiều và đường hai chiều."
+  },
+  "320": {
+    "ten": "W.235 - Đường đôi",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình đường có dải phân cách ở giữa.",
+    "y_nghia": "Báo trước sắp đến đoạn đường đôi (có dải phân cách giữa hai chiều xe chạy)."
+  },
+  "321": {
+    "ten": "W.236 - Hết đường đôi",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình đường có dải phân cách kết thúc.",
+    "y_nghia": "Báo trước sắp hết đoạn đường đôi, chuyển sang đường hai chiều không có dải phân cách."
+  },
+  "322": {
+    "ten": "W.237 - Cầu vồng",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình cây cầu cong vồng lên.",
+    "y_nghia": "Báo trước sắp đến cầu vồng (cầu có mặt cầu cong lên, hạn chế tầm nhìn)."
+  },
+  "323": {
+    "ten": "W.238 - Đường cao tốc phía trước",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình đường cao tốc có dải phân cách và cầu vượt.",
+    "y_nghia": "Báo trước sắp đi vào đường cao tốc."
+  },
+  "324": {
+    "ten": "W.239a - Đường cáp điện ở phía trên",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình đường dây cáp điện có ký hiệu tia sét.",
+    "y_nghia": "Báo trước nơi có đường cáp điện đi phía trên; xe chở hàng cao phải chú ý an toàn."
+  },
+  "325": {
+    "ten": "W.239b - Hạn chế chiều cao an toàn (cáp điện)",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình đường dây cáp điện kèm con số chiều cao an toàn.",
+    "y_nghia": "Báo chiều cao an toàn khi đi qua dưới đường cáp điện, theo con số ghi trên biển."
+  },
+  "326": {
+    "ten": "W.240 - Đường hầm",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình cửa hầm (vòm) màu đen.",
+    "y_nghia": "Báo trước sắp đến đường hầm; bật đèn chiếu sáng, không dừng đỗ trong hầm."
+  },
+  "327": {
+    "ten": "W.241 - Ùn tắc giao thông",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình nhiều xe ô tô nối đuôi nhau.",
+    "y_nghia": "Báo trước đoạn đường hay xảy ra ùn tắc giao thông."
+  },
+  "328": {
+    "ten": "W.242a - Nơi đường sắt giao vuông góc với đường bộ",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình chữ thập chéo (chữ X), nền trắng, viền đỏ; biển đặt ngay trước chỗ giao với một đường sắt.",
+    "y_nghia": "Báo trước nơi đường sắt (một đường) giao vuông góc với đường bộ."
+  },
+  "329": {
+    "ten": "W.242b - Nơi đường sắt giao vuông góc với đường bộ (nhiều đường sắt)",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hai hình chữ X chồng lên nhau, nền trắng, viền đỏ; biển đặt trước chỗ giao với từ hai đường sắt trở lên.",
+    "y_nghia": "Báo trước nơi có từ hai đường sắt trở lên giao vuông góc với đường bộ."
+  },
+  "330": {
+    "ten": "W.243a - Nơi đường sắt giao không vuông góc với đường bộ (cách 50 m)",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình chữ nhật đứng, nền trắng; có 1 vạch chéo màu đỏ (báo khoảng cách còn lại đến đường sắt).",
+    "y_nghia": "Báo khoảng cách còn lại đến chỗ giao với đường sắt (khoảng 50 m)."
+  },
+  "331": {
+    "ten": "W.243b - Nơi đường sắt giao không vuông góc với đường bộ (cách 100 m)",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình chữ nhật đứng, nền trắng; có 2 vạch chéo màu đỏ (báo khoảng cách còn lại đến đường sắt).",
+    "y_nghia": "Báo khoảng cách còn lại đến chỗ giao với đường sắt (khoảng 100 m)."
+  },
+  "332": {
+    "ten": "W.243c - Nơi đường sắt giao không vuông góc với đường bộ (cách 150 m)",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình chữ nhật đứng, nền trắng; có 3 vạch chéo màu đỏ (báo khoảng cách còn lại đến đường sắt).",
+    "y_nghia": "Báo khoảng cách còn lại đến chỗ giao với đường sắt (khoảng 150 m)."
+  },
+  "333": {
+    "ten": "W.244 - Đoạn đường hay xảy ra tai nạn",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; dòng chữ ĐOẠN ĐƯỜNG HAY XẢY RA TAI NẠN.",
+    "y_nghia": "Báo trước đoạn đường thường xảy ra tai nạn; cần đặc biệt chú ý."
+  },
+  "334": {
+    "ten": "W.245a - Đi chậm",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; dòng chữ ĐI CHẬM màu đen.",
+    "y_nghia": "Nhắc người lái xe giảm tốc độ, đi chậm."
+  },
+  "335": {
+    "ten": "W.245b - Đi chậm (biển song ngữ)",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; dòng chữ ĐI CHẬM và SLOW màu đen.",
+    "y_nghia": "Nhắc người lái xe giảm tốc độ, đi chậm (dùng trên đường đối ngoại, có chữ tiếng Anh)."
+  },
+  "336": {
+    "ten": "W.246a - Chú ý chướng ngại vật (vòng tránh sang hai bên)",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình chướng ngại vật và mũi tên vòng tránh sang hai bên.",
+    "y_nghia": "Báo trước có chướng ngại vật trên đường; xe có thể vòng tránh sang hai bên."
+  },
+  "337": {
+    "ten": "W.246b - Chú ý chướng ngại vật (vòng tránh sang bên trái)",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình chướng ngại vật và mũi tên vòng tránh sang trái.",
+    "y_nghia": "Báo trước có chướng ngại vật trên đường; xe phải vòng tránh sang bên trái."
+  },
+  "338": {
+    "ten": "W.246c - Chú ý chướng ngại vật (vòng tránh sang bên phải)",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình chướng ngại vật và mũi tên vòng tránh sang phải.",
+    "y_nghia": "Báo trước có chướng ngại vật trên đường; xe phải vòng tránh sang bên phải."
+  },
+  "339": {
+    "ten": "W.247 - Chú ý xe đỗ",
+    "nhom": "Biển báo nguy hiểm và cảnh báo",
+    "dac_diem": "Hình tam giác đều, viền đỏ, nền vàng; hình xe ô tô đang đỗ trên đường.",
+    "y_nghia": "Báo trước có xe đang đỗ chiếm một phần đường (xe hỏng, sự cố...)."
+  }
+}

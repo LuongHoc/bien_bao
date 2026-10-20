@@ -1,0 +1,8 @@
+__pycache__/
+data/
+ban_web/
+luu_tru/
+ket_qua/
+hinh_chuong_*/
+vi_du_tao_du_lieu/
+*.pyc
