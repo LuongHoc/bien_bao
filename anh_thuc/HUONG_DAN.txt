@@ -1,0 +1,9 @@
+THƯ MỤC ẢNH CHỤP THỰC TẾ (dùng cho danh_gia_anh_thuc.py)
+
+Tạo một thư mục con cho mỗi loại biển, đặt tên đúng mã biển theo QCVN 41:2024, rồi bỏ ảnh vào:
+    anh_thuc\P.102\anh1.jpg
+    anh_thuc\W.224\cong_truong_1.jpg
+    anh_thuc\khac\bien_la.jpg        <- biển KHÔNG thuộc 340 biển (dùng để chọn ngưỡng cảnh báo)
+
+Yêu cầu: mỗi ảnh chỉ chứa MỘT biển, cắt sát quanh biển (giống thao tác chọn vùng trong ứng dụng).
+Nên có ít nhất 100 ảnh, càng nhiều loại biển càng tốt; ghi lại nơi chụp, ngày chụp để đưa vào báo cáo.

@@ -1,0 +1,66 @@
+ĐÁNH GIÁ TRÊN TẬP KIỂM THỬ ẢNH TỔNG HỢP (sinh từ hình vẽ chuẩn, cùng nguồn hình với tập huấn luyện)
+Số lớp: 340 | Số ảnh kiểm thử: 10200 (30 ảnh/lớp)
+
+1. KẾT QUẢ TỔNG THỂ
+   Số dự đoán đúng / tổng số ảnh : 10016/10200
+   Độ chính xác (accuracy)        : 98.20%
+   Độ chính xác top-5             : 99.99%
+   Macro-Precision / Recall / F1  : 0.9818 / 0.9820 / 0.9812
+
+2. KẾT QUẢ THEO NHÓM BIỂN
+   Nhóm                             Số lớp    Đúng/Tổng  Accuracy  Macro-F1  Số lớp F1<0,9
+   Biển báo cấm                         78  2340/2340     100.00%    1.0000              0
+   Biển hiệu lệnh                       61  1821/1830      99.51%    0.9948              2
+   Biển báo nguy hiểm và cảnh báo       86  2571/2580      99.65%    0.9965              0
+   Biển chỉ dẫn                         94  2673/2820      94.79%    0.9452             14
+   Biển phụ                             21   611/630       96.98%    0.9699              3
+
+3. MA TRẬN NHẦM LẪN THEO NHÓM (số ảnh; hàng = nhóm thực tế, cột = nhóm dự đoán)
+                    Cấm Hiệu lệnh  Cảnh báo   Chỉ dẫn       Phụ
+   Cấm             2340         0         0         0         0
+   Hiệu lệnh          0      1830         0         0         0
+   Cảnh báo           0         0      2580         0         0
+   Chỉ dẫn            0         1         0      2819         0
+   Phụ                0         0         0         0       630
+
+4. CÁC BIỂN CÓ F1 < 0,9 (sắp xếp theo F1 tăng dần)
+   STT Ký hiệu         P      R     F1  Hay bị nhầm thành
+     1 I.441b       0.40   0.07   0.11  I.441a (24 ảnh)
+     2 I.444m       0.44   0.37   0.40  I.444k (10 ảnh)
+     3 I.407c       0.50   0.50   0.50  I.407b (14 ảnh)
+     4 I.407b       0.52   0.50   0.51  I.407c (15 ảnh)
+     5 I.444l       0.58   0.50   0.54  I.444m (10 ảnh)
+     6 I.441a       0.45   0.70   0.55  I.441c (6 ảnh)
+     7 I.444k       0.62   0.80   0.70  I.444m (3 ảnh)
+     8 I.444d       0.81   0.83   0.82  I.444e (4 ảnh)
+     9 I.441c       0.74   0.93   0.82  I.441a (2 ảnh)
+    10 I.444g       0.96   0.73   0.83  I.444a (3 ảnh)
+    11 S.503b       0.77   0.90   0.83  S.503c (3 ảnh)
+    12 S.503a       1.00   0.73   0.85  S.503b (7 ảnh)
+    13 I.444e       0.87   0.87   0.87  I.444f (2 ảnh)
+    14 I.447b       0.93   0.83   0.88  I.447c (5 ảnh)
+    15 I.444f       0.90   0.87   0.88  I.444d (3 ảnh)
+    16 I.447c       0.85   0.93   0.89  I.447b (2 ảnh)
+    17 S.503e       0.83   0.97   0.89  S.503d (1 ảnh)
+    18 R.310a       0.93   0.87   0.90  R.310b (2 ảnh)
+    19 R.310b       0.93   0.87   0.90  R.310a (2 ảnh)
+   => 19/340 lớp có F1 < 0,9; 287 lớp có F1 ≥ 0,99
+
+5. PHÂN TÍCH ĐIỂM SOFTMAX (giá trị lớn nhất của lớp ra - mức tự tin của mô hình, CHƯA phải xác suất đã hiệu chuẩn)
+   Dự đoán đúng: trung vị 0.998, trung bình 0.961
+   Dự đoán sai : trung vị 0.499, trung bình 0.504
+   Sai số hiệu chuẩn kỳ vọng (ECE, 10 khoảng): 0.0295
+
+    Ngưỡng  Tỉ lệ ảnh được chấp nhận  Accuracy trên ảnh chấp nhận  Tỉ lệ dự đoán sai bị cảnh báo
+       0.3                    99.96%                       98.22%                          1.63%
+       0.4                    99.47%                       98.52%                         18.48%
+       0.5                    98.19%                       99.11%                         51.63%
+       0.6                    96.11%                       99.60%                         78.80%
+       0.7                    93.98%                       99.90%                         94.57%
+       0.8                    91.55%                       99.99%                         99.46%
+       0.9                    87.07%                      100.00%                        100.00%
+   => Ngưỡng cảnh báo đề xuất (nhỏ nhất đạt accuracy ≥ 99% trên ảnh được chấp nhận): 0.5
+      Cần xác nhận lại ngưỡng trên ảnh chụp thực tế bằng danh_gia_anh_thuc.py.
+
+6. NHẬN DẠNG 340 HÌNH CHUẨN TRONG THƯ VIỆN: đúng 330/340
+   Nhận dạng sai: I.407c→I.407b, I.441b→I.441c, I.444g→I.444h, I.444l→I.444k, I.444m→I.444k, I.447c→I.447b, S.501→S.502, S.503e→S.503f, S.508a→R.404k, W.242a→W.242b

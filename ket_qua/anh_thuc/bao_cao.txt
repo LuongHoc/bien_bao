@@ -1,0 +1,32 @@
+KIỂM THỬ TRÊN ẢNH CHỤP THỰC TẾ (nguồn độc lập với hình vẽ chuẩn)
+Tổng số ảnh biển: 14202 | thuộc 340 biển: 10668 (48 loại biển) | ngoài danh sách: 3534
+Nguồn: bộ dữ liệu ảnh đường phố: 14202 ảnh
+
+1. Trên các biển THUỘC danh sách 340 biển:
+   Đúng / tổng          : 6191/10668
+   Độ chính xác top-1   : 58.03%
+   Độ chính xác top-5   : 79.87%
+   Nhận đúng NHÓM biển  : 86.35%
+
+   Theo nhóm biển:
+   Biển báo cấm                      4331/6583  =  65.79%
+   Biển hiệu lệnh                     555/625   =  88.80%
+   Biển báo nguy hiểm và cảnh báo    1305/3265  =  39.97%
+   Biển phụ                             0/195   =   0.00%
+
+2. Điểm Softmax lớn nhất (mức tự tin):
+   dự đoán đúng: trung vị 0.904
+   dự đoán sai : trung vị 0.424
+   biển ngoài danh sách: trung vị 0.426
+
+3. LỰA CHỌN NGƯỠNG CẢNH BÁO
+    Ngưỡng   Chấp nhận (biển thuộc DS)   Accuracy khi chấp nhận   Bắt được dự đoán sai   Từ chối biển ngoài DS
+       0.3                      83.89%                   65.36%                 30.76%                  29.12%
+       0.4                      74.54%                   69.83%                 46.42%                  45.64%
+       0.5                      65.07%                   74.56%                 60.55%                  60.92%
+       0.6                      55.85%                   79.94%                 73.31%                  72.41%
+       0.7                      47.89%                   84.44%                 82.24%                  80.65%
+       0.8                      39.95%                   89.00%                 89.52%                  86.33%
+       0.9                      30.92%                   94.51%                 95.96%                  90.44%
+   => Ngưỡng cân bằng nhất trên ảnh thực tế (tổng accuracy + tỉ lệ bắt lỗi + tỉ lệ từ chối lớn nhất): 0.9
+      (đã ghi vào nguong_tin_cay.json, ứng dụng web sẽ dùng ngưỡng này)

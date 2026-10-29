@@ -1,0 +1,20 @@
+﻿STT,Ký hiệu,Tên biển,Nhóm,Precision,Recall,F1,Hay bị nhầm thành,Số ảnh nhầm
+1,I.441b,"Phía trước có công trường thi công (cách 100 m)",Biển chỉ dẫn,0.40,0.07,0.11,I.441a,24
+2,I.444m,"Biển chỉ dẫn địa điểm: Trạm sửa chữa ô tô",Biển chỉ dẫn,0.44,0.37,0.40,I.444k,10
+3,I.407c,"Đường một chiều (hướng rẽ trái)",Biển chỉ dẫn,0.50,0.50,0.50,I.407b,14
+4,I.407b,"Đường một chiều (hướng rẽ phải)",Biển chỉ dẫn,0.52,0.50,0.51,I.407c,15
+5,I.444l,"Biển chỉ dẫn địa điểm: Nhà hàng ăn uống",Biển chỉ dẫn,0.58,0.50,0.54,I.444m,10
+6,I.441a,"Phía trước có công trường thi công (cách 500 m)",Biển chỉ dẫn,0.45,0.70,0.55,I.441c,6
+7,I.444k,"Biển chỉ dẫn địa điểm: Ga tàu điện ngầm",Biển chỉ dẫn,0.62,0.80,0.70,I.444m,3
+8,I.444d,"Biển chỉ dẫn địa điểm: Bến xe khách",Biển chỉ dẫn,0.81,0.83,0.82,I.444e,4
+9,I.441c,"Phía trước có công trường thi công (cách 50 m)",Biển chỉ dẫn,0.74,0.93,0.82,I.441a,2
+10,I.444g,"Biển chỉ dẫn địa điểm: Điểm di tích, du lịch (Chùa Hương)",Biển chỉ dẫn,0.96,0.73,0.83,I.444a,3
+11,S.503b,"Hướng tác dụng của biển: sang cả hai bên trái và phải",Biển phụ,0.77,0.90,0.83,S.503c,3
+12,S.503a,"Hướng tác dụng của biển: sang bên phải",Biển phụ,1.00,0.73,0.85,S.503b,7
+13,I.444e,"Biển chỉ dẫn địa điểm: Trạm cấp cứu",Biển chỉ dẫn,0.87,0.87,0.87,I.444f,2
+14,I.447b,"Biển chỉ dẫn cầu vượt liên thông",Biển chỉ dẫn,0.93,0.83,0.88,I.447c,5
+15,I.444f,"Biển chỉ dẫn địa điểm: Bến tàu thủy",Biển chỉ dẫn,0.90,0.87,0.88,I.444d,3
+16,I.447c,"Biển chỉ dẫn cầu vượt liên thông",Biển chỉ dẫn,0.85,0.93,0.89,I.447b,2
+17,S.503e,"Hướng tác dụng của biển: về phía trước và phía sau",Biển phụ,0.83,0.97,0.89,S.503d,1
+18,R.310a,"Hướng đi phải theo cho xe chở hàng nguy hiểm: rẽ trái",Biển hiệu lệnh,0.93,0.87,0.90,R.310b,2
+19,R.310b,"Hướng đi phải theo cho xe chở hàng nguy hiểm: đi thẳng",Biển hiệu lệnh,0.93,0.87,0.90,R.310a,2

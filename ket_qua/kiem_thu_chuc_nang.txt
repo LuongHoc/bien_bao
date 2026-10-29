@@ -1,0 +1,19 @@
+[ĐẠT] Ứng dụng khởi chạy không lỗi
+[ĐẠT] Thư viện hiển thị đủ 340 biển
+[ĐẠT] Lọc nhóm “Biển báo cấm” → 78 biển
+[ĐẠT] Tìm kiếm theo tên (“trẻ em”) có kết quả
+[ĐẠT] Tìm kiếm theo mã (“P.102”) có kết quả
+[ĐẠT] 14 bộ đề, mỗi đề tối đa 25 câu — số câu: [25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 15]
+[ĐẠT] 14 bộ đề bao phủ đủ 340 biển, không biển nào lặp lại giữa các đề
+[ĐẠT] Mỗi câu có 4 đáp án khác nhau và chứa đáp án đúng
+[ĐẠT] Tên các đáp án trong cùng một câu không trùng nhau
+[ĐẠT] Chọn đáp án đúng → chấm ngay, ghi nhận đúng
+[ĐẠT] Chọn đáp án sai → biển được đưa vào danh sách ôn câu sai
+[ĐẠT] Bỏ qua câu hỏi → được ghi nhận là 'bỏ qua'
+[ĐẠT] Nộp bài → hiển thị kết quả (đúng/sai/bỏ qua, Đạt/Chưa đạt)
+[ĐẠT] Hết giờ → tự động kết thúc bài, các câu chưa làm tính là bỏ qua
+[ĐẠT] Ôn câu sai → bài ôn gồm đúng các biển đã sai/bỏ qua
+[ĐẠT] Luyện theo nhóm: 2 lượt 10 câu liên tiếp không lặp lại biển (nhóm Biển phụ có 21 biển) — trùng 0 biển
+[ĐẠT] Thống kê theo nhóm được cập nhật
+
+Tổng: 17/17 kiểm thử đạt.

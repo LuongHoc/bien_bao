@@ -1,0 +1,6 @@
+Máy đo: Windows 10 | CPU: Intel64 Family 6 Model 158 Stepping 10, GenuineIntel | số luồng: 12 | Python 3.11.9 | NumPy 2.4.4
+
+(a) Tiền xử lý + mạng nơron (1 ảnh đã cắt)                 p50 =    0.81 ms | p95 =    1.44 ms | max =    2.08 ms
+(b) Ảnh điện thoại 12 MP (0.7 MB): giải mã + cắt + nhận dạng p50 =   52.02 ms | p95 =   64.75 ms | max =   99.38 ms
+
+Số lần đo mỗi mục: 300 (sau 10 lần chạy khởi động).

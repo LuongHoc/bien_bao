@@ -1,0 +1,35 @@
+=== 1. KIỂM CHỨNG GRADIENT (lan truyền ngược so với sai phân trung tâm, ε = 1e-6, số thực 64 bit) ===
+
+Mạng [8, 6, 5, 4] - kiểm tra TOÀN BỘ tham số
+Tham số  Kích thước      Số phần tử KT   Sai số tương đối  Kết luận
+W1       (8, 6)                     48           3.49e-10  ĐẠT
+W2       (6, 5)                     30           4.40e-10  ĐẠT
+W3       (5, 4)                     20           3.30e-10  ĐẠT
+b1       (6,)                        6           1.47e-10  ĐẠT
+b2       (5,)                        5           1.99e-10  ĐẠT
+b3       (4,)                        4           2.22e-10  ĐẠT
+
+Mạng [3072, 512, 256, 340] - kiểm tra ngẫu nhiên 30 phần tử mỗi ma trận
+Tham số  Kích thước      Số phần tử KT   Sai số tương đối  Kết luận
+W1       (3072, 512)                30           1.78e-08  ĐẠT
+W2       (512, 256)                 30           7.62e-09  ĐẠT
+W3       (256, 340)                 30           6.71e-08  ĐẠT
+b1       (512,)                     30           1.87e-08  ĐẠT
+b2       (256,)                     30           1.51e-08  ĐẠT
+b3       (340,)                     30           7.08e-09  ĐẠT
+
+=== 2. KIỂM THỬ ĐƠN VỊ ===
+[ĐẠT] Kích thước đầu ra lan truyền xuôi = (6, 5)
+[ĐẠT] Softmax: mỗi hàng có tổng bằng 1, giá trị trong (0, 1)
+[ĐẠT] Softmax ổn định số học với đầu vào rất lớn (z = 1000)
+[ĐẠT] Sai số lớp ra Softmax + Cross-Entropy: dE/db = tổng (ŷ − y)/m
+[ĐẠT] Dropout: tỉ lệ nơron bị tắt ≈ 30%
+[ĐẠT] Dropout: kỳ vọng mặt nạ ≈ 1 (chia cho 1 − p)
+[ĐẠT] Dropout: nơron bị tắt không nhận gradient
+[ĐẠT] Khi nhận dạng (huan_luyen=False) không áp dụng Dropout
+[ĐẠT] Học được bài toán XOR (phi tuyến): độ chính xác 100%
+[ĐẠT] Hàm mất mát giảm sau huấn luyện (XOR)
+[ĐẠT] Lưu rồi nạp lại mô hình cho kết quả dự đoán giống hệt
+[ĐẠT] Tái hiện ví dụ tính tay mục 2.4: E giảm 0,5716 → 0,4958 (chương trình: 0.5716 → 0.4958)
+
+Tổng: 12/12 kiểm thử đạt.

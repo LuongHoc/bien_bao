@@ -1,0 +1,11 @@
+__pycache__/
+venv/
+data/
+ban_web/
+vi_du_tao_du_lieu/
+anh_thuc/**/*.jpg
+anh_thuc/**/*.jpeg
+anh_thuc/**/*.png
+khao_sat.csv
+*.pyc
+du_lieu_vn56/
