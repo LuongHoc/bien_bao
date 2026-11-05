@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Biển Báo Giao Thông</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <aside class="thanh-ben">
+    <div class="dau-ben">
+      <a class="logo" href="#/">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><defs><linearGradient id="logo-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5aa2ff"/><stop offset="1" stop-color="#1d5fe0"/></linearGradient></defs><rect width="40" height="40" rx="10" fill="url(#logo-g)"/><path d="M20 6 32 34h-6l-6-16-6 16H8z" fill="#fff"/><path d="M20 22.5v3M20 29v3" stroke="#1d5fe0" stroke-width="2.2" stroke-linecap="round"/></svg>
+      <span>Biển Báo<br>Giao Thông</span>
+    </a>
+      <button class="nut-thu-gon" id="thu-gon" type="button" aria-expanded="true" aria-label="Thu gọn menu" title="Thu gọn menu">
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/><path d="M20 4v16"/></svg>
+      </button>
+    </div>
+    <nav id="menu" aria-label="Chức năng"></nav>
+    <a class="nguoi-hoc-nho" href="#/nguoi-hoc" data-trang="nguoi-hoc" title="Người học">
+      <span class="avatar nho"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span><span id="ten-nho">Người học</span>
+    </a>
+  </aside>
+  <main id="noi-dung" tabindex="-1"></main>
+  <div id="thong-bao" class="thong-bao" role="status" aria-live="polite" hidden></div>
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+BO SUNG / THAY ANH BIEN BAO
+===========================
+Bo anh (PNG, JPG) vao thu muc nay, DAT TEN FILE THEO MA BIEN. Nhan F5 tren trinh duyet la thay ngay.
+Chap nhan cac cach viet: R.E,9a.png  RE9a.png  R.E_9a.png  W.211.png  DP.127.png
+
+14 bien con thieu (ung dung da co san ten va y nghia, chi can anh):
+  R.E,9a   Cam do xe trong khu vuc
+  R.E,9b   Cam do xe theo gio trong khu vuc
+  R.E,9c   Khu vuc do xe
+  R.E,9d   Toc do toi da trong khu vuc
+  R.E,10a  Het cam do xe trong khu vuc
+  R.E,10b  Het cam do xe theo gio trong khu vuc
+  R.E,10c  Het khu vuc do xe
+  R.E,10d  Het toc do toi da trong khu vuc
+  R.E,11a  Duong ham
+  R.E,11b  Ket thuc duong ham
+  DP.127   Het toc do toi da cho phep theo bien ghep
+  R.301h   Huong di phai theo
+  W.211    Giao nhau voi duong sat khong co rao chan
+  R.415    Bien gop lan duong theo phuong tien
+
+Thay anh bien da co: dat file trung ma (vd P.102.png) -> anh moi duoc dung thay anh mac dinh.

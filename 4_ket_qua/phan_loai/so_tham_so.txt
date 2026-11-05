@@ -1,0 +1,23 @@
+dac_trung.0.0.weight	(32, 3, 3, 3)	864
+dac_trung.0.1.weight	(32,)	32
+dac_trung.0.1.bias	(32,)	32
+dac_trung.0.3.weight	(32, 32, 3, 3)	9216
+dac_trung.0.4.weight	(32,)	32
+dac_trung.0.4.bias	(32,)	32
+dac_trung.1.0.weight	(64, 32, 3, 3)	18432
+dac_trung.1.1.weight	(64,)	64
+dac_trung.1.1.bias	(64,)	64
+dac_trung.1.3.weight	(64, 64, 3, 3)	36864
+dac_trung.1.4.weight	(64,)	64
+dac_trung.1.4.bias	(64,)	64
+dac_trung.2.0.weight	(128, 64, 3, 3)	73728
+dac_trung.2.1.weight	(128,)	128
+dac_trung.2.1.bias	(128,)	128
+dac_trung.2.3.weight	(128, 128, 3, 3)	147456
+dac_trung.2.4.weight	(128,)	128
+dac_trung.2.4.bias	(128,)	128
+phan_loai.2.weight	(256, 8192)	2097152
+phan_loai.2.bias	(256,)	256
+phan_loai.5.weight	(54, 256)	13824
+phan_loai.5.bias	(54,)	54
+TONG		2398742

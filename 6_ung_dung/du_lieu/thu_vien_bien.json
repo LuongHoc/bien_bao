@@ -1,0 +1,3358 @@
+[
+ {
+  "ma": "P.101",
+  "ten": "Đường cấm",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.101.png",
+  "y_nghia": "Đường cấm. Lệnh cấm có hiệu lực kể từ vị trí đặt biển theo chiều đi.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.102",
+  "ten": "Cấm đi ngược chiều",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.102.png",
+  "y_nghia": "Cấm các loại xe đi vào theo chiều đặt biển (trừ xe được quyền ưu tiên theo quy định)."
+ },
+ {
+  "ma": "P.103a",
+  "ten": "Cấm xe ô tô",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.103a.png",
+  "y_nghia": "Cấm các loại xe ô tô đi qua, trừ xe được quyền ưu tiên theo quy định."
+ },
+ {
+  "ma": "P.103b",
+  "ten": "Cấm xe ô tô rẽ phải",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.103b.png",
+  "y_nghia": "Cấm xe ô tô rẽ phải. Lệnh cấm có hiệu lực kể từ vị trí đặt biển theo chiều đi.",
+  "y_nghia_tom_tat": true,
+  "ghi_chu": "QCVN 41:2024 liệt kê tên “Cấm xe ô tô rẽ trái” cho mã này; ảnh theo bản vẽ “Cấm xe ô tô rẽ phải”. Đối chiếu hình vẽ ở phụ lục để chốt.",
+  "can_kiem_tra": true
+ },
+ {
+  "ma": "P.103c",
+  "ten": "Cấm xe ô tô rẽ trái",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.103c.png",
+  "y_nghia": "Cấm xe ô tô rẽ ở nơi đặt biển theo hướng hình vẽ trên biển; các loại xe khác không bị cấm.",
+  "ghi_chu": "Văn bản QCVN 41:2024 (Điều 22) ghi 'P.103(b,c): Cấm xe ô tô rẽ trái; Cấm xe ôtô rẽ phải' — thứ tự khác bản 2019. Đối chiếu hình vẽ ở Phụ lục B để chốt hướng rẽ.",
+  "can_kiem_tra": true
+ },
+ {
+  "ma": "P.104",
+  "ten": "Cấm xe máy",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.104.png",
+  "y_nghia": "Cấm xe máy đi qua. Biển không cấm người dắt xe máy."
+ },
+ {
+  "ma": "P.105",
+  "ten": "Cấm xe ô tô và xe máy",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.105.png",
+  "y_nghia": "Cấm xe ô tô và xe máy. Lệnh cấm có hiệu lực kể từ vị trí đặt biển theo chiều đi.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.106a",
+  "ten": "Cấm xe ô tô tải",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.106a.png",
+  "y_nghia": "Cấm các loại xe ô tô tải đi qua."
+ },
+ {
+  "ma": "P.106b",
+  "ten": "Cấm xe ô tô tải",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.106b.png",
+  "y_nghia": "Cấm xe ô tô tải có khối lượng chuyên chở lớn hơn giá trị ghi trên biển."
+ },
+ {
+  "ma": "P.106c",
+  "ten": "Cấm các xe chở hàng nguy hiểm",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.106c.png",
+  "y_nghia": "Cấm các xe chở hàng nguy hiểm. Lệnh cấm có hiệu lực kể từ vị trí đặt biển theo chiều đi.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.107",
+  "ten": "Cấm xe ô tô khách và xe ô tô tải",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.107.png",
+  "y_nghia": "Cấm xe ô tô chở khách và các loại xe ô tô tải đi qua."
+ },
+ {
+  "ma": "P.107a",
+  "ten": "Cấm xe ô tô khách",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.107a.png",
+  "y_nghia": "Cấm xe ô tô khách. Lệnh cấm có hiệu lực kể từ vị trí đặt biển theo chiều đi.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.107b",
+  "ten": "Cấm xe ô tô taxi",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.107b.png",
+  "y_nghia": "Cấm xe ô tô taxi. Lệnh cấm có hiệu lực kể từ vị trí đặt biển theo chiều đi.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.108",
+  "ten": "Cấm xe kéo rơ-moóc",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.108.png",
+  "y_nghia": "Cấm xe kéo rơ-moóc. Lệnh cấm có hiệu lực kể từ vị trí đặt biển theo chiều đi.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.108a",
+  "ten": "Cấm xe sơ-mi rơ-moóc",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.108a.png",
+  "y_nghia": "Cấm xe kéo sơ-mi rơ-moóc. Lệnh cấm có hiệu lực kể từ vị trí đặt biển theo chiều đi.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.109",
+  "ten": "Cấm máy kéo",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.109.png",
+  "y_nghia": "Cấm máy kéo. Lệnh cấm có hiệu lực kể từ vị trí đặt biển theo chiều đi.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.110a",
+  "ten": "Cấm xe đạp",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.110a.png",
+  "y_nghia": "Cấm xe đạp. Lệnh cấm có hiệu lực kể từ vị trí đặt biển theo chiều đi.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.110b",
+  "ten": "Cấm xe đạp thồ",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.110b.png",
+  "y_nghia": "Cấm xe đạp thồ. Lệnh cấm có hiệu lực kể từ vị trí đặt biển theo chiều đi.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.111",
+  "ten": "Nhóm biển P.111: cấm xe gắn máy / xe ba bánh",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.111.png",
+  "y_nghia": "P.111a cấm xe gắn máy; P.111(b,c) cấm xe ba bánh có động cơ; P.111d cấm xe ba bánh không có động cơ.",
+  "ghi_chu": "Bộ dữ liệu gộp chung nhãn P.111, không tách a/b/c/d. Xem ảnh mẫu để biết đa số là biển nào.",
+  "can_kiem_tra": true
+ },
+ {
+  "ma": "P.111a",
+  "ten": "Cấm xe gắn máy",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.111a.png",
+  "y_nghia": "Cấm xe gắn máy. Lệnh cấm có hiệu lực kể từ vị trí đặt biển theo chiều đi.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.111b",
+  "ten": "Cấm xe ba bánh loại có động cơ (xe lam, xích lô máy)",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.111b.png",
+  "y_nghia": "Cấm xe ba bánh loại có động cơ (xe lam, xích lô máy). Lệnh cấm có hiệu lực kể từ vị trí đặt biển theo chiều đi.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.111c",
+  "ten": "Cấm xe ba bánh loại có động cơ (xe lam, xích lô máy)",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.111c.png",
+  "y_nghia": "Cấm xe ba bánh loại có động cơ (xe lam, xích lô máy). Lệnh cấm có hiệu lực kể từ vị trí đặt biển theo chiều đi.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.111d",
+  "ten": "Cấm xe ba bánh loại không có động cơ (xích lô)",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.111d.png",
+  "y_nghia": "Cấm xe ba bánh loại không có động cơ (xích lô). Lệnh cấm có hiệu lực kể từ vị trí đặt biển theo chiều đi.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.112",
+  "ten": "Cấm người đi bộ",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.112.png",
+  "y_nghia": "Cấm người đi bộ. Lệnh cấm có hiệu lực kể từ vị trí đặt biển theo chiều đi.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.113",
+  "ten": "Cấm xe người kéo, đẩy",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.113.png",
+  "y_nghia": "Cấm xe người kéo, đẩy. Lệnh cấm có hiệu lực kể từ vị trí đặt biển theo chiều đi.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.114",
+  "ten": "Cấm xe vật nuôi kéo",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.114.png",
+  "y_nghia": "Cấm xe vật nuôi kéo. Lệnh cấm có hiệu lực kể từ vị trí đặt biển theo chiều đi.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.115",
+  "ten": "Hạn chế trọng tải toàn bộ xe",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.115.png",
+  "y_nghia": "Hạn chế trọng tải toàn bộ xe: cấm các xe có thông số vượt quá trị số ghi trên biển đi qua.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.116",
+  "ten": "Hạn chế tải trọng trên trục xe",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.116.png",
+  "y_nghia": "Hạn chế tải trọng trên trục xe: cấm các xe có thông số vượt quá trị số ghi trên biển đi qua.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.117",
+  "ten": "Hạn chế chiều cao",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.117.png",
+  "y_nghia": "Cấm xe có chiều cao tính cả hàng hóa vượt quá trị số ghi trên biển."
+ },
+ {
+  "ma": "P.118",
+  "ten": "Hạn chế chiều ngang xe",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.118.png",
+  "y_nghia": "Hạn chế chiều ngang xe: cấm các xe có thông số vượt quá trị số ghi trên biển đi qua.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.119",
+  "ten": "Hạn chế chiều dài xe",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.119.png",
+  "y_nghia": "Hạn chế chiều dài xe: cấm các xe có thông số vượt quá trị số ghi trên biển đi qua.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.120",
+  "ten": "Hạn chế chiều dài xe cơ giới kéo theo rơ-moóc hoặc sơ-mi rơ-moóc",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.120.png",
+  "y_nghia": "Hạn chế chiều dài xe cơ giới kéo theo rơ-moóc hoặc sơ-mi rơ-moóc: cấm các xe có thông số vượt quá trị số ghi trên biển đi qua.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.121",
+  "ten": "Cự ly tối thiểu giữa hai xe",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.121.png",
+  "y_nghia": "Cự ly tối thiểu giữa hai xe: cấm các xe có thông số vượt quá trị số ghi trên biển đi qua.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.123a",
+  "ten": "Cấm rẽ trái",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.123a.png",
+  "y_nghia": "Cấm các loại xe rẽ trái ở vị trí đặt biển."
+ },
+ {
+  "ma": "P.123b",
+  "ten": "Cấm rẽ phải",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.123b.png",
+  "y_nghia": "Cấm các loại xe rẽ phải ở vị trí đặt biển."
+ },
+ {
+  "ma": "P.124a",
+  "ten": "Cấm quay đầu xe",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.124a.png",
+  "y_nghia": "Cấm các loại xe quay đầu ở vị trí đặt biển."
+ },
+ {
+  "ma": "P.124b",
+  "ten": "Cấm ô tô quay đầu xe",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.124b.png",
+  "y_nghia": "Cấm quay đầu xe cơ giới. Lệnh cấm có hiệu lực kể từ vị trí đặt biển theo chiều đi.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.124c",
+  "ten": "Cấm rẽ trái và quay đầu xe",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.124c.png",
+  "y_nghia": "Cấm các loại xe rẽ trái và quay đầu ở vị trí đặt biển."
+ },
+ {
+  "ma": "P.124d",
+  "ten": "Cấm rẽ phải và quay đầu xe",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.124d.png",
+  "y_nghia": "Cấm rẽ phải và quay đầu xe. Lệnh cấm có hiệu lực kể từ vị trí đặt biển theo chiều đi.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.124e",
+  "ten": "Cấm ô tô rẽ trái và quay đầu xe",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.124e.png",
+  "y_nghia": "Cấm xe cơ giới rẽ trái và quay đầu. Lệnh cấm có hiệu lực kể từ vị trí đặt biển theo chiều đi.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.124f",
+  "ten": "Cấm ô tô rẽ phải và quay đầu xe",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.124f.png",
+  "y_nghia": "Cấm xe cơ giới rẽ phải và quay đầu. Lệnh cấm có hiệu lực kể từ vị trí đặt biển theo chiều đi.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.125",
+  "ten": "Cấm vượt",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.125.png",
+  "y_nghia": "Cấm vượt. Lệnh cấm có hiệu lực kể từ vị trí đặt biển theo chiều đi.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.126",
+  "ten": "Cấm xe ô tô tải vượt",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.126.png",
+  "y_nghia": "Cấm xe ô tô tải vượt. Lệnh cấm có hiệu lực kể từ vị trí đặt biển theo chiều đi.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.127",
+  "ten": "Tốc độ tối đa cho phép",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.127.png",
+  "y_nghia": "Cấm các loại xe chạy quá tốc độ (km/h) ghi trên biển."
+ },
+ {
+  "ma": "P.127(5)",
+  "ten": "Tốc độ tối đa cho phép 5 km/h",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.127_5.png",
+  "y_nghia": "Cấm các loại xe chạy quá 5 km/h kể từ vị trí đặt biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.127(20)",
+  "ten": "Tốc độ tối đa cho phép 20 km/h",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.127_20.png",
+  "y_nghia": "Cấm các loại xe chạy quá 20 km/h kể từ vị trí đặt biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.127(30)",
+  "ten": "Tốc độ tối đa cho phép 30 km/h",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.127_30.png",
+  "y_nghia": "Cấm các loại xe chạy quá 30 km/h kể từ vị trí đặt biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.127(40)",
+  "ten": "Tốc độ tối đa cho phép 40 km/h",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.127_40.png",
+  "y_nghia": "Cấm các loại xe chạy quá 40 km/h."
+ },
+ {
+  "ma": "P.127(50)",
+  "ten": "Tốc độ tối đa cho phép 50 km/h",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.127_50.png",
+  "y_nghia": "Cấm các loại xe chạy quá 50 km/h."
+ },
+ {
+  "ma": "P.127(60)",
+  "ten": "Tốc độ tối đa cho phép 60 km/h",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.127_60.png",
+  "y_nghia": "Cấm các loại xe chạy quá 60 km/h."
+ },
+ {
+  "ma": "P.127(70)",
+  "ten": "Tốc độ tối đa cho phép 70 km/h",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.127_70.png",
+  "y_nghia": "Cấm các loại xe chạy quá 70 km/h kể từ vị trí đặt biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.127(80)",
+  "ten": "Tốc độ tối đa cho phép 80 km/h",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.127_80.png",
+  "y_nghia": "Cấm các loại xe chạy quá 80 km/h."
+ },
+ {
+  "ma": "P.127(90)",
+  "ten": "Tốc độ tối đa cho phép 90 km/h",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.127_90.png",
+  "y_nghia": "Cấm các loại xe chạy quá 90 km/h kể từ vị trí đặt biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.127(100)",
+  "ten": "Tốc độ tối đa cho phép 100 km/h",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.127_100.png",
+  "y_nghia": "Cấm các loại xe chạy quá 100 km/h kể từ vị trí đặt biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.127(110)",
+  "ten": "Tốc độ tối đa cho phép 110 km/h",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.127_110.png",
+  "y_nghia": "Cấm các loại xe chạy quá 110 km/h kể từ vị trí đặt biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.127(120)",
+  "ten": "Tốc độ tối đa cho phép 120 km/h",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.127_120.png",
+  "y_nghia": "Cấm các loại xe chạy quá 120 km/h kể từ vị trí đặt biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.127a",
+  "ten": "Tốc độ tối đa cho phép về ban đêm",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.127a.png",
+  "y_nghia": "Tốc độ tối đa cho phép về ban đêm. Lệnh cấm có hiệu lực kể từ vị trí đặt biển theo chiều đi.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.127b",
+  "ten": "Biển ghép tốc độ tối đa cho phép trên từng làn đường",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.127b.png",
+  "y_nghia": "Biển ghép tốc độ tối đa cho phép trên từng làn đường. Lệnh cấm có hiệu lực kể từ vị trí đặt biển theo chiều đi.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.127c",
+  "ten": "Biển ghép tốc độ tối đa cho phép theo phương tiện, trên từng làn đường",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.127c.png",
+  "y_nghia": "Biển ghép tốc độ tối đa cho phép theo phương tiện, trên từng làn đường. Lệnh cấm có hiệu lực kể từ vị trí đặt biển theo chiều đi.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.127d",
+  "ten": "Hết quy định tốc độ khác nhau theo làn",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.127d.png",
+  "y_nghia": "Báo hết đoạn đường chịu hiệu lực của lệnh cấm: hết quy định tốc độ khác nhau theo làn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.127e",
+  "ten": "Hết quy định tốc độ và loại xe theo làn",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.127e.png",
+  "y_nghia": "Báo hết đoạn đường chịu hiệu lực của lệnh cấm: hết quy định tốc độ và loại xe theo làn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.128",
+  "ten": "Cấm sử dụng còi",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.128.png",
+  "y_nghia": "Cấm sử dụng còi. Lệnh cấm có hiệu lực kể từ vị trí đặt biển theo chiều đi.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.129",
+  "ten": "Kiểm tra",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.129.png",
+  "y_nghia": "Báo nơi đặt trạm kiểm tra; các loại xe phải dừng lại để làm thủ tục kiểm tra, kiểm soát."
+ },
+ {
+  "ma": "P.130",
+  "ten": "Cấm dừng xe và đỗ xe",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.130.png",
+  "y_nghia": "Cấm dừng xe và đỗ xe ở phía đường có đặt biển (trừ xe được quyền ưu tiên theo quy định)."
+ },
+ {
+  "ma": "P.131a",
+  "ten": "Cấm đỗ xe",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.131a.png",
+  "y_nghia": "Cấm đỗ xe ở phía đường có đặt biển; vẫn được dừng xe."
+ },
+ {
+  "ma": "P.131b",
+  "ten": "Cấm đỗ xe",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.131b.png",
+  "y_nghia": "Cấm đỗ xe ngày lẻ. Lệnh cấm có hiệu lực kể từ vị trí đặt biển theo chiều đi.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.131c",
+  "ten": "Cấm đỗ xe",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.131c.png",
+  "y_nghia": "Cấm đỗ xe ngày chẵn. Lệnh cấm có hiệu lực kể từ vị trí đặt biển theo chiều đi.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.132",
+  "ten": "Nhường đường cho xe cơ giới đi ngược chiều qua đường hẹp",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.132.png",
+  "y_nghia": "Nhường đường cho xe cơ giới đi ngược chiều qua đường hẹp. Lệnh cấm có hiệu lực kể từ vị trí đặt biển theo chiều đi.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "DP.133",
+  "ten": "Hết cấm vượt",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "DP.133.png",
+  "y_nghia": "Báo hết đoạn đường chịu hiệu lực của lệnh cấm: hết cấm vượt.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "DP.134",
+  "ten": "Hết tốc độ tối đa cho phép",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "DP.134.png",
+  "y_nghia": "Báo hết đoạn đường chịu hiệu lực của lệnh cấm: hết tốc độ tối đa cho phép.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "DP.135",
+  "ten": "Hết tất cả các lệnh cấm",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "DP.135.png",
+  "y_nghia": "Báo hết đoạn đường chịu hiệu lực của các biển báo cấm đặt trước đó."
+ },
+ {
+  "ma": "P.136",
+  "ten": "Cấm đi thẳng",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.136.png",
+  "y_nghia": "Cấm đi thẳng. Lệnh cấm có hiệu lực kể từ vị trí đặt biển theo chiều đi.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.137",
+  "ten": "Cấm rẽ trái, rẽ phải",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.137.png",
+  "y_nghia": "Cấm các loại xe rẽ trái và rẽ phải ở nơi giao nhau đặt biển."
+ },
+ {
+  "ma": "P.138",
+  "ten": "Cấm đi thẳng, rẽ trái",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.138.png",
+  "y_nghia": "Cấm đi thẳng và rẽ trái. Lệnh cấm có hiệu lực kể từ vị trí đặt biển theo chiều đi.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "P.139",
+  "ten": "Cấm đi thẳng, rẽ phải",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.139.png",
+  "y_nghia": "Cấm các loại xe đi thẳng và rẽ phải ở nơi giao nhau đặt biển."
+ },
+ {
+  "ma": "P.140",
+  "ten": "Cấm xe công nông và các loại xe tương tự",
+  "nhom": "Biển báo cấm",
+  "dac_diem_nhom": "Thường hình tròn, viền đỏ, nền trắng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 22, Phụ lục B",
+  "anh_file": "P.140.png",
+  "y_nghia": "Cấm xe công nông và các loại xe tương tự. Lệnh cấm có hiệu lực kể từ vị trí đặt biển theo chiều đi.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.201a",
+  "ten": "Chỗ ngoặt nguy hiểm",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.201a.png",
+  "y_nghia": "Báo trước sắp đến chỗ ngoặt nguy hiểm theo hướng hình vẽ trên biển; cần giảm tốc độ."
+ },
+ {
+  "ma": "W.201b",
+  "ten": "Chỗ ngoặt nguy hiểm",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.201b.png",
+  "y_nghia": "Báo trước sắp đến chỗ ngoặt nguy hiểm theo hướng hình vẽ trên biển; cần giảm tốc độ."
+ },
+ {
+  "ma": "W.201c",
+  "ten": "Chỗ ngoặt nguy hiểm có nguy cơ lật xe",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.201c.png",
+  "y_nghia": "Báo trước phía trước có: chỗ ngoặt nguy hiểm bên trái, nguy cơ lật xe. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.201d",
+  "ten": "Chỗ ngoặt nguy hiểm có nguy cơ lật xe",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.201d.png",
+  "y_nghia": "Báo trước phía trước có: chỗ ngoặt nguy hiểm bên phải, nguy cơ lật xe. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.202a",
+  "ten": "Nhiều chỗ ngoặt nguy hiểm liên tiếp",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.202a.png",
+  "y_nghia": "Báo trước sắp đến đoạn đường có nhiều chỗ ngoặt liên tiếp; cần giảm tốc độ."
+ },
+ {
+  "ma": "W.202b",
+  "ten": "Nhiều chỗ ngoặt nguy hiểm liên tiếp",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.202b.png",
+  "y_nghia": "Báo trước sắp đến đoạn đường có nhiều chỗ ngoặt liên tiếp; cần giảm tốc độ."
+ },
+ {
+  "ma": "W.203a",
+  "ten": "Đường bị thu hẹp",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.203a.png",
+  "y_nghia": "Báo trước phía trước có: đường bị thu hẹp cả hai bên. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.203b",
+  "ten": "Đường bị thu hẹp",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.203b.png",
+  "y_nghia": "Báo trước đường bị thu hẹp về phía có hình vẽ trên biển."
+ },
+ {
+  "ma": "W.203c",
+  "ten": "Đường bị thu hẹp",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.203c.png",
+  "y_nghia": "Báo trước phía trước có: đường bị thu hẹp bên phải. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.204",
+  "ten": "Đường hai chiều",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.204.png",
+  "y_nghia": "Báo trước phía trước có: đường hai chiều. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.205a",
+  "ten": "Đường giao nhau",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.205a.png",
+  "y_nghia": "Báo trước sắp đến nơi giao nhau cùng mức của các tuyến đường."
+ },
+ {
+  "ma": "W.205b",
+  "ten": "Đường giao nhau",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.205b.png",
+  "y_nghia": "Báo trước sắp đến nơi giao nhau cùng mức của các tuyến đường."
+ },
+ {
+  "ma": "W.205c",
+  "ten": "Đường giao nhau",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.205c.png",
+  "y_nghia": "Báo trước phía trước có: giao nhau với đường nhánh bên trái. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.205d",
+  "ten": "Đường giao nhau",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.205d.png",
+  "y_nghia": "Báo trước phía trước có: giao nhau hình chữ T. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.205e",
+  "ten": "Đường giao nhau",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.205e.png",
+  "y_nghia": "Báo trước phía trước có: giao nhau hình chữ Y. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.206",
+  "ten": "Giao nhau chạy theo vòng xuyến",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.206.png",
+  "y_nghia": "Báo trước phía trước có: giao nhau chạy theo vòng xuyến. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.207a",
+  "ten": "Giao nhau với đường không ưu tiên (đường nhánh)",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.207a.png",
+  "y_nghia": "Báo trước sắp đến nơi giao nhau với đường nhánh; xe trên đường chính được ưu tiên."
+ },
+ {
+  "ma": "W.207b",
+  "ten": "Giao nhau với đường không ưu tiên (đường nhánh)",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.207b.png",
+  "y_nghia": "Báo trước sắp đến nơi giao nhau với đường nhánh; xe trên đường chính được ưu tiên."
+ },
+ {
+  "ma": "W.207c",
+  "ten": "Giao nhau với đường không ưu tiên (đường nhánh)",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.207c.png",
+  "y_nghia": "Báo trước sắp đến nơi giao nhau với đường nhánh; xe trên đường chính được ưu tiên."
+ },
+ {
+  "ma": "W.207d",
+  "ten": "Giao nhau với đường không ưu tiên (đường nhánh)",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.207d.png",
+  "y_nghia": "Báo trước phía trước có: giao nhau với đường không ưu tiên (đường nhánh). Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.207e",
+  "ten": "Giao nhau với đường không ưu tiên (đường nhánh)",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.207e.png",
+  "y_nghia": "Báo trước phía trước có: giao nhau với đường không ưu tiên (đường nhánh). Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.207f",
+  "ten": "Giao nhau với đường không ưu tiên (đường nhánh)",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.207f.png",
+  "y_nghia": "Báo trước phía trước có: giao nhau với đường không ưu tiên (đường nhánh). Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.207g",
+  "ten": "Giao nhau với đường không ưu tiên (đường nhánh)",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.207g.png",
+  "y_nghia": "Báo trước phía trước có: giao nhau với đường không ưu tiên (đường nhánh). Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.207h",
+  "ten": "Giao nhau với đường không ưu tiên (đường nhánh)",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.207h.png",
+  "y_nghia": "Báo trước phía trước có: giao nhau với đường không ưu tiên (đường nhánh). Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.207i",
+  "ten": "Giao nhau với đường không ưu tiên (đường nhánh)",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.207i.png",
+  "y_nghia": "Báo trước phía trước có: giao nhau với đường không ưu tiên (đường nhánh). Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.207j",
+  "ten": "Giao nhau với đường không ưu tiên",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.207j.png",
+  "y_nghia": "Báo trước phía trước có: giao nhau với đường không ưu tiên. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.207k",
+  "ten": "Giao nhau với đường không ưu tiên (đường nhánh)",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.207k.png",
+  "y_nghia": "Báo trước phía trước có: giao nhau với đường không ưu tiên (đường nhánh). Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.207l",
+  "ten": "Giao nhau với đường không ưu tiên (đường nhánh)",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.207l.png",
+  "y_nghia": "Báo trước phía trước có: giao nhau với đường không ưu tiên (đường nhánh). Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.207m",
+  "ten": "Giao nhau với đường không ưu tiên",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.207m.png",
+  "y_nghia": "Báo trước phía trước có: giao nhau với đường không ưu tiên. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.208",
+  "ten": "Giao nhau với đường ưu tiên (đường chính)",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.208.png",
+  "y_nghia": "Báo trước sắp đến nơi giao nhau với đường ưu tiên; phải nhường đường cho xe trên đường ưu tiên."
+ },
+ {
+  "ma": "W.209",
+  "ten": "Giao nhau có tín hiệu đèn",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.209.png",
+  "y_nghia": "Báo trước sắp đến nơi giao nhau có đèn tín hiệu điều khiển giao thông."
+ },
+ {
+  "ma": "W.210",
+  "ten": "Giao nhau với đường sắt có rào chắn",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.210.png",
+  "y_nghia": "Báo trước sắp đến chỗ giao nhau với đường sắt có rào chắn và người điều khiển."
+ },
+ {
+  "ma": "W.211a",
+  "ten": "Giao nhau với đường sắt không có rào chắn",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.211a.png",
+  "y_nghia": "Báo trước phía trước có: giao nhau với đường sắt không có rào chắn. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.211b",
+  "ten": "Giao nhau với đường tàu điện",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.211b.png",
+  "y_nghia": "Báo trước phía trước có: giao nhau với đường tàu điện. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.212",
+  "ten": "Cầu hẹp",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.212.png",
+  "y_nghia": "Báo trước phía trước có: cầu hẹp. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.213",
+  "ten": "Cầu tạm",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.213.png",
+  "y_nghia": "Báo trước phía trước có: cầu tạm. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.214",
+  "ten": "Cầu quay - cầu cất",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.214.png",
+  "y_nghia": "Báo trước phía trước có: cầu quay - cầu cất. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.215a",
+  "ten": "Kè, vực sâu phía trước",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.215a.png",
+  "y_nghia": "Báo trước phía trước có: kè, vực sâu phía trước. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.215b",
+  "ten": "Kè, vực sâu bên đường phía bên phải",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.215b.png",
+  "y_nghia": "Báo trước phía trước có: kè, vực sâu bên đường phía bên phải. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.215c",
+  "ten": "Kè, vực sâu bên đường phía bên trái",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.215c.png",
+  "y_nghia": "Báo trước phía trước có: kè, vực sâu bên đường phía bên trái. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.216a",
+  "ten": "Đường ngầm",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.216a.png",
+  "y_nghia": "Báo trước phía trước có: đường ngầm. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.216b",
+  "ten": "Đường ngầm có nguy cơ lũ quét",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.216b.png",
+  "y_nghia": "Báo trước phía trước có: đường ngầm dễ ngập nước khi mưa lũ. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.217",
+  "ten": "Bến phà",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.217.png",
+  "y_nghia": "Báo trước phía trước có: bến phà. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.218",
+  "ten": "Cửa chui",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.218.png",
+  "y_nghia": "Báo trước phía trước có: đường hầm chui. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.219",
+  "ten": "Dốc xuống nguy hiểm",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.219.png",
+  "y_nghia": "Báo trước phía trước có: dốc xuống nguy hiểm. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.220",
+  "ten": "Dốc lên nguy hiểm",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.220.png",
+  "y_nghia": "Báo trước phía trước có: dốc lên nguy hiểm. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.221a",
+  "ten": "Đường lồi lõm",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.221a.png",
+  "y_nghia": "Báo trước phía trước có: đường không bằng phẳng. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.221b",
+  "ten": "Đường có gồ giảm tốc",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.221b.png",
+  "y_nghia": "Báo trước đoạn đường có gồ giảm tốc; cần giảm tốc độ."
+ },
+ {
+  "ma": "W.222a",
+  "ten": "Đường trơn",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.222a.png",
+  "y_nghia": "Báo trước phía trước có: đường trơn. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.222b",
+  "ten": "Lề đường nguy hiểm",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.222b.png",
+  "y_nghia": "Báo trước phía trước có: lề đường nguy hiểm. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.223a",
+  "ten": "Vách núi nguy hiểm",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.223a.png",
+  "y_nghia": "Báo trước phía trước có: vách núi nguy hiểm. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.223b",
+  "ten": "Vách núi nguy hiểm",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.223b.png",
+  "y_nghia": "Báo trước phía trước có: vách núi nguy hiểm. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.224",
+  "ten": "Đường người đi bộ cắt ngang",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.224.png",
+  "y_nghia": "Báo trước sắp đến chỗ có người đi bộ qua đường; giảm tốc độ, nhường đường cho người đi bộ."
+ },
+ {
+  "ma": "W.225",
+  "ten": "Trẻ em",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.225.png",
+  "y_nghia": "Báo trước gần trường học, nơi vui chơi của trẻ em; giảm tốc độ, chú ý quan sát."
+ },
+ {
+  "ma": "W.226",
+  "ten": "Đường người đi xe đạp cắt ngang",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.226.png",
+  "y_nghia": "Báo trước phía trước có: đường người đi xe đạp cắt ngang. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.227",
+  "ten": "Công trường",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.227.png",
+  "y_nghia": "Báo trước gần đoạn đường đang thi công; đi chậm, chú ý người và máy làm việc."
+ },
+ {
+  "ma": "W.228a",
+  "ten": "Đá lở",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.228a.png",
+  "y_nghia": "Báo trước phía trước có: đá lở. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.228b",
+  "ten": "Đá lở",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.228b.png",
+  "y_nghia": "Báo trước phía trước có: đá lở. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.228c",
+  "ten": "Sỏi đá bắn lên",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.228c.png",
+  "y_nghia": "Báo trước phía trước có: sỏi đá bắn lên. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.228d",
+  "ten": "Nền đường yếu",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.228d.png",
+  "y_nghia": "Báo trước phía trước có: nền đường yếu. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.229",
+  "ten": "Dải máy bay lên xuống",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.229.png",
+  "y_nghia": "Báo trước phía trước có: dải máy bay lên xuống. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.230",
+  "ten": "Gia súc",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.230.png",
+  "y_nghia": "Báo trước phía trước có: gia súc. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.231",
+  "ten": "Thú rừng vượt qua đường",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.231.png",
+  "y_nghia": "Báo trước phía trước có: thú rừng vượt qua đường. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.232",
+  "ten": "Gió ngang",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.232.png",
+  "y_nghia": "Báo trước phía trước có: gió ngang. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.233",
+  "ten": "Nguy hiểm khác",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.233.png",
+  "y_nghia": "Báo trước phía trước có: nguy hiểm khác. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.234",
+  "ten": "Giao nhau với đường hai chiều",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.234.png",
+  "y_nghia": "Báo trước phía trước có: đường hai chiều cắt ngang đường một chiều. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.235",
+  "ten": "Đường đôi",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.235.png",
+  "y_nghia": "Báo trước phía trước có: đường đôi. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.236",
+  "ten": "Kết thúc đường đôi",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.236.png",
+  "y_nghia": "Báo trước phía trước có: kết thúc đường đôi. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.237",
+  "ten": "Cầu vồng",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.237.png",
+  "y_nghia": "Báo trước phía trước có: cầu vồng. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.238",
+  "ten": "Đường cao tốc phía trước",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.238.png",
+  "y_nghia": "Báo trước phía trước có: phía trước có đường cao tốc. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.239",
+  "ten": "Đường dây điện phía trên",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.239.png",
+  "y_nghia": "Báo trước phía trước có: đường dây điện phía trên. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.239a",
+  "ten": "Đường cáp điện ở phía trên",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.239a.png",
+  "y_nghia": "Báo trước phía trước có: đường cáp điện ở phía trên. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.239b",
+  "ten": "Chiều cao tĩnh không thực tế",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.239b.png",
+  "y_nghia": "Báo trước phía trước có: chiều cao tĩnh không thực tế. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.240",
+  "ten": "Đường hầm",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.240.png",
+  "y_nghia": "Báo trước phía trước có: đường hầm. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.241",
+  "ten": "Ùn tắc giao thông",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.241.png",
+  "y_nghia": "Báo trước phía trước có: ùn tắc giao thông. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.242a",
+  "ten": "Nơi đường sắt giao vuông góc với đường bộ",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.242a.png",
+  "y_nghia": "Báo trước phía trước có: nơi đường sắt giao vuông góc với đường bộ. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.242b",
+  "ten": "Nơi đường sắt giao vuông góc với đường bộ",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.242b.png",
+  "y_nghia": "Báo trước phía trước có: giao nhau với đường sắt (từ hai đường ray trở lên). Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.243a",
+  "ten": "Nơi đường sắt giao không vuông góc với đường bộ",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.243a.png",
+  "y_nghia": "Báo trước phía trước có: nơi đường sắt giao không vuông góc với đường bộ. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.243b",
+  "ten": "Nơi đường sắt giao không vuông góc với đường bộ",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.243b.png",
+  "y_nghia": "Báo trước phía trước có: nơi đường sắt giao không vuông góc với đường bộ. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.243c",
+  "ten": "Nơi đường sắt giao không vuông góc với đường bộ",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.243c.png",
+  "y_nghia": "Báo trước phía trước có: nơi đường sắt giao không vuông góc với đường bộ. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.244",
+  "ten": "Đoạn đường hay xảy ra tai nạn",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.244.png",
+  "y_nghia": "Báo trước phía trước có: đoạn đường hay xảy ra tai nạn. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.245a",
+  "ten": "Đi chậm",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.245a.png",
+  "y_nghia": "Nhắc người tham gia giao thông giảm tốc độ, đi chậm."
+ },
+ {
+  "ma": "W.245b",
+  "ten": "Đi chậm (có chỉ dẫn tiếng Anh)",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.245b.png",
+  "y_nghia": "Báo trước phía trước có: đi chậm (có chỉ dẫn tiếng Anh). Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.246a",
+  "ten": "Chú ý chướng ngại vật",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.246a.png",
+  "y_nghia": "Báo trước có chướng ngại vật trên đường; phải giảm tốc độ và đi vòng tránh."
+ },
+ {
+  "ma": "W.246b",
+  "ten": "Chú ý chướng ngại vật",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.246b.png",
+  "y_nghia": "Báo trước phía trước có: chú ý chướng ngại vật, đi bên trái. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.246c",
+  "ten": "Chú ý chướng ngại vật",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.246c.png",
+  "y_nghia": "Báo trước phía trước có: chú ý chướng ngại vật, đi bên phải. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "W.247",
+  "ten": "Chú ý xe đỗ",
+  "nhom": "Biển báo nguy hiểm và cảnh báo",
+  "dac_diem_nhom": "Hình tam giác đều, viền đỏ, nền vàng, hình vẽ màu đen",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 28, Phụ lục C",
+  "anh_file": "W.247.png",
+  "y_nghia": "Báo trước phía trước có: biển nguy hiểm W.247. Người tham gia giao thông cần giảm tốc độ, chú ý quan sát và xử lý an toàn.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.122",
+  "ten": "Dừng lại",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.122.png",
+  "y_nghia": "Các loại xe phải dừng lại trước vạch dừng hoặc trước vị trí đặt biển, quan sát an toàn rồi mới được đi tiếp."
+ },
+ {
+  "ma": "R.301a",
+  "ten": "Hướng đi phải theo",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.301a.png",
+  "y_nghia": "Hướng đi phải theo: đi thẳng. Người tham gia giao thông bắt buộc thực hiện theo nội dung của biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.301b",
+  "ten": "Hướng đi phải theo",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.301b.png",
+  "y_nghia": "Hướng đi phải theo: rẽ phải. Người tham gia giao thông bắt buộc thực hiện theo nội dung của biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.301c",
+  "ten": "Hướng đi phải theo",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.301c.png",
+  "y_nghia": "Các xe chỉ được đi theo hướng mũi tên vẽ trên biển.",
+  "ghi_chu": "R.301(a–h) là các biến thể hướng đi; xem mũi tên trên biển để biết hướng cụ thể.",
+  "can_kiem_tra": true
+ },
+ {
+  "ma": "R.301d",
+  "ten": "Hướng đi phải theo",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.301d.png",
+  "y_nghia": "Các xe chỉ được rẽ phải. Người tham gia giao thông bắt buộc thực hiện theo nội dung của biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.301e",
+  "ten": "Hướng đi phải theo",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.301e.png",
+  "y_nghia": "Các xe chỉ được đi theo hướng mũi tên vẽ trên biển.",
+  "ghi_chu": "R.301(a–h) là các biến thể hướng đi; xem mũi tên trên biển để biết hướng cụ thể.",
+  "can_kiem_tra": true
+ },
+ {
+  "ma": "R.301f",
+  "ten": "Hướng đi phải theo",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.301f.png",
+  "y_nghia": "Các xe chỉ được đi thẳng và rẽ phải. Người tham gia giao thông bắt buộc thực hiện theo nội dung của biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.301g",
+  "ten": "Hướng đi phải theo",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.301g.png",
+  "y_nghia": "Các xe chỉ được đi thẳng và rẽ trái. Người tham gia giao thông bắt buộc thực hiện theo nội dung của biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.301i",
+  "ten": "Các xe chỉ được rẽ trái và rẽ phải",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.301i.png",
+  "y_nghia": "Các xe chỉ được rẽ trái và rẽ phải. Người tham gia giao thông bắt buộc thực hiện theo nội dung của biển.",
+  "y_nghia_tom_tat": true,
+  "ghi_chu": "QCVN 41:2024 liệt kê R.301 từ a đến h; ảnh theo bản vẽ cũ.",
+  "can_kiem_tra": true
+ },
+ {
+  "ma": "R.302a",
+  "ten": "Hướng phải đi vòng chướng ngại vật",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.302a.png",
+  "y_nghia": "Các xe phải đi vòng qua chướng ngại vật theo hướng mũi tên trên biển."
+ },
+ {
+  "ma": "R.302b",
+  "ten": "Hướng phải đi vòng chướng ngại vật",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.302b.png",
+  "y_nghia": "Các xe phải đi vòng qua chướng ngại vật theo hướng mũi tên trên biển."
+ },
+ {
+  "ma": "R.302c",
+  "ten": "Hướng phải đi vòng chướng ngại vật",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.302c.png",
+  "y_nghia": "Hướng phải đi vòng chướng ngại vật. Người tham gia giao thông bắt buộc thực hiện theo nội dung của biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.303",
+  "ten": "Nơi giao nhau chạy theo vòng xuyến",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.303.png",
+  "y_nghia": "Các xe phải chạy vòng quanh đảo giao thông theo chiều mũi tên."
+ },
+ {
+  "ma": "R.304",
+  "ten": "Đường dành cho xe thô sơ",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.304.png",
+  "y_nghia": "Đường dành cho xe thô sơ. Người tham gia giao thông bắt buộc thực hiện theo nội dung của biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.305",
+  "ten": "Đường dành cho người đi bộ",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.305.png",
+  "y_nghia": "Đường dành cho người đi bộ. Người tham gia giao thông bắt buộc thực hiện theo nội dung của biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.306",
+  "ten": "Tốc độ tối thiểu cho phép",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.306.png",
+  "y_nghia": "Tốc độ tối thiểu cho phép. Người tham gia giao thông bắt buộc thực hiện theo nội dung của biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.307",
+  "ten": "Hết tốc độ tối thiểu",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.307.png",
+  "y_nghia": "Hết tốc độ tối thiểu: báo hết hiệu lực của biển hiệu lệnh tương ứng.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.308a",
+  "ten": "Tuyến đường cầu vượt cắt qua",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.308a.png",
+  "y_nghia": "Tuyến đường cầu vượt cắt qua. Người tham gia giao thông bắt buộc thực hiện theo nội dung của biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.308b",
+  "ten": "Tuyến đường cầu vượt cắt qua",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.308b.png",
+  "y_nghia": "Tuyến đường cầu vượt cắt qua. Người tham gia giao thông bắt buộc thực hiện theo nội dung của biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.309",
+  "ten": "Ấn còi",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.309.png",
+  "y_nghia": "Ấn còi. Người tham gia giao thông bắt buộc thực hiện theo nội dung của biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.310a",
+  "ten": "Hướng đi phải theo cho các xe chở hàng nguy hiểm",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.310a.png",
+  "y_nghia": "Hướng đi phải theo cho các xe chở hàng nguy hiểm. Người tham gia giao thông bắt buộc thực hiện theo nội dung của biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.310b",
+  "ten": "Hướng đi phải theo cho các xe chở hàng nguy hiểm",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.310b.png",
+  "y_nghia": "Hướng đi phải theo cho các xe chở hàng nguy hiểm. Người tham gia giao thông bắt buộc thực hiện theo nội dung của biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.310c",
+  "ten": "Hướng đi phải theo cho các xe chở hàng nguy hiểm",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.310c.png",
+  "y_nghia": "Hướng đi phải theo cho các xe chở hàng nguy hiểm. Người tham gia giao thông bắt buộc thực hiện theo nội dung của biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.403a",
+  "ten": "Đường dành cho xe ô tô",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.403a.png",
+  "y_nghia": "Đường/làn dành cho ô tô. Người tham gia giao thông bắt buộc thực hiện theo nội dung của biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.403b",
+  "ten": "Đường dành cho xe ô tô, xe máy",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.403b.png",
+  "y_nghia": "Đường/làn dành cho ô tô và xe máy. Người tham gia giao thông bắt buộc thực hiện theo nội dung của biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.403c",
+  "ten": "Đường dành cho xe buýt",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.403c.png",
+  "y_nghia": "Đường/làn dành cho xe buýt. Người tham gia giao thông bắt buộc thực hiện theo nội dung của biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.403d",
+  "ten": "Đường dành cho xe ô tô con",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.403d.png",
+  "y_nghia": "Đường/làn dành cho ô tô con. Người tham gia giao thông bắt buộc thực hiện theo nội dung của biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.403e",
+  "ten": "Đường dành cho xe máy",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.403e.png",
+  "y_nghia": "Đường/làn dành cho xe máy. Người tham gia giao thông bắt buộc thực hiện theo nội dung của biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.403f",
+  "ten": "Đường dành cho xe máy và xe đạp",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.403f.png",
+  "y_nghia": "Đường/làn dành cho xe máy và xe đạp. Người tham gia giao thông bắt buộc thực hiện theo nội dung của biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.403g",
+  "ten": "Đường dành cho xe chở hàng bốn bánh gắn động cơ",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.403g.png",
+  "y_nghia": "Đường dành cho xe chở hàng bốn bánh gắn động cơ. Người tham gia giao thông bắt buộc thực hiện theo nội dung của biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.403h",
+  "ten": "Đường dành cho xe chở người bốn bánh gắn động cơ",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.403h.png",
+  "y_nghia": "Đường dành cho xe chở người bốn bánh gắn động cơ. Người tham gia giao thông bắt buộc thực hiện theo nội dung của biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.403k",
+  "ten": "Đường dành cho xe chở hàng, xe chở người bốn bánh gắn động cơ",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.403k.png",
+  "y_nghia": "Đường dành cho xe chở hàng, xe chở người bốn bánh gắn động cơ. Người tham gia giao thông bắt buộc thực hiện theo nội dung của biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.404a",
+  "ten": "Hết đoạn đường dành cho xe ô tô",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.404a.png",
+  "y_nghia": "Hết đoạn đường dành cho xe ô tô: báo hết hiệu lực của biển hiệu lệnh tương ứng.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.404b",
+  "ten": "Hết đoạn đường dành cho xe ô tô, xe máy",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.404b.png",
+  "y_nghia": "Hết đoạn đường dành cho xe ô tô, xe máy: báo hết hiệu lực của biển hiệu lệnh tương ứng.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.404c",
+  "ten": "Hết đoạn đường dành cho xe buýt",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.404c.png",
+  "y_nghia": "Hết đoạn đường dành cho xe buýt: báo hết hiệu lực của biển hiệu lệnh tương ứng.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.404d",
+  "ten": "Hết đoạn đường dành cho xe ô tô con",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.404d.png",
+  "y_nghia": "Hết đoạn đường dành cho xe ô tô con: báo hết hiệu lực của biển hiệu lệnh tương ứng.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.404e",
+  "ten": "Hết đoạn đường dành cho xe máy",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.404e.png",
+  "y_nghia": "Hết đoạn đường dành cho xe máy: báo hết hiệu lực của biển hiệu lệnh tương ứng.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.404f",
+  "ten": "Hết đoạn đường dành cho xe máy và xe đạp",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.404f.png",
+  "y_nghia": "Hết đoạn đường dành cho xe máy và xe đạp: báo hết hiệu lực của biển hiệu lệnh tương ứng.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.404g",
+  "ten": "Hết đoạn đường dành cho xe chở hàng bốn bánh gắn động cơ",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.404g.png",
+  "y_nghia": "Hết đoạn đường dành cho xe chở hàng bốn bánh gắn động cơ: báo hết hiệu lực của biển hiệu lệnh tương ứng.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.404h",
+  "ten": "Hết đoạn đường dành cho xe chở người bốn bánh gắn động cơ",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.404h.png",
+  "y_nghia": "Hết đoạn đường dành cho xe chở người bốn bánh gắn động cơ: báo hết hiệu lực của biển hiệu lệnh tương ứng.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.404k",
+  "ten": "Hết đoạn đường dành cho xe chở hàng, xe chở người bốn bánh gắn động cơ",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.404k.png",
+  "y_nghia": "Hết đoạn đường dành cho xe chở hàng, xe chở người bốn bánh gắn động cơ: báo hết hiệu lực của biển hiệu lệnh tương ứng.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.411",
+  "ten": "Hướng đi trên mỗi làn đường phải theo",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.411.png",
+  "y_nghia": "Hướng đi trên mỗi làn đường phải theo. Người tham gia giao thông bắt buộc thực hiện theo nội dung của biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.412a",
+  "ten": "Làn đường dành cho xe ô tô khách",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.412a.png",
+  "y_nghia": "Làn đường dành cho xe ô tô khách. Người tham gia giao thông bắt buộc thực hiện theo nội dung của biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.412b",
+  "ten": "Làn đường dành cho xe ô tô con",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.412b.png",
+  "y_nghia": "Làn đường dành cho xe ô tô con. Người tham gia giao thông bắt buộc thực hiện theo nội dung của biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.412c",
+  "ten": "Làn đường dành cho xe ô tô tải",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.412c.png",
+  "y_nghia": "Làn đường dành cho xe ô tô tải. Người tham gia giao thông bắt buộc thực hiện theo nội dung của biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.412d",
+  "ten": "Làn đường dành cho xe máy",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.412d.png",
+  "y_nghia": "Làn đường dành cho xe máy. Người tham gia giao thông bắt buộc thực hiện theo nội dung của biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.412e",
+  "ten": "Làn đường dành cho xe buýt",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.412e.png",
+  "y_nghia": "Làn đường dành cho xe buýt. Người tham gia giao thông bắt buộc thực hiện theo nội dung của biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.412f",
+  "ten": "Làn đường dành cho xe ô tô",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.412f.png",
+  "y_nghia": "Làn đường dành cho xe ô tô. Người tham gia giao thông bắt buộc thực hiện theo nội dung của biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.412g",
+  "ten": "Làn đường dành cho xe máy và xe đạp",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.412g.png",
+  "y_nghia": "Làn đường dành cho xe máy và xe đạp. Người tham gia giao thông bắt buộc thực hiện theo nội dung của biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.412h",
+  "ten": "Làn đường dành cho xe đạp",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.412h.png",
+  "y_nghia": "Làn đường dành cho xe đạp. Người tham gia giao thông bắt buộc thực hiện theo nội dung của biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.412i",
+  "ten": "Kết thúc làn đường dành cho xe ô tô khách",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.412i.png",
+  "y_nghia": "Kết thúc làn đường dành cho xe ô tô khách: báo hết hiệu lực của biển hiệu lệnh tương ứng.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.412j",
+  "ten": "Kết thúc làn đường dành cho xe ô tô con",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.412j.png",
+  "y_nghia": "Kết thúc làn đường dành cho xe ô tô con: báo hết hiệu lực của biển hiệu lệnh tương ứng.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.412k",
+  "ten": "Kết thúc làn đường dành cho xe ô tô tải",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.412k.png",
+  "y_nghia": "Kết thúc làn đường dành cho xe ô tô tải: báo hết hiệu lực của biển hiệu lệnh tương ứng.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.412l",
+  "ten": "Kết thúc làn đường dành cho xe máy",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.412l.png",
+  "y_nghia": "Kết thúc làn đường dành cho xe máy: báo hết hiệu lực của biển hiệu lệnh tương ứng.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.412m",
+  "ten": "Kết thúc làn đường dành cho xe buýt",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.412m.png",
+  "y_nghia": "Kết thúc làn đường dành cho xe buýt: báo hết hiệu lực của biển hiệu lệnh tương ứng.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.412n",
+  "ten": "Kết thúc làn đường dành cho xe ô tô",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.412n.png",
+  "y_nghia": "Kết thúc làn đường dành cho xe ô tô: báo hết hiệu lực của biển hiệu lệnh tương ứng.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.412o",
+  "ten": "Kết thúc làn đường dành cho xe máy và xe đạp",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.412o.png",
+  "y_nghia": "Kết thúc làn đường dành cho xe máy và xe đạp: báo hết hiệu lực của biển hiệu lệnh tương ứng.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.412p",
+  "ten": "Kết thúc làn đường dành cho xe đạp",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.412p.png",
+  "y_nghia": "Kết thúc làn đường dành cho xe đạp: báo hết hiệu lực của biển hiệu lệnh tương ứng.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.415a",
+  "ten": "Biển gộp làn đường theo phương tiện",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.415a.png",
+  "y_nghia": "Chỉ dẫn các làn đường được gộp lại theo loại phương tiện.",
+  "ghi_chu": "QCVN 41:2024 (Điều 32) chỉ ghi R.415. Nhãn R.415a của bộ dữ liệu có thể theo quy chuẩn cũ — đối chiếu hình trước khi dùng.",
+  "can_kiem_tra": true
+ },
+ {
+  "ma": "R.415b",
+  "ten": "Biển gộp làn đường theo phương tiện",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.415b.png",
+  "y_nghia": "Biển gộp làn đường theo phương tiện. Người tham gia giao thông bắt buộc thực hiện theo nội dung của biển.",
+  "y_nghia_tom_tat": true,
+  "ghi_chu": "QCVN 41:2024 chỉ ghi mã R.415; ảnh theo bản vẽ cũ R.415a/R.415b.",
+  "can_kiem_tra": true
+ },
+ {
+  "ma": "R.420",
+  "ten": "Bắt đầu khu đông dân cư",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.420.png",
+  "y_nghia": "Bắt đầu khu đông dân cư. Người tham gia giao thông bắt buộc thực hiện theo nội dung của biển.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "R.421",
+  "ten": "Hết khu đông dân cư",
+  "nhom": "Biển hiệu lệnh",
+  "dac_diem_nhom": "Hình tròn, nền xanh lam, hình vẽ màu trắng",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 32, Phụ lục D",
+  "anh_file": "R.421.png",
+  "y_nghia": "Hết khu đông dân cư: báo hết hiệu lực của biển hiệu lệnh tương ứng.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.401",
+  "ten": "Bắt đầu đường ưu tiên",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.401.png",
+  "y_nghia": "Chỉ dẫn: bắt đầu đường ưu tiên. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.402",
+  "ten": "Hết đoạn đường ưu tiên",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.402.png",
+  "y_nghia": "Chỉ dẫn: hết đoạn đường ưu tiên. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.405a",
+  "ten": "Đường cụt",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.405a.png",
+  "y_nghia": "Chỉ dẫn: đường cụt. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.405b",
+  "ten": "Đường cụt",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.405b.png",
+  "y_nghia": "Chỉ dẫn: đường cụt. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.405c",
+  "ten": "Đường cụt",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.405c.png",
+  "y_nghia": "Chỉ dẫn: đường cụt. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.406",
+  "ten": "Được ưu tiên qua đường hẹp",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.406.png",
+  "y_nghia": "Chỉ dẫn: được ưu tiên qua đường hẹp. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.407a",
+  "ten": "Đường một chiều",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.407a.png",
+  "y_nghia": "Đoạn đường chỉ cho xe đi theo một chiều theo mũi tên; không được đi ngược lại."
+ },
+ {
+  "ma": "I.407b",
+  "ten": "Đường một chiều",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.407b.png",
+  "y_nghia": "Chỉ dẫn: đường một chiều. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.407c",
+  "ten": "Đường một chiều",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.407c.png",
+  "y_nghia": "Chỉ dẫn: đường một chiều. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.408",
+  "ten": "Nơi đỗ xe",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.408.png",
+  "y_nghia": "Chỉ dẫn: nơi đỗ xe. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.408a",
+  "ten": "Nơi đỗ xe một phần trên hè phố",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.408a.png",
+  "y_nghia": "Chỉ dẫn: nơi đỗ xe một phần trên hè phố. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.409",
+  "ten": "Chỗ quay xe",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.409.png",
+  "y_nghia": "Chỉ dẫn: chỗ quay xe. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.410",
+  "ten": "Khu vực quay xe",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.410.png",
+  "y_nghia": "Chỉ dẫn: khu vực quay xe. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.413a",
+  "ten": "Đường phía trước có làn đường dành cho ô tô khách",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.413a.png",
+  "y_nghia": "Chỉ dẫn: đường phía trước có làn đường dành cho ô tô khách. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.413b",
+  "ten": "Rẽ ra đường có làn đường dành cho ô tô khách",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.413b.png",
+  "y_nghia": "Chỉ dẫn: đường một chiều có làn ngược chiều cho xe buýt. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.413c",
+  "ten": "Rẽ ra đường có làn đường dành cho ô tô khách",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.413c.png",
+  "y_nghia": "Chỉ dẫn: đường một chiều có làn ngược chiều cho xe buýt. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.414a",
+  "ten": "Chỉ hướng đường",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.414a.png",
+  "y_nghia": "Chỉ dẫn: chỉ hướng đường. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.414b",
+  "ten": "Chỉ hướng đường",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.414b.png",
+  "y_nghia": "Chỉ dẫn: chỉ hướng đường. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.414c",
+  "ten": "Chỉ hướng đường",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.414c.png",
+  "y_nghia": "Chỉ dẫn: chỉ hướng đường. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.414d",
+  "ten": "Chỉ hướng đường",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.414d.png",
+  "y_nghia": "Chỉ dẫn: chỉ hướng đường. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.415",
+  "ten": "Mũi tên chỉ hướng đi",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.415.png",
+  "y_nghia": "Chỉ dẫn: mũi tên chỉ hướng đi. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.416",
+  "ten": "Đường tránh",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.416.png",
+  "y_nghia": "Chỉ dẫn: đường tránh. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.417a",
+  "ten": "Chỉ hướng đường phải đi cho từng loại xe",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.417a.png",
+  "y_nghia": "Chỉ dẫn: chỉ hướng đường phải đi cho từng loại xe. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.417b",
+  "ten": "Chỉ hướng đường phải đi cho từng loại xe",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.417b.png",
+  "y_nghia": "Chỉ dẫn: chỉ hướng đường phải đi cho từng loại xe. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.417c",
+  "ten": "Chỉ hướng đường phải đi cho từng loại xe",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.417c.png",
+  "y_nghia": "Chỉ dẫn: chỉ hướng đường phải đi cho từng loại xe. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.418",
+  "ten": "Lối đi ở những vị trí cấm rẽ",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.418.png",
+  "y_nghia": "Chỉ dẫn: đường vòng thay thế nơi cấm rẽ. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.419a",
+  "ten": "Chỉ dẫn địa giới",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.419a.png",
+  "y_nghia": "Chỉ dẫn: chỉ dẫn địa giới. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.419b",
+  "ten": "Chỉ dẫn địa giới trên tuyến đường đối ngoại",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.419b.png",
+  "y_nghia": "Chỉ dẫn: chỉ dẫn địa giới trên tuyến đường đối ngoại. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.422a",
+  "ten": "Di tích lịch sử",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.422a.png",
+  "y_nghia": "Chỉ dẫn: di tích lịch sử. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.422b",
+  "ten": "Di tích lịch sử trên tuyến đường đối ngoại",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.422b.png",
+  "y_nghia": "Chỉ dẫn: di tích lịch sử trên tuyến đường đối ngoại. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.423a",
+  "ten": "Vị trí người đi bộ sang ngang",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.423a.png",
+  "y_nghia": "Chỉ dẫn: vị trí người đi bộ sang ngang. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.423b",
+  "ten": "Vị trí người đi bộ sang ngang",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.423b.png",
+  "y_nghia": "Chỉ dẫn: vị trí người đi bộ sang ngang. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.423c",
+  "ten": "Điểm bắt đầu đường đi bộ",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.423c.png",
+  "y_nghia": "Chỉ dẫn: đường dành cho người đi bộ. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.424a",
+  "ten": "Cầu vượt qua đường cho người đi bộ",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.424a.png",
+  "y_nghia": "Chỉ dẫn: cầu vượt qua đường cho người đi bộ. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.424b",
+  "ten": "Cầu vượt qua đường cho người đi bộ",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.424b.png",
+  "y_nghia": "Chỉ dẫn: cầu vượt qua đường cho người đi bộ. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.424c",
+  "ten": "Hầm chui qua đường cho người đi bộ",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.424c.png",
+  "y_nghia": "Chỉ dẫn: hầm chui qua đường cho người đi bộ. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.424d",
+  "ten": "Hầm chui qua đường cho người đi bộ",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.424d.png",
+  "y_nghia": "Chỉ dẫn: hầm chui qua đường cho người đi bộ. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.425",
+  "ten": "Bệnh viện",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.425.png",
+  "y_nghia": "Chỉ dẫn: bệnh viện. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.426",
+  "ten": "Trạm cấp cứu",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.426.png",
+  "y_nghia": "Chỉ dẫn: trạm cấp cứu. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.427a",
+  "ten": "Trạm sửa chữa",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.427a.png",
+  "y_nghia": "Chỉ dẫn: trạm sửa chữa. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.427b",
+  "ten": "Công trình kiểm soát tải trọng xe",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.427b.png",
+  "y_nghia": "Chỉ dẫn: công trình kiểm soát tải trọng xe. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.428",
+  "ten": "Cửa hàng xăng dầu",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.428.png",
+  "y_nghia": "Chỉ dẫn: cửa hàng xăng dầu. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.428b",
+  "ten": "Trạm sạc xe điện",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.428b.png",
+  "y_nghia": "Chỉ dẫn: trạm sạc xe điện. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.428c",
+  "ten": "Cửa hàng xăng dầu và trạm sạc xe điện",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.428c.png",
+  "y_nghia": "Chỉ dẫn: cửa hàng xăng dầu và trạm sạc xe điện. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.429",
+  "ten": "Nơi rửa xe",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.429.png",
+  "y_nghia": "Chỉ dẫn: trạm rửa xe. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.430",
+  "ten": "Điện thoại",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.430.png",
+  "y_nghia": "Chỉ dẫn: điện thoại. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.431",
+  "ten": "Trạm dừng nghỉ",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.431.png",
+  "y_nghia": "Chỉ dẫn: trạm dừng nghỉ. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.432",
+  "ten": "Khách sạn",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.432.png",
+  "y_nghia": "Chỉ dẫn: khách sạn. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.433a",
+  "ten": "Nơi nghỉ mát",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.433a.png",
+  "y_nghia": "Chỉ dẫn: nơi nghỉ mát. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.433b",
+  "ten": "Nơi cắm trại, nhà nghỉ lưu động",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.433b.png",
+  "y_nghia": "Chỉ dẫn: nơi cắm trại, nhà nghỉ lưu động. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.433c",
+  "ten": "Nơi cắm trại, nhà nghỉ lưu động",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.433c.png",
+  "y_nghia": "Chỉ dẫn: nơi cắm trại, nhà nghỉ lưu động. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.433d",
+  "ten": "Nơi cắm trại, nhà nghỉ lưu động",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.433d.png",
+  "y_nghia": "Chỉ dẫn: nơi cắm trại, nhà nghỉ lưu động. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.433e",
+  "ten": "Nhà trọ",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.433e.png",
+  "y_nghia": "Chỉ dẫn: nhà trọ. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.434a",
+  "ten": "Bến xe buýt",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.434a.png",
+  "y_nghia": "Chỉ dẫn chỗ dừng, đỗ xe buýt để khách lên xuống."
+ },
+ {
+  "ma": "I.434b",
+  "ten": "Bến xe tải",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.434b.png",
+  "y_nghia": "Chỉ dẫn: bến xe tải. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.435",
+  "ten": "Bến xe điện",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.435.png",
+  "y_nghia": "Chỉ dẫn: bến tàu điện. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.436",
+  "ten": "Trạm cảnh sát giao thông",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.436.png",
+  "y_nghia": "Chỉ dẫn: trạm cảnh sát giao thông. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.437",
+  "ten": "Đường cao tốc",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.437.png",
+  "y_nghia": "Chỉ dẫn: đường cao tốc. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.439",
+  "ten": "Tên cầu",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.439.png",
+  "y_nghia": "Chỉ dẫn: tên cầu. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.440",
+  "ten": "Đoạn đường thi công",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.440.png",
+  "y_nghia": "Chỉ dẫn: đoạn đường thi công. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.441a",
+  "ten": "Phía trước có công trường thi công",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.441a.png",
+  "y_nghia": "Chỉ dẫn: khoảng cách tới công trường phía trước. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.441b",
+  "ten": "Phía trước có công trường thi công",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.441b.png",
+  "y_nghia": "Chỉ dẫn: khoảng cách tới công trường phía trước. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.441c",
+  "ten": "Phía trước có công trường thi công",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.441c.png",
+  "y_nghia": "Chỉ dẫn: khoảng cách tới công trường phía trước. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.442",
+  "ten": "Chợ",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.442.png",
+  "y_nghia": "Chỉ dẫn: chợ. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.443",
+  "ten": "Xe kéo rơ-moóc",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.443.png",
+  "y_nghia": "Chỉ dẫn: biển gắn trên xe kéo rơ-moóc. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.444a",
+  "ten": "Biển báo chỉ dẫn địa điểm",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.444a.png",
+  "y_nghia": "Chỉ dẫn: biển báo chỉ dẫn địa điểm. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.444b",
+  "ten": "Biển báo chỉ dẫn địa điểm",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.444b.png",
+  "y_nghia": "Chỉ dẫn: biển báo chỉ dẫn địa điểm. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.444c",
+  "ten": "Biển báo chỉ dẫn địa điểm",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.444c.png",
+  "y_nghia": "Chỉ dẫn: biển báo chỉ dẫn địa điểm. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.444d",
+  "ten": "Biển báo chỉ dẫn địa điểm",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.444d.png",
+  "y_nghia": "Chỉ dẫn: biển báo chỉ dẫn địa điểm. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.444e",
+  "ten": "Biển báo chỉ dẫn địa điểm",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.444e.png",
+  "y_nghia": "Chỉ dẫn: biển báo chỉ dẫn địa điểm. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.444f",
+  "ten": "Biển báo chỉ dẫn địa điểm",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.444f.png",
+  "y_nghia": "Chỉ dẫn: biển báo chỉ dẫn địa điểm. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.444g",
+  "ten": "Biển báo chỉ dẫn địa điểm",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.444g.png",
+  "y_nghia": "Chỉ dẫn: biển báo chỉ dẫn địa điểm. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.444h",
+  "ten": "Biển báo chỉ dẫn địa điểm",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.444h.png",
+  "y_nghia": "Chỉ dẫn: biển báo chỉ dẫn địa điểm. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.444i",
+  "ten": "Biển báo chỉ dẫn địa điểm",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.444i.png",
+  "y_nghia": "Chỉ dẫn: biển báo chỉ dẫn địa điểm. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.444j",
+  "ten": "Biển báo chỉ dẫn địa điểm",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.444j.png",
+  "y_nghia": "Chỉ dẫn: biển báo chỉ dẫn địa điểm. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.444k",
+  "ten": "Biển báo chỉ dẫn địa điểm",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.444k.png",
+  "y_nghia": "Chỉ dẫn: biển báo chỉ dẫn địa điểm. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.444l",
+  "ten": "Biển báo chỉ dẫn địa điểm",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.444l.png",
+  "y_nghia": "Chỉ dẫn: khu vực dịch vụ cho khách đi đường. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.444m",
+  "ten": "Biển báo chỉ dẫn địa điểm",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.444m.png",
+  "y_nghia": "Chỉ dẫn: biển báo chỉ dẫn địa điểm. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.445a",
+  "ten": "Biển báo kiểu mô tả tình trạng đường",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.445a.png",
+  "y_nghia": "Chỉ dẫn: biển báo kiểu mô tả tình trạng đường. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.445b",
+  "ten": "Biển báo kiểu mô tả tình trạng đường",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.445b.png",
+  "y_nghia": "Chỉ dẫn: đường dốc phải đi chậm, lái xe cẩn thận. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.445c",
+  "ten": "Biển báo kiểu mô tả tình trạng đường",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.445c.png",
+  "y_nghia": "Chỉ dẫn: đường có sương mù, tầm nhìn hạn chế, phải đi chậm. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.445d",
+  "ten": "Biển báo kiểu mô tả tình trạng đường",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.445d.png",
+  "y_nghia": "Chỉ dẫn: biển báo kiểu mô tả tình trạng đường. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.445e",
+  "ten": "Biển báo kiểu mô tả tình trạng đường",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.445e.png",
+  "y_nghia": "Chỉ dẫn: biển báo kiểu mô tả tình trạng đường. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.445f",
+  "ten": "Biển báo kiểu mô tả tình trạng đường",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.445f.png",
+  "y_nghia": "Chỉ dẫn: biển báo kiểu mô tả tình trạng đường. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.445g",
+  "ten": "Biển báo kiểu mô tả tình trạng đường",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.445g.png",
+  "y_nghia": "Chỉ dẫn: đoạn đường nguy hiểm hay xảy ra tai nạn. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.445h",
+  "ten": "Biển báo kiểu mô tả tình trạng đường",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.445h.png",
+  "y_nghia": "Chỉ dẫn: biển báo kiểu mô tả tình trạng đường. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.446",
+  "ten": "Nơi đỗ xe dành cho người khuyết tật",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.446.png",
+  "y_nghia": "Chỉ dẫn: nơi đỗ xe dành cho người khuyết tật. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.447a",
+  "ten": "Cầu vượt liên thông",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.447a.png",
+  "y_nghia": "Chỉ dẫn: cầu vượt liên thông. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.447b",
+  "ten": "Cầu vượt liên thông",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.447b.png",
+  "y_nghia": "Chỉ dẫn: cầu vượt liên thông. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.447c",
+  "ten": "Cầu vượt liên thông",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.447c.png",
+  "y_nghia": "Chỉ dẫn: cầu vượt liên thông. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.447d",
+  "ten": "Cầu vượt liên thông",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.447d.png",
+  "y_nghia": "Chỉ dẫn: cầu vượt liên thông. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.448",
+  "ten": "Làn đường cứu nạn hay làn dừng xe khẩn cấp",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.448.png",
+  "y_nghia": "Chỉ dẫn: làn đường cứu nạn hay làn dừng xe khẩn cấp. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "I.449",
+  "ten": "Biển tên đường",
+  "nhom": "Biển chỉ dẫn",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, nền xanh lam",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 36, Phụ lục E",
+  "anh_file": "I.449.png",
+  "y_nghia": "Chỉ dẫn: biển tên đường. Cung cấp thông tin để người tham gia giao thông biết và chủ động lựa chọn hành trình.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "S.501",
+  "ten": "Phạm vi tác dụng của biển",
+  "nhom": "Biển phụ",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, đặt dưới biển chính",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 41, Phụ lục F",
+  "anh_file": "S.501.png",
+  "y_nghia": "Phạm vi tác dụng của biển. Biển phụ đặt dưới biển chính để bổ sung hoặc giải thích thêm cho biển chính.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "S.502",
+  "ten": "Khoảng cách đến đối tượng báo hiệu",
+  "nhom": "Biển phụ",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, đặt dưới biển chính",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 41, Phụ lục F",
+  "anh_file": "S.502.png",
+  "y_nghia": "Khoảng cách đến đối tượng báo hiệu. Biển phụ đặt dưới biển chính để bổ sung hoặc giải thích thêm cho biển chính.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "S.503a",
+  "ten": "Hướng tác dụng của biển",
+  "nhom": "Biển phụ",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, đặt dưới biển chính",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 41, Phụ lục F",
+  "anh_file": "S.503a.png",
+  "y_nghia": "Hướng tác dụng của biển. Biển phụ đặt dưới biển chính để bổ sung hoặc giải thích thêm cho biển chính.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "S.503b",
+  "ten": "Hướng tác dụng của biển",
+  "nhom": "Biển phụ",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, đặt dưới biển chính",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 41, Phụ lục F",
+  "anh_file": "S.503b.png",
+  "y_nghia": "Hướng tác dụng của biển. Biển phụ đặt dưới biển chính để bổ sung hoặc giải thích thêm cho biển chính.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "S.503c",
+  "ten": "Hướng tác dụng của biển",
+  "nhom": "Biển phụ",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, đặt dưới biển chính",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 41, Phụ lục F",
+  "anh_file": "S.503c.png",
+  "y_nghia": "Hướng tác dụng của biển. Biển phụ đặt dưới biển chính để bổ sung hoặc giải thích thêm cho biển chính.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "S.503d",
+  "ten": "Hướng tác dụng của biển",
+  "nhom": "Biển phụ",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, đặt dưới biển chính",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 41, Phụ lục F",
+  "anh_file": "S.503d.png",
+  "y_nghia": "Hướng tác dụng của biển. Biển phụ đặt dưới biển chính để bổ sung hoặc giải thích thêm cho biển chính.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "S.503e",
+  "ten": "Hướng tác dụng của biển",
+  "nhom": "Biển phụ",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, đặt dưới biển chính",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 41, Phụ lục F",
+  "anh_file": "S.503e.png",
+  "y_nghia": "Hướng tác dụng của biển. Biển phụ đặt dưới biển chính để bổ sung hoặc giải thích thêm cho biển chính.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "S.503f",
+  "ten": "Hướng tác dụng của biển",
+  "nhom": "Biển phụ",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, đặt dưới biển chính",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 41, Phụ lục F",
+  "anh_file": "S.503f.png",
+  "y_nghia": "Hướng tác dụng của biển. Biển phụ đặt dưới biển chính để bổ sung hoặc giải thích thêm cho biển chính.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "S.504",
+  "ten": "Làn đường",
+  "nhom": "Biển phụ",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, đặt dưới biển chính",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 41, Phụ lục F",
+  "anh_file": "S.504.png",
+  "y_nghia": "Làn đường. Biển phụ đặt dưới biển chính để bổ sung hoặc giải thích thêm cho biển chính.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "S.505a",
+  "ten": "Loại xe",
+  "nhom": "Biển phụ",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, đặt dưới biển chính",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 41, Phụ lục F",
+  "anh_file": "S.505a.png",
+  "y_nghia": "Biển phụ đặt dưới biển chính, chỉ rõ loại xe chịu hiệu lực của biển chính."
+ },
+ {
+  "ma": "S.505b",
+  "ten": "Loại xe hạn chế qua cầu",
+  "nhom": "Biển phụ",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, đặt dưới biển chính",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 41, Phụ lục F",
+  "anh_file": "S.505b.png",
+  "y_nghia": "Loại xe hạn chế qua cầu. Biển phụ đặt dưới biển chính để bổ sung hoặc giải thích thêm cho biển chính.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "S.505c",
+  "ten": "Tải trọng trục hạn chế qua cầu",
+  "nhom": "Biển phụ",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, đặt dưới biển chính",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 41, Phụ lục F",
+  "anh_file": "S.505c.png",
+  "y_nghia": "Tải trọng trục hạn chế qua cầu. Biển phụ đặt dưới biển chính để bổ sung hoặc giải thích thêm cho biển chính.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "S.506a",
+  "ten": "Hướng đường ưu tiên",
+  "nhom": "Biển phụ",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, đặt dưới biển chính",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 41, Phụ lục F",
+  "anh_file": "S.506a.png",
+  "y_nghia": "Hướng đường ưu tiên. Biển phụ đặt dưới biển chính để bổ sung hoặc giải thích thêm cho biển chính.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "S.506b",
+  "ten": "Hướng đường ưu tiên",
+  "nhom": "Biển phụ",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, đặt dưới biển chính",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 41, Phụ lục F",
+  "anh_file": "S.506b.png",
+  "y_nghia": "Hướng đường ưu tiên. Biển phụ đặt dưới biển chính để bổ sung hoặc giải thích thêm cho biển chính.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "S.507",
+  "ten": "Hướng rẽ",
+  "nhom": "Biển phụ",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, đặt dưới biển chính",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 41, Phụ lục F",
+  "anh_file": "S.507.png",
+  "y_nghia": "Hướng rẽ. Biển phụ đặt dưới biển chính để bổ sung hoặc giải thích thêm cho biển chính.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "S.508a",
+  "ten": "Biểu thị thời gian",
+  "nhom": "Biển phụ",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, đặt dưới biển chính",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 41, Phụ lục F",
+  "anh_file": "S.508a.png",
+  "y_nghia": "Biểu thị thời gian. Biển phụ đặt dưới biển chính để bổ sung hoặc giải thích thêm cho biển chính.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "S.508b",
+  "ten": "Biểu thị thời gian",
+  "nhom": "Biển phụ",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, đặt dưới biển chính",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 41, Phụ lục F",
+  "anh_file": "S.508b.png",
+  "y_nghia": "Biểu thị thời gian. Biển phụ đặt dưới biển chính để bổ sung hoặc giải thích thêm cho biển chính.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "S.509a",
+  "ten": "Thuyết minh biển chính",
+  "nhom": "Biển phụ",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, đặt dưới biển chính",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 41, Phụ lục F",
+  "anh_file": "S.509a.png",
+  "y_nghia": "Biển phụ ghi chữ để giải thích thêm cho biển chính."
+ },
+ {
+  "ma": "S.509b",
+  "ten": "Thuyết minh biển chính",
+  "nhom": "Biển phụ",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, đặt dưới biển chính",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 41, Phụ lục F",
+  "anh_file": "S.509b.png",
+  "y_nghia": "Thuyết minh biển chính. Biển phụ đặt dưới biển chính để bổ sung hoặc giải thích thêm cho biển chính.",
+  "y_nghia_tom_tat": true
+ },
+ {
+  "ma": "S.510",
+  "ten": "Biển phụ S.510",
+  "nhom": "Biển phụ",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, đặt dưới biển chính",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 41, Phụ lục F",
+  "anh_file": "S.510.png",
+  "y_nghia": "Biển phụ S.510. Biển phụ đặt dưới biển chính để bổ sung hoặc giải thích thêm cho biển chính.",
+  "y_nghia_tom_tat": true,
+  "ghi_chu": "Chưa đối chiếu được tên chính thức; xem QCVN 41:2024, Phụ lục F.",
+  "can_kiem_tra": true
+ },
+ {
+  "ma": "S.510b",
+  "ten": "Biển phụ S.510b",
+  "nhom": "Biển phụ",
+  "dac_diem_nhom": "Hình chữ nhật hoặc vuông, đặt dưới biển chính",
+  "can_cu": "QCVN 41:2024/BGTVT, Điều 41, Phụ lục F",
+  "anh_file": "S.510b.png",
+  "y_nghia": "Biển phụ S.510b. Biển phụ đặt dưới biển chính để bổ sung hoặc giải thích thêm cho biển chính.",
+  "y_nghia_tom_tat": true,
+  "ghi_chu": "Chưa đối chiếu được tên chính thức; xem QCVN 41:2024, Phụ lục F.",
+  "can_kiem_tra": true
+ }
+]

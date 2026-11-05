@@ -1,0 +1,533 @@
+{
+ "P.101": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Tất cả các loại phương tiện (cơ giới và thô sơ).",
+  "pham_vi": "Đi lại cả hai hướng.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "luu_y": "Nếu đường cấm do sự cố (đường, cầu bị tắc) và có rào chắn thì xe ưu tiên cũng không được đi vào.",
+  "y_nghia": "Báo đường cấm tất cả các loại phương tiện đi lại cả hai hướng."
+ },
+ "P.102": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe cơ giới và thô sơ.",
+  "pham_vi": "Đi vào theo chiều đặt biển.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "luu_y": "Người đi bộ vẫn được đi trên vỉa hè hoặc lề đường.",
+  "y_nghia": "Báo đường cấm các loại xe đi vào theo chiều đặt biển."
+ },
+ "P.103a": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe cơ giới, kể cả xe máy 3 bánh có thùng.",
+  "pham_vi": "Đi vào theo chiều đặt biển.",
+  "loai_tru": "Xe máy 2 bánh, xe gắn máy và xe được quyền ưu tiên theo quy định.",
+  "y_nghia": "Báo đường cấm xe ô tô (và xe cơ giới tương tự) đi qua."
+ },
+ "P.103b": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe cơ giới, kể cả xe máy 3 bánh có thùng, rẽ phải.",
+  "pham_vi": "Tại nơi đường giao nhau đặt biển.",
+  "loai_tru": "Xe máy 2 bánh, xe gắn máy và xe được quyền ưu tiên theo quy định.",
+  "y_nghia": "Báo cấm xe ô tô (và xe cơ giới tương tự) rẽ phải.",
+  "xac_minh": true
+ },
+ "P.103c": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe cơ giới, kể cả xe máy 3 bánh có thùng, rẽ trái.",
+  "pham_vi": "Tại nơi đường giao nhau đặt biển.",
+  "loai_tru": "Xe máy 2 bánh, xe gắn máy và xe được quyền ưu tiên theo quy định.",
+  "y_nghia": "Báo cấm xe ô tô (và xe cơ giới tương tự) rẽ trái.",
+  "xac_minh": true
+ },
+ "P.104": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe máy.",
+  "pham_vi": "Đi vào theo chiều đặt biển.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "luu_y": "Biển không cấm người dắt xe máy.",
+  "y_nghia": "Báo đường cấm xe máy đi qua."
+ },
+ "P.105": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe cơ giới và xe máy.",
+  "pham_vi": "Đi vào theo chiều đặt biển.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "y_nghia": "Báo đường cấm xe ô tô và xe máy đi qua."
+ },
+ "P.106a": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe ô tô tải, kể cả máy kéo và xe máy chuyên dùng.",
+  "pham_vi": "Đi vào theo chiều đặt biển.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "y_nghia": "Báo đường cấm xe ô tô tải đi qua."
+ },
+ "P.106b": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Xe ô tô tải có khối lượng chuyên chở (theo giấy chứng nhận kiểm định) lớn hơn trị số ghi trên biển.",
+  "pham_vi": "Đi vào theo chiều đặt biển.",
+  "luu_y": "Trị số trên biển thay đổi tùy nơi đặt.",
+  "y_nghia": "Báo đường cấm xe ô tô tải có khối lượng chuyên chở vượt trị số ghi trên biển."
+ },
+ "P.106c": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các xe chở hàng nguy hiểm.",
+  "pham_vi": "Đi vào theo chiều đặt biển.",
+  "y_nghia": "Báo đường cấm các xe chở hàng nguy hiểm đi qua."
+ },
+ "P.107": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Xe ô tô chở khách và các loại xe ô tô tải, kể cả máy kéo và xe máy chuyên dùng.",
+  "pham_vi": "Đi vào theo chiều đặt biển.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "y_nghia": "Báo đường cấm xe ô tô khách và xe ô tô tải đi qua."
+ },
+ "P.107a": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Xe ô tô chở khách.",
+  "pham_vi": "Đi vào theo chiều đặt biển.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "y_nghia": "Báo đường cấm xe ô tô khách đi qua."
+ },
+ "P.107b": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Xe ô tô taxi.",
+  "pham_vi": "Đi vào theo chiều đặt biển.",
+  "luu_y": "Có thể kèm biển phụ ghi thời gian cấm.",
+  "y_nghia": "Báo đường cấm xe ô tô taxi đi lại."
+ },
+ "P.108": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe cơ giới kéo theo rơ-moóc, kể cả xe máy, máy kéo, ô tô khách kéo rơ-moóc.",
+  "pham_vi": "Đi vào theo chiều đặt biển.",
+  "loai_tru": "Ô tô sơ-mi rơ-moóc và xe được quyền ưu tiên theo quy định.",
+  "y_nghia": "Báo đường cấm xe kéo rơ-moóc đi qua."
+ },
+ "P.108a": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Xe sơ-mi rơ-moóc và các xe kéo rơ-moóc.",
+  "pham_vi": "Đi vào theo chiều đặt biển.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "y_nghia": "Báo đường cấm xe sơ-mi rơ-moóc đi qua."
+ },
+ "P.109": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại máy kéo, kể cả máy kéo bánh hơi và bánh xích.",
+  "pham_vi": "Đi vào theo chiều đặt biển.",
+  "y_nghia": "Báo đường cấm máy kéo đi qua."
+ },
+ "P.110a": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Xe đạp.",
+  "pham_vi": "Đi vào theo chiều đặt biển.",
+  "luu_y": "Biển không cấm người dắt xe đạp.",
+  "y_nghia": "Báo đường cấm xe đạp đi qua."
+ },
+ "P.110b": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Xe đạp thồ.",
+  "pham_vi": "Đi vào theo chiều đặt biển.",
+  "luu_y": "Biển không cấm người dắt xe đạp thồ.",
+  "y_nghia": "Báo đường cấm xe đạp thồ đi qua."
+ },
+ "P.111a": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Xe gắn máy.",
+  "pham_vi": "Đi vào theo chiều đặt biển.",
+  "luu_y": "Biển không có giá trị đối với xe đạp.",
+  "y_nghia": "Báo đường cấm xe gắn máy đi qua."
+ },
+ "P.111b": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Xe ba bánh loại có động cơ như xe lam, xích lô máy, xe lôi máy.",
+  "pham_vi": "Đi vào theo chiều đặt biển.",
+  "y_nghia": "Báo đường cấm xe ba bánh loại có động cơ đi qua."
+ },
+ "P.111c": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Xe ba bánh loại có động cơ như xe lam, xích lô máy, xe lôi máy.",
+  "pham_vi": "Đi vào theo chiều đặt biển.",
+  "y_nghia": "Báo đường cấm xe ba bánh loại có động cơ đi qua."
+ },
+ "P.111d": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Xe ba bánh loại không có động cơ như xích lô, xe lôi đạp.",
+  "pham_vi": "Đi vào theo chiều đặt biển.",
+  "y_nghia": "Báo đường cấm xe ba bánh loại không có động cơ đi qua."
+ },
+ "P.111": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Xe gắn máy (P.111a); xe ba bánh có động cơ (P.111b, c); xe ba bánh không có động cơ (P.111d).",
+  "pham_vi": "Đi vào theo chiều đặt biển.",
+  "luu_y": "Mô hình AI gộp chung các biển P.111; hãy xem hình vẽ trên biển để biết loại xe bị cấm.",
+  "y_nghia": "Nhóm biển cấm xe gắn máy và các loại xe ba bánh."
+ },
+ "P.112": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Người đi bộ.",
+  "pham_vi": "Đi vào theo chiều đặt biển.",
+  "y_nghia": "Báo đường cấm người đi bộ qua lại."
+ },
+ "P.113": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Xe thô sơ chuyển động do người kéo, đẩy.",
+  "pham_vi": "Đi vào theo chiều đặt biển.",
+  "luu_y": "Biển không cấm xe nôi trẻ em và phương tiện chuyên dùng của người khuyết tật.",
+  "y_nghia": "Báo đường cấm xe người kéo, đẩy đi qua."
+ },
+ "P.114": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Súc vật vận tải hàng hóa hoặc hành khách, dù kéo xe hay chở trên lưng.",
+  "pham_vi": "Đi vào theo chiều đặt biển.",
+  "y_nghia": "Báo đường cấm xe vật nuôi kéo đi qua."
+ },
+ "P.115": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe cơ giới và thô sơ có trọng tải toàn bộ (xe cộng người, hành lý và hàng hóa) vượt quá trị số ghi trên biển.",
+  "pham_vi": "Đi qua đoạn đường đặt biển.",
+  "loai_tru": "Không có. Biển áp dụng cả với xe được quyền ưu tiên.",
+  "luu_y": "Trị số ghi trên biển thay đổi tùy nơi đặt.",
+  "y_nghia": "Báo hạn chế trọng tải toàn bộ của xe: xe vượt quá trị số ghi trên biển không được đi qua."
+ },
+ "P.116": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe cơ giới và thô sơ có tải trọng phân bổ trên một trục bất kỳ vượt quá trị số ghi trên biển.",
+  "pham_vi": "Đi qua đoạn đường đặt biển.",
+  "loai_tru": "Không có. Biển áp dụng cả với xe được quyền ưu tiên.",
+  "luu_y": "Trị số ghi trên biển thay đổi tùy nơi đặt.",
+  "y_nghia": "Báo hạn chế tải trọng trên trục của xe: xe vượt quá trị số ghi trên biển không được đi qua."
+ },
+ "P.117": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe cơ giới và thô sơ có chiều cao (tính cả hàng hóa) vượt quá trị số ghi trên biển.",
+  "pham_vi": "Đi qua đoạn đường đặt biển.",
+  "loai_tru": "Không có. Biển áp dụng cả với xe được quyền ưu tiên.",
+  "luu_y": "Trị số ghi trên biển thay đổi tùy nơi đặt.",
+  "y_nghia": "Báo hạn chế chiều cao của xe: xe vượt quá trị số ghi trên biển không được đi qua."
+ },
+ "P.118": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe cơ giới và thô sơ có chiều ngang (tính cả hàng hóa) vượt quá trị số ghi trên biển.",
+  "pham_vi": "Đi qua đoạn đường đặt biển.",
+  "loai_tru": "Không có. Biển áp dụng cả với xe được quyền ưu tiên.",
+  "luu_y": "Trị số ghi trên biển thay đổi tùy nơi đặt.",
+  "y_nghia": "Báo hạn chế chiều ngang của xe: xe vượt quá trị số ghi trên biển không được đi qua."
+ },
+ "P.119": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe cơ giới và thô sơ có chiều dài toàn bộ (tính cả hàng hóa) vượt quá trị số ghi trên biển.",
+  "pham_vi": "Đi qua đoạn đường đặt biển.",
+  "loai_tru": "Không có. Biển áp dụng cả với xe được quyền ưu tiên.",
+  "luu_y": "Trị số ghi trên biển thay đổi tùy nơi đặt.",
+  "y_nghia": "Báo hạn chế chiều dài của xe: xe vượt quá trị số ghi trên biển không được đi qua."
+ },
+ "P.120": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Xe cơ giới kéo theo rơ-moóc hoặc sơ-mi rơ-moóc có chiều dài toàn bộ (xe, moóc và hàng) lớn hơn trị số ghi trên biển.",
+  "pham_vi": "Đi qua đoạn đường đặt biển.",
+  "loai_tru": "Không có. Biển áp dụng cả với xe được quyền ưu tiên kéo moóc.",
+  "y_nghia": "Báo hạn chế chiều dài của xe cơ giới kéo theo rơ-moóc hoặc sơ-mi rơ-moóc."
+ },
+ "P.121": {
+  "nhan_doi_tuong": "Áp dụng cho",
+  "doi_tuong": "Các xe ô tô phải đi cách nhau một khoảng không nhỏ hơn trị số (mét) ghi trên biển.",
+  "pham_vi": "Trên đoạn đường đặt biển.",
+  "loai_tru": "Không có. Biển áp dụng cả với xe được quyền ưu tiên.",
+  "luu_y": "Trị số ghi trên biển thay đổi tùy nơi đặt.",
+  "y_nghia": "Báo các xe ô tô phải giữ cự ly tối thiểu giữa hai xe."
+ },
+ "P.123a": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe (cơ giới và thô sơ) rẽ sang phía trái.",
+  "pham_vi": "Tại nơi đường giao nhau đặt biển.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "luu_y": "Biển không cấm quay đầu xe. Muốn cấm cả rẽ trái và quay đầu phải dùng biển P.124c.",
+  "y_nghia": "Báo cấm rẽ trái theo hướng mũi tên ở nơi đường giao nhau."
+ },
+ "P.123b": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe (cơ giới và thô sơ) rẽ sang phía phải.",
+  "pham_vi": "Tại nơi đường giao nhau đặt biển.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "luu_y": "Biển không cấm quay đầu xe.",
+  "y_nghia": "Báo cấm rẽ phải theo hướng mũi tên ở nơi đường giao nhau."
+ },
+ "P.124a": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe (cơ giới và thô sơ) quay đầu theo kiểu chữ U.",
+  "pham_vi": "Tại vị trí đặt biển, theo chiều mũi tên.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "luu_y": "Biển không cấm rẽ trái.",
+  "y_nghia": "Báo cấm các loại xe quay đầu."
+ },
+ "P.124b": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Xe ô tô và xe máy 3 bánh có thùng (side car) quay đầu theo kiểu chữ U.",
+  "pham_vi": "Tại vị trí đặt biển, theo chiều mũi tên.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "luu_y": "Biển không cấm rẽ trái; các loại xe khác vẫn được quay đầu.",
+  "y_nghia": "Báo cấm xe ô tô quay đầu."
+ },
+ "P.124c": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe rẽ trái và quay đầu.",
+  "pham_vi": "Tại nơi đường giao nhau đặt biển.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "y_nghia": "Báo cấm các loại xe rẽ trái, đồng thời cấm quay đầu."
+ },
+ "P.124d": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe rẽ phải và quay đầu.",
+  "pham_vi": "Tại nơi đường giao nhau đặt biển.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "y_nghia": "Báo cấm các loại xe rẽ phải, đồng thời cấm quay đầu."
+ },
+ "P.124e": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Xe ô tô rẽ trái và quay đầu.",
+  "pham_vi": "Tại nơi đường giao nhau đặt biển.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "y_nghia": "Báo cấm xe ô tô rẽ trái, đồng thời cấm quay đầu."
+ },
+ "P.124f": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Xe ô tô rẽ phải và quay đầu.",
+  "pham_vi": "Tại nơi đường giao nhau đặt biển.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "y_nghia": "Báo cấm xe ô tô rẽ phải, đồng thời cấm quay đầu."
+ },
+ "P.125": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Tất cả các loại xe cơ giới vượt nhau, kể cả xe được quyền ưu tiên.",
+  "pham_vi": "Từ vị trí đặt biển đến biển hết cấm vượt DP.133 hoặc biển hết tất cả lệnh cấm DP.135.",
+  "loai_tru": "Được phép vượt xe máy 2 bánh, xe gắn máy.",
+  "y_nghia": "Báo cấm các loại xe cơ giới vượt nhau."
+ },
+ "P.126": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Xe ô tô tải có khối lượng chuyên chở lớn hơn 3.500 kg (kể cả xe ưu tiên) vượt xe cơ giới khác.",
+  "pham_vi": "Từ vị trí đặt biển đến biển hết cấm vượt DP.133 hoặc biển hết tất cả lệnh cấm DP.135.",
+  "loai_tru": "Được phép vượt xe máy 2 bánh, xe gắn máy.",
+  "luu_y": "Biển không cấm các xe cơ giới khác vượt nhau và vượt xe ô tô tải.",
+  "y_nghia": "Báo cấm xe ô tô tải vượt xe cơ giới khác."
+ },
+ "P.127": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe cơ giới chạy quá tốc độ (km/h) ghi trên biển.",
+  "pham_vi": "Từ vị trí đặt biển đến biển hết tốc độ tối đa DP.134, biển hết tất cả lệnh cấm DP.135 hoặc biển tốc độ tối đa có trị số khác.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "luu_y": "Con số trên biển thay đổi tùy đoạn đường.",
+  "y_nghia": "Báo tốc độ tối đa cho phép các xe cơ giới chạy."
+ },
+ "P.127(5)": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe cơ giới chạy quá 5 km/h.",
+  "pham_vi": "Từ vị trí đặt biển đến biển hết tốc độ tối đa DP.134, biển hết tất cả lệnh cấm DP.135 hoặc biển tốc độ tối đa có trị số khác.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "y_nghia": "Báo tốc độ tối đa cho phép các xe cơ giới chạy là 5 km/h."
+ },
+ "P.127(20)": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe cơ giới chạy quá 20 km/h.",
+  "pham_vi": "Từ vị trí đặt biển đến biển hết tốc độ tối đa DP.134, biển hết tất cả lệnh cấm DP.135 hoặc biển tốc độ tối đa có trị số khác.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "y_nghia": "Báo tốc độ tối đa cho phép các xe cơ giới chạy là 20 km/h."
+ },
+ "P.127(30)": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe cơ giới chạy quá 30 km/h.",
+  "pham_vi": "Từ vị trí đặt biển đến biển hết tốc độ tối đa DP.134, biển hết tất cả lệnh cấm DP.135 hoặc biển tốc độ tối đa có trị số khác.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "y_nghia": "Báo tốc độ tối đa cho phép các xe cơ giới chạy là 30 km/h."
+ },
+ "P.127(40)": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe cơ giới chạy quá 40 km/h.",
+  "pham_vi": "Từ vị trí đặt biển đến biển hết tốc độ tối đa DP.134, biển hết tất cả lệnh cấm DP.135 hoặc biển tốc độ tối đa có trị số khác.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "y_nghia": "Báo tốc độ tối đa cho phép các xe cơ giới chạy là 40 km/h."
+ },
+ "P.127(50)": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe cơ giới chạy quá 50 km/h.",
+  "pham_vi": "Từ vị trí đặt biển đến biển hết tốc độ tối đa DP.134, biển hết tất cả lệnh cấm DP.135 hoặc biển tốc độ tối đa có trị số khác.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "y_nghia": "Báo tốc độ tối đa cho phép các xe cơ giới chạy là 50 km/h."
+ },
+ "P.127(60)": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe cơ giới chạy quá 60 km/h.",
+  "pham_vi": "Từ vị trí đặt biển đến biển hết tốc độ tối đa DP.134, biển hết tất cả lệnh cấm DP.135 hoặc biển tốc độ tối đa có trị số khác.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "y_nghia": "Báo tốc độ tối đa cho phép các xe cơ giới chạy là 60 km/h."
+ },
+ "P.127(70)": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe cơ giới chạy quá 70 km/h.",
+  "pham_vi": "Từ vị trí đặt biển đến biển hết tốc độ tối đa DP.134, biển hết tất cả lệnh cấm DP.135 hoặc biển tốc độ tối đa có trị số khác.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "y_nghia": "Báo tốc độ tối đa cho phép các xe cơ giới chạy là 70 km/h."
+ },
+ "P.127(80)": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe cơ giới chạy quá 80 km/h.",
+  "pham_vi": "Từ vị trí đặt biển đến biển hết tốc độ tối đa DP.134, biển hết tất cả lệnh cấm DP.135 hoặc biển tốc độ tối đa có trị số khác.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "y_nghia": "Báo tốc độ tối đa cho phép các xe cơ giới chạy là 80 km/h."
+ },
+ "P.127(90)": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe cơ giới chạy quá 90 km/h.",
+  "pham_vi": "Từ vị trí đặt biển đến biển hết tốc độ tối đa DP.134, biển hết tất cả lệnh cấm DP.135 hoặc biển tốc độ tối đa có trị số khác.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "y_nghia": "Báo tốc độ tối đa cho phép các xe cơ giới chạy là 90 km/h."
+ },
+ "P.127(100)": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe cơ giới chạy quá 100 km/h.",
+  "pham_vi": "Từ vị trí đặt biển đến biển hết tốc độ tối đa DP.134, biển hết tất cả lệnh cấm DP.135 hoặc biển tốc độ tối đa có trị số khác.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "y_nghia": "Báo tốc độ tối đa cho phép các xe cơ giới chạy là 100 km/h."
+ },
+ "P.127(110)": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe cơ giới chạy quá 110 km/h.",
+  "pham_vi": "Từ vị trí đặt biển đến biển hết tốc độ tối đa DP.134, biển hết tất cả lệnh cấm DP.135 hoặc biển tốc độ tối đa có trị số khác.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "y_nghia": "Báo tốc độ tối đa cho phép các xe cơ giới chạy là 110 km/h."
+ },
+ "P.127(120)": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe cơ giới chạy quá 120 km/h.",
+  "pham_vi": "Từ vị trí đặt biển đến biển hết tốc độ tối đa DP.134, biển hết tất cả lệnh cấm DP.135 hoặc biển tốc độ tối đa có trị số khác.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "y_nghia": "Báo tốc độ tối đa cho phép các xe cơ giới chạy là 120 km/h."
+ },
+ "P.127a": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe cơ giới chạy quá tốc độ ghi trên biển trong khoảng thời gian ban đêm ghi trên biển.",
+  "pham_vi": "Từ vị trí đặt biển đến biển hết tốc độ tối đa DP.134, biển hết tất cả lệnh cấm DP.135 hoặc biển tốc độ tối đa có trị số khác.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "y_nghia": "Báo tốc độ tối đa cho phép về ban đêm."
+ },
+ "P.127b": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Xe chạy trên từng làn đường vượt quá tốc độ tối đa ghi cho làn đó.",
+  "pham_vi": "Từ vị trí đặt biển đến biển hết tốc độ theo biển ghép DP.127.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "y_nghia": "Biển ghép quy định tốc độ tối đa cho phép trên từng làn đường."
+ },
+ "P.127c": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Từng loại xe trên từng làn đường chạy quá tốc độ tối đa ghi cho làn và loại xe đó.",
+  "pham_vi": "Từ vị trí đặt biển đến biển hết tốc độ theo biển ghép DP.127.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "y_nghia": "Biển ghép quy định tốc độ tối đa cho phép theo loại phương tiện trên từng làn đường."
+ },
+ "P.128": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe cơ giới sử dụng còi.",
+  "pham_vi": "Trên đoạn đường đặt biển.",
+  "y_nghia": "Báo cấm các loại xe cơ giới sử dụng còi."
+ },
+ "P.129": {
+  "nhan_doi_tuong": "Áp dụng cho",
+  "doi_tuong": "Các loại xe phải dừng lại để làm thủ tục kiểm tra, kiểm soát.",
+  "pham_vi": "Tại vị trí đặt trạm kiểm tra.",
+  "y_nghia": "Báo nơi đặt trạm kiểm tra; các loại xe phải dừng lại."
+ },
+ "P.130": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe dừng và đỗ ở phía đường có đặt biển.",
+  "pham_vi": "Từ vị trí đặt biển đến nơi đường giao nhau gần nhất, trừ khi có biển phụ quy định khác.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "luu_y": "Dấu X (hai vạch chéo) là cấm cả dừng lẫn đỗ.",
+  "y_nghia": "Báo cấm dừng xe và đỗ xe ở phía đường có đặt biển."
+ },
+ "P.131a": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe đỗ ở phía đường có đặt biển.",
+  "pham_vi": "Từ vị trí đặt biển đến nơi đường giao nhau gần nhất, trừ khi có biển phụ quy định khác.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "luu_y": "Biển chỉ cấm đỗ, vẫn được dừng xe.",
+  "y_nghia": "Báo cấm đỗ xe ở phía đường có đặt biển."
+ },
+ "P.131b": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe đỗ ở phía đường có đặt biển vào các ngày lẻ.",
+  "pham_vi": "Từ vị trí đặt biển đến nơi đường giao nhau gần nhất.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "y_nghia": "Báo cấm đỗ xe vào ngày lẻ."
+ },
+ "P.131c": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe đỗ ở phía đường có đặt biển vào các ngày chẵn.",
+  "pham_vi": "Từ vị trí đặt biển đến nơi đường giao nhau gần nhất.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "y_nghia": "Báo cấm đỗ xe vào ngày chẵn."
+ },
+ "P.132": {
+  "nhan_doi_tuong": "Áp dụng cho",
+  "doi_tuong": "Các loại xe đi theo hướng đặt biển phải nhường đường cho xe cơ giới đi ngược chiều qua đoạn đường hẹp hoặc cầu hẹp.",
+  "pham_vi": "Đoạn đường hẹp hoặc cầu hẹp phía trước.",
+  "luu_y": "Xe đi theo hướng ngược lại được ưu tiên qua trước (biển I.406).",
+  "y_nghia": "Báo phải nhường đường cho xe cơ giới đi ngược chiều qua đường hẹp."
+ },
+ "P.136": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe đi thẳng.",
+  "pham_vi": "Tại nơi đường giao nhau đặt biển.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "y_nghia": "Báo cấm các loại xe đi thẳng."
+ },
+ "P.137": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe rẽ trái và rẽ phải.",
+  "pham_vi": "Tại nơi đường giao nhau đặt biển.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "luu_y": "Xe chỉ được đi thẳng (hoặc theo hướng được phép khác).",
+  "y_nghia": "Báo cấm các loại xe rẽ trái và rẽ phải."
+ },
+ "P.138": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe đi thẳng và rẽ trái.",
+  "pham_vi": "Tại nơi đường giao nhau đặt biển.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "y_nghia": "Báo cấm các loại xe đi thẳng và rẽ trái."
+ },
+ "P.139": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Các loại xe đi thẳng và rẽ phải.",
+  "pham_vi": "Tại nơi đường giao nhau đặt biển.",
+  "loai_tru": "Xe được quyền ưu tiên theo quy định.",
+  "y_nghia": "Báo cấm các loại xe đi thẳng và rẽ phải."
+ },
+ "P.140": {
+  "nhan_doi_tuong": "Cấm đối tượng",
+  "doi_tuong": "Xe công nông và các loại xe tương tự.",
+  "pham_vi": "Đi vào theo chiều đặt biển.",
+  "y_nghia": "Báo đường cấm xe công nông và các loại xe tương tự đi qua."
+ },
+ "DP.133": {
+  "nhan_doi_tuong": "Hết hiệu lực",
+  "doi_tuong": "Kết thúc hiệu lực của lệnh cấm vượt (P.125, P.126).",
+  "pham_vi": "Kể từ vị trí đặt biển.",
+  "y_nghia": "Báo hết đoạn đường chịu hiệu lực của lệnh cấm vượt."
+ },
+ "DP.134": {
+  "nhan_doi_tuong": "Hết hiệu lực",
+  "doi_tuong": "Kết thúc hiệu lực của lệnh tốc độ tối đa (P.127).",
+  "pham_vi": "Kể từ vị trí đặt biển.",
+  "y_nghia": "Báo hết đoạn đường chịu hiệu lực của lệnh tốc độ tối đa."
+ },
+ "DP.135": {
+  "nhan_doi_tuong": "Hết hiệu lực",
+  "doi_tuong": "Kết thúc hiệu lực của lệnh tất cả các lệnh cấm (các biển cấm trước đó).",
+  "pham_vi": "Kể từ vị trí đặt biển.",
+  "y_nghia": "Báo hết đoạn đường chịu hiệu lực của lệnh tất cả các lệnh cấm."
+ },
+ "DP.127": {
+  "nhan_doi_tuong": "Hết hiệu lực",
+  "doi_tuong": "Kết thúc hiệu lực của lệnh tốc độ tối đa theo biển ghép (P.127b, P.127c).",
+  "pham_vi": "Kể từ vị trí đặt biển.",
+  "y_nghia": "Báo hết đoạn đường chịu hiệu lực của lệnh tốc độ tối đa theo biển ghép."
+ }
+}
