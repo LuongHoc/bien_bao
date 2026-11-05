@@ -4,5 +4,3 @@ __pycache__/
 venv/
 *.zip
 1_du_lieu/
-6_ung_dung/anh_nen/*
-!6_ung_dung/anh_nen/DOC_TOI.txt
