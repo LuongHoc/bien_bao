@@ -148,8 +148,11 @@ Không đưa file `.env` hoặc `instance/users.db` của máy chủ lên GitHub
 
 ## 8. Tác giả và mục đích
 
+**Lương Văn Học**  
+Sinh viên ngành **Kỹ thuật máy tính** — **Trường Đại học Kỹ thuật Công nghiệp, Đại học Thái Nguyên**  
+Đồ án tốt nghiệp, **2026**  
+**Giảng viên hướng dẫn:** ThS. Lê Thị Lương
+
 Dự án được xây dựng phục vụ học tập, nghiên cứu và đồ án về nhận dạng biển báo giao thông Việt Nam.
 
----
 
-**Gợi ý ảnh cần chuẩn bị:** `landing-page.png`, `trang-chu.png`, `thu-vien-bien-bao.png`, `bai-tap.png`, `nhan-dang-ai.png`, `thong-ke.png`, `dang-nhap.png`, `admin.png`, `kien-truc-trien-khai.png`. Đặt trong `docs/images/` ở **gốc repository**, sau đó bỏ `<!--` và `-->` ở dòng Markdown ảnh tương ứng để hiển thị trên GitHub.
