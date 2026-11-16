@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biển Báo AI - Ứng dụng Học và Nhận dạng Biển báo Giao thông Thông minh</title>
+  <meta name="description" content="Nền tảng học biển báo giao thông đường bộ Việt Nam tích hợp trí tuệ nhân tạo: Tra cứu 352 biển báo QCVN 41:2024, luyện tập trắc nghiệm thông minh và nhận dạng biển báo qua ảnh, video, camera bằng YOLO11n và CNN.">
+  <meta name="keywords" content="biển báo giao thông, học biển báo, nhận dạng biển báo, AI, YOLO11n, CNN, trắc nghiệm giao thông, luật giao thông Việt Nam">
+  <meta name="author" content="Lương Văn Học - Đại học Kỹ thuật Công nghiệp">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bienbao.luongvanhoc.io.vn/">
+  <meta property="og:title" content="Biển Báo AI - Học và Nhận dạng Biển báo Giao thông Thông minh">
+  <meta property="og:description" content="Khám phá thư viện 352 biển báo chuẩn QCVN 41:2024, luyện tập trắc nghiệm và trải nghiệm công nghệ AI nhận dạng biển báo thời gian thực.">
+  <meta property="og:image" content="/anh-nen/1.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><rect width='40' height='40' rx='10' fill='%232563EB'/><path d='M20 6 32 34h-6l-6-16-6 16H8z' fill='%23fff'/><path d='M20 22.5v3M20 29v3' stroke='%232563EB' stroke-width='2.2' stroke-linecap='round'/></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/landing.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. HEADER & NAVIGATION
+       ========================================================================= -->
+  <header class="site-header" id="header">
+    <div class="container-wide header-inner">
+      <!-- Brand Logo -->
+      <a class="brand-logo" href="/" title="Trang chủ Biển Báo AI">
+        <div class="brand-icon" aria-hidden="true">
+          <svg class="lucide" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Biển Báo AI</span>
+          <span class="brand-badge">EDTECH + AI</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav aria-label="Menu chính">
+        <ul class="nav-menu">
+          <li><a class="nav-link" href="#hero">Trang chủ</a></li>
+          <li><a class="nav-link" href="#tinh-nang">Tính năng</a></li>
+          <li><a class="nav-link" href="#cong-nghe">Công nghệ AI</a></li>
+          <li><a class="nav-link" href="#quy-trinh">Cách hoạt động</a></li>
+          <li><a class="nav-link" href="#luyen-tap">Luyện tập</a></li>
+          <li><a class="nav-link" href="#do-an">Giới thiệu đồ án</a></li>
+          <li><a class="nav-link" href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Desktop Header Actions (Auth & App CTA) -->
+      <div class="header-actions">
+        <div id="auth-container" style="display:flex;align-items:center;gap:10px;">
+          <!-- Nạp động qua landing.js: Đăng nhập hoặc Thông tin tài khoản -->
+          <a class="btn btn-secondary btn-sm" href="/login">
+            <span>Đăng nhập</span>
+          </a>
+          <a class="btn btn-primary btn-sm" href="/app">
+            <span>Bắt đầu học</span>
+            <svg class="lucide" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+          </a>
+        </div>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="hamburger" id="hamburger-btn" aria-label="Mở menu điều hướng" type="button">
+          <svg class="lucide" viewBox="0 0 24 24"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-backdrop" id="mobile-backdrop"></div>
+  <aside class="mobile-nav-drawer" id="mobile-drawer" aria-label="Menu di động">
+    <div class="mobile-nav-head">
+      <div class="brand-text">
+        <span class="brand-name">Biển Báo AI</span>
+        <span class="brand-badge">EDTECH + AI</span>
+      </div>
+      <button class="btn btn-sm" id="mobile-close-btn" aria-label="Đóng menu">
+        <svg class="lucide" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+
+    <ul class="mobile-nav-links">
+      <li><a class="nav-link" href="#hero">Trang chủ</a></li>
+      <li><a class="nav-link" href="#tinh-nang">Tính năng nổi bật</a></li>
+      <li><a class="nav-link" href="#cong-nghe">Công nghệ AI</a></li>
+      <li><a class="nav-link" href="#quy-trinh">Quy trình xử lý</a></li>
+      <li><a class="nav-link" href="#luyen-tap">Luyện tập trắc nghiệm</a></li>
+      <li><a class="nav-link" href="#thong-ke">Theo dõi tiến độ</a></li>
+      <li><a class="nav-link" href="#do-an">Thông tin đồ án</a></li>
+      <li><a class="nav-link" href="#faq">Hỏi đáp (FAQ)</a></li>
+    </ul>
+
+    <div class="mobile-nav-actions" id="mobile-auth-container">
+      <a class="btn btn-secondary" href="/login">Đăng nhập</a>
+      <a class="btn btn-primary" href="/app">Bắt đầu học miễn phí</a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- =========================================================================
+         2. HERO SECTION
+         ========================================================================= -->
+    <section class="section hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Cột trái: Thông điệp và CTA -->
+          <div class="hero-content reveal-item">
+            <div class="hero-pill">
+              <span class="hero-pill-spark"></span>
+              <span>Ứng dụng học biển báo giao thông tích hợp AI</span>
+            </div>
+
+            <h1 class="hero-title">
+              Học biển báo dễ dàng.<br>
+              <span class="gradient-text">Nhận dạng thông minh</span> cùng AI.
+            </h1>
+
+            <p class="hero-desc">
+              Khám phá thư viện biển báo giao thông Việt Nam chuẩn QCVN 41:2024, luyện tập kiến thức qua bài trắc nghiệm thông minh và trải nghiệm công nghệ nhận dạng biển báo thời gian thực bằng mạng nơron nhân tạo.
+            </p>
+
+            <div class="hero-cta-group">
+              <a class="btn btn-primary btn-lg" href="/app#/hoc">
+                <span>Bắt đầu học miễn phí</span>
+                <svg class="lucide" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+              </a>
+              <a class="btn btn-secondary btn-lg" href="/app#/nhan-dang">
+                <svg class="lucide" viewBox="0 0 24 24" style="color:var(--primary);"><path d="M3 8V5a2 2 0 0 1 2-2h3M16 3h3a2 2 0 0 1 2 2v3M21 16v3a2 2 0 0 1-2 2h-3M8 21H5a2 2 0 0 1-2-2v-3"/><circle cx="12" cy="12" r="3.5"/></svg>
+                <span>Trải nghiệm nhận dạng AI</span>
+              </a>
+            </div>
+
+            <div class="hero-highlights">
+              <div class="hero-highlight-item">
+                <span class="hero-highlight-icon">
+                  <svg class="lucide" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                </span>
+                <span>Thư viện 352 biển báo chuẩn QCVN 41:2024/BGTVT</span>
+              </div>
+              <div class="hero-highlight-item">
+                <span class="hero-highlight-icon">
+                  <svg class="lucide" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                </span>
+                <span>Luyện tập trắc nghiệm tương tác với gợi ý thông minh</span>
+              </div>
+              <div class="hero-highlight-item">
+                <span class="hero-highlight-icon">
+                  <svg class="lucide" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                </span>
+                <span>Nhận dạng chính xác từ ảnh tải lên, video và camera trực tiếp</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cột phải: Khung minh họa sản phẩm Nhận dạng AI
+               HƯỚNG DẪN THAY ẢNH:
+               1. Thay file tại: static/img/hero-ai-street.jpg (tỷ lệ khuyến nghị 4:3, rộng ~960px).
+               2. Nếu ảnh mới CHƯA có khung/nhãn sẵn, cập nhật tọa độ % của .ai-target-box và thẻ kết quả bên dưới cho khớp biển báo.
+               3. Nếu ảnh mới ĐÃ VẼ SẴN bounding box/nhãn/thẻ kết quả, thêm thuộc tính data-baked-ui="true" vào .hero-mockup-wrapper để tránh vẽ chồng lặp. -->
+          <div class="hero-visual reveal-item">
+            <div class="hero-mockup-wrapper" id="hero-ai-showcase">
+              <!-- Phần trên cùng: Thanh tiêu đề tinh tế -->
+              <div class="mockup-header-bar">
+                <div class="ai-head-brand">
+                  <span class="ai-head-icon" aria-hidden="true">
+                    <svg class="lucide" viewBox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><circle cx="12" cy="12" r="3"/></svg>
+                  </span>
+                  <span class="ai-head-title">Nhận dạng biển báo giao thông</span>
+                </div>
+                <span class="ai-head-status">
+                  <span class="ai-status-dot" aria-hidden="true"></span>
+                  <span>Đã nhận dạng</span>
+                </span>
+              </div>
+
+              <!-- Phần trung tâm: Ảnh đường phố Việt Nam + bounding box khớp chính xác vị trí biển P.102 -->
+              <div class="mockup-screen">
+                <img class="mockup-screen-img" src="/img/hero-ai-street.jpg" alt="Đường phố Việt Nam với biển báo P.102 Cấm đi ngược chiều" loading="eager">
+
+                <div class="ai-scan-overlay" aria-hidden="true">
+                  <div class="ai-target-box" style="left:54.06%;top:22.78%;width:16.15%;height:21.67%;">
+                    <span class="ai-target-corner corner-tl"></span>
+                    <span class="ai-target-corner corner-tr"></span>
+                    <span class="ai-target-corner corner-bl"></span>
+                    <span class="ai-target-corner corner-br"></span>
+                    <div class="ai-tag-badge">
+                      <span class="ai-tag-dot"></span>
+                      <span>P.102 • Cấm đi ngược chiều</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Phần dưới: Thẻ kết quả nhận dạng gọn gàng, khớp với ảnh -->
+              <div class="ai-showcase-result">
+                <img class="ai-result-sign" src="/bien_chuan/P.102.png" alt="Biểu tượng biển báo P.102">
+                <div class="ai-result-body">
+                  <div class="ai-result-top">
+                    <span class="ai-result-code">P.102</span>
+                    <span class="ai-result-name">Cấm đi ngược chiều</span>
+                  </div>
+                  <p class="ai-result-meaning">Cấm các loại xe đi vào theo chiều đặt biển, trừ các xe ưu tiên theo quy định.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         3. TRUST / VALUE STRIP
+         ========================================================================= -->
+    <section class="trust-strip">
+      <div class="container">
+        <div class="trust-grid">
+          <div class="trust-item">
+            <div class="trust-icon-box">
+              <svg class="lucide" viewBox="0 0 24 24"><path d="M2 4h7a3 3 0 0 1 3 3v14a2 2 0 0 0-2-2H2z"/><path d="M22 4h-7a3 3 0 0 0-3 3v14a2 2 0 0 1 2-2h8z"/></svg>
+            </div>
+            <div class="trust-text">
+              <span class="trust-value">352 Biển báo</span>
+              <span class="trust-label">Quy chuẩn QCVN 41:2024</span>
+            </div>
+          </div>
+
+          <div class="trust-item">
+            <div class="trust-icon-box" style="background:#ecfeff;color:#0891b2;">
+              <svg class="lucide" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+            </div>
+            <div class="trust-text">
+              <span class="trust-value">YOLO11n + CNN</span>
+              <span class="trust-label">Kiến trúc AI 2 tầng độc lập</span>
+            </div>
+          </div>
+
+          <div class="trust-item">
+            <div class="trust-icon-box" style="background:#f5f3ff;color:#7c3aed;">
+              <svg class="lucide" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg>
+            </div>
+            <div class="trust-text">
+              <span class="trust-value">Học & Luyện tập</span>
+              <span class="trust-label">Trắc nghiệm thông minh tương tác</span>
+            </div>
+          </div>
+
+          <div class="trust-item">
+            <div class="trust-icon-box" style="background:#f0fdf4;color:#16a34a;">
+              <svg class="lucide" viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M6 17v-5M11 17V7M16 17v-8M20 17V4"/></svg>
+            </div>
+            <div class="trust-text">
+              <span class="trust-value">Theo dõi tiến độ</span>
+              <span class="trust-label">Lưu trữ tài khoản Google & SQLite</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         4. FEATURES BENTO GRID
+         ========================================================================= -->
+    <section class="section features-section" id="tinh-nang">
+      <div class="container">
+        <div class="section-head reveal-item">
+          <div class="section-badge">Nền tảng toàn diện</div>
+          <h2 class="section-title">Một nền tảng – Nhiều cách học hiệu quả</h2>
+          <p class="section-desc">
+            Kết hợp kiến thức lý thuyết chuẩn hóa của Bộ Giao thông Vận tải với các phương pháp thực hành trực quan và công nghệ trí tuệ nhân tạo hiện đại.
+          </p>
+        </div>
+
+        <div class="bento-grid">
+          <!-- Card 1: Thư viện biển báo -->
+          <a class="bento-card reveal-item" href="/app#/hoc">
+            <div class="bento-card-top">
+              <div class="bento-icon blue">
+                <svg class="lucide" viewBox="0 0 24 24"><path d="M2 4h7a3 3 0 0 1 3 3v14a2 2 0 0 0-2-2H2z"/><path d="M22 4h-7a3 3 0 0 0-3 3v14a2 2 0 0 1 2-2h8z"/></svg>
+              </div>
+              <span class="bento-tag blue">QCVN 41:2024</span>
+            </div>
+            <h3 class="bento-title">Thư viện biển báo</h3>
+            <p class="bento-desc">
+              Tra cứu 352 biển báo giao thông Việt Nam chuẩn QCVN 41:2024 theo mã, tên và 5 nhóm biển quy định.
+            </p>
+            <span class="bento-cta">
+              <span>Khám phá thư viện</span>
+              <svg class="lucide" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </span>
+          </a>
+
+          <!-- Card 2: Nhận dạng AI -->
+          <a class="bento-card reveal-item" href="/app#/nhan-dang">
+            <div class="bento-card-top">
+              <div class="bento-icon cyan">
+                <svg class="lucide" viewBox="0 0 24 24"><path d="M3 8V5a2 2 0 0 1 2-2h3M16 3h3a2 2 0 0 1 2 2v3M21 16v3a2 2 0 0 1-2 2h-3M8 21H5a2 2 0 0 1-2-2v-3"/><circle cx="12" cy="12" r="3.5"/></svg>
+              </div>
+              <span class="bento-tag cyan">YOLO11n + CNN</span>
+            </div>
+            <h3 class="bento-title">Nhận dạng AI</h3>
+            <p class="bento-desc">
+              Phát hiện và phân loại biển báo từ hình ảnh đường phố bằng mô hình YOLO11n kết hợp CNN.
+            </p>
+            <span class="bento-cta">
+              <span>Thử nhận dạng ảnh</span>
+              <svg class="lucide" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </span>
+          </a>
+
+          <!-- Card 3: Video & Camera -->
+          <a class="bento-card reveal-item" href="/app#/nhan-dang">
+            <div class="bento-card-top">
+              <div class="bento-icon purple">
+                <svg class="lucide" viewBox="0 0 24 24"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10 5-3v10l-5-3z"/></svg>
+              </div>
+              <span class="bento-tag purple">Thời gian thực</span>
+            </div>
+            <h3 class="bento-title">Video &amp; Camera</h3>
+            <p class="bento-desc">
+              Nhận dạng biển báo trực tiếp qua camera thiết bị hoặc phân tích khung hình từ video hành trình.
+            </p>
+            <span class="bento-cta">
+              <span>Mở Video &amp; Camera</span>
+              <svg class="lucide" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </span>
+          </a>
+
+          <!-- Card 4: Luyện tập trắc nghiệm -->
+          <a class="bento-card reveal-item" href="/app#/bai-tap">
+            <div class="bento-card-top">
+              <div class="bento-icon amber">
+                <svg class="lucide" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg>
+              </div>
+              <span class="bento-tag amber">Trắc nghiệm</span>
+            </div>
+            <h3 class="bento-title">Luyện tập trắc nghiệm</h3>
+            <p class="bento-desc">
+              Ôn tập kiến thức bằng câu hỏi trắc nghiệm đa chế độ kèm chấm điểm và giải thích đáp án tức thì.
+            </p>
+            <span class="bento-cta">
+              <span>Bắt đầu luyện tập</span>
+              <svg class="lucide" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </span>
+          </a>
+
+          <!-- Card 5: Kết quả & Lịch sử -->
+          <a class="bento-card reveal-item" href="/app#/thong-ke">
+            <div class="bento-card-top">
+              <div class="bento-icon green">
+                <svg class="lucide" viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M6 17v-5M11 17V7M16 17v-8M20 17V4"/></svg>
+              </div>
+              <span class="bento-tag green">Cá nhân hóa</span>
+            </div>
+            <h3 class="bento-title">Kết quả &amp; Lịch sử</h3>
+            <p class="bento-desc">
+              Theo dõi tiến độ, điểm số và lịch sử học tập cá nhân được lưu trữ đồng bộ trên hệ thống.
+            </p>
+            <span class="bento-cta">
+              <span>Xem thống kê</span>
+              <svg class="lucide" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </span>
+          </a>
+
+          <!-- Card 6: Khảo sát & Góp ý -->
+          <a class="bento-card reveal-item" href="/app#/nguoi-hoc/danh-gia">
+            <div class="bento-card-top">
+              <div class="bento-icon rose">
+                <svg class="lucide" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </div>
+              <span class="bento-tag rose">Tương tác</span>
+            </div>
+            <h3 class="bento-title">Khảo sát &amp; Góp ý</h3>
+            <p class="bento-desc">
+              Chia sẻ trải nghiệm sử dụng và đóng góp ý kiến trực tiếp để giúp cải thiện ứng dụng.
+            </p>
+            <span class="bento-cta">
+              <span>Gửi khảo sát</span>
+              <svg class="lucide" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         5. AI SHOWCASE & PIPELINE
+         ========================================================================= -->
+    <section class="section ai-showcase-section" id="cong-nghe">
+      <div class="container">
+        <div class="section-head reveal-item">
+          <div class="section-badge">Kiến trúc AI 2 tầng</div>
+          <h2 class="section-title">AI nhìn thấy gì trong một bức ảnh?</h2>
+          <p class="section-desc">
+            Khám phá quy trình xử lý hình ảnh 4 bước khép kín từ khi thu nhận tín hiệu thị giác đến khi tra cứu thành công quy chuẩn giao thông Việt Nam.
+          </p>
+        </div>
+
+        <div class="ai-pipeline-grid">
+          <!-- Cột trái: Giao diện trực quan hóa quy trình AI -->
+          <div class="ai-visual-card reveal-item">
+            <div class="ai-visual-glow"></div>
+            <h3 style="font-size:1.1rem;color:#ffffff;margin-bottom:18px;display:flex;align-items:center;gap:8px;">
+              <svg class="lucide" viewBox="0 0 24 24" style="color:var(--accent-cyan);"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+              <span>Chuỗi suy luận mô hình (Inference Pipeline)</span>
+            </h3>
+
+            <div class="ai-stage-display">
+              <div class="stage-step-card active">
+                <div class="stage-badge-num">1</div>
+                <div class="stage-step-info">
+                  <div class="stage-step-title">Thu nhận & Cân chỉnh ảnh đầu vào</div>
+                  <div class="stage-step-desc">Định dạng RGB, chuẩn hóa tỉ lệ kích thước 640×640</div>
+                </div>
+                <span class="stage-step-tag">OpenCV</span>
+              </div>
+
+              <div class="stage-step-card active">
+                <div class="stage-badge-num">2</div>
+                <div class="stage-step-info">
+                  <div class="stage-step-title">Phát hiện vị trí hộp bao (Bounding Box)</div>
+                  <div class="stage-step-desc">Mô hình YOLO11n định vị tọa độ x, y, w, h của biển</div>
+                </div>
+                <span class="stage-step-tag">YOLO11n</span>
+              </div>
+
+              <div class="stage-step-card active">
+                <div class="stage-badge-num">3</div>
+                <div class="stage-step-info">
+                  <div class="stage-step-title">Phân loại & Hiệu chỉnh độ tin cậy</div>
+                  <div class="stage-step-desc">Mạng CNN 2.39M tham số cắt ảnh 64×64 + Temperature Scaling</div>
+                </div>
+                <span class="stage-step-tag">CNN ONNX</span>
+              </div>
+
+              <div class="stage-step-card active">
+                <div class="stage-badge-num">4</div>
+                <div class="stage-step-info">
+                  <div class="stage-step-title">Truy vấn Thư viện & Pháp lý</div>
+                  <div class="stage-step-desc">Trích xuất tên gọi, ý nghĩa chấp hành chuẩn QCVN 41:2024</div>
+                </div>
+                <span class="stage-step-tag">QCVN 41</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cột phải: Giải thích chi tiết các bước và giới hạn kỹ thuật -->
+          <div class="ai-pipeline-content reveal-item">
+            <div class="pipeline-list">
+              <div class="pipeline-item">
+                <div class="pipeline-icon-circle">1</div>
+                <div class="pipeline-info">
+                  <h4 class="pipeline-title">Tiếp nhận hình ảnh</h4>
+                  <p class="pipeline-desc">Hệ thống nhận ảnh từ camera điện thoại, máy tính, tệp ảnh tải lên hoặc trích xuất khung hình từ video giao thông thực tế.</p>
+                </div>
+              </div>
+
+              <div class="pipeline-item">
+                <div class="pipeline-icon-circle">2</div>
+                <div class="pipeline-info">
+                  <h4 class="pipeline-title">YOLO11n định vị khung bao</h4>
+                  <p class="pipeline-desc">Mô hình YOLO11n gọn nhẹ tìm kiếm nhanh chóng các vùng nghi vấn chứa biển báo giao thông trên nền cảnh quan đường phố phức tạp.</p>
+                </div>
+              </div>
+
+              <div class="pipeline-item">
+                <div class="pipeline-icon-circle">3</div>
+                <div class="pipeline-info">
+                  <h4 class="pipeline-title">Mạng CNN phân loại chuyên sâu</h4>
+                  <p class="pipeline-desc">Vùng biển được cắt, chuẩn hóa về 64×64 pixel và đưa qua mạng nơron tích chập (CNN) tự huấn luyện để nhận dạng chính xác mã định danh của biển.</p>
+                </div>
+              </div>
+
+              <div class="pipeline-item">
+                <div class="pipeline-icon-circle">4</div>
+                <div class="pipeline-info">
+                  <h4 class="pipeline-title">Đối chiếu và tra cứu quy chuẩn</h4>
+                  <p class="pipeline-desc">Mã biển được tra cứu trong cơ sở tri thức để hiển thị tức thì tên gọi, phân nhóm, hành vi bắt buộc tuân thủ và cảnh báo nếu độ tin cậy thấp.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Ghi chú phạm vi kỹ thuật rõ ràng theo đúng tiêu chí khoa học -->
+            <div class="ai-scope-banner">
+              <strong>Lưu ý phạm vi kỹ thuật:</strong> Thư viện ứng dụng hỗ trợ tra cứu đầy đủ 352 biển báo theo QCVN 41:2024. Mô hình AI hiện được tối ưu và huấn luyện trên tập 54 lớp thực tế (53 loại biển báo thông dụng nhất và 1 lớp lọc nền) để đảm bảo độ tin cậy cao trên môi trường triển khai thực tế.
+            </div>
+
+            <div>
+              <a class="btn btn-primary" href="/app#/nhan-dang">
+                <svg class="lucide" viewBox="0 0 24 24"><path d="M3 8V5a2 2 0 0 1 2-2h3M16 3h3a2 2 0 0 1 2 2v3M21 16v3a2 2 0 0 1-2 2h-3M8 21H5a2 2 0 0 1-2-2v-3"/><circle cx="12" cy="12" r="3.5"/></svg>
+                <span>Thử nhận dạng ngay</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         6. INTERACTIVE LEARNING SHOWCASE (QUIZ)
+         ========================================================================= -->
+    <section class="section learning-section" id="luyen-tap">
+      <div class="container">
+        <div class="quiz-showcase-container">
+          <!-- Cột trái: Giới thiệu phương pháp luyện tập -->
+          <div class="reveal-item">
+            <div class="section-badge">Ghi nhớ chủ động</div>
+            <h2 class="section-title">Luyện tập thông minh, ghi nhớ lâu hơn</h2>
+            <p class="section-desc" style="margin-bottom:24px;">
+              Học lý thuyết kết hợp giải đề trắc nghiệm trực quan giúp người học nhanh chóng nhận biết biển báo trong tích tắc khi tham gia giao thông thực tế.
+            </p>
+
+            <div style="display:flex;flex-direction:column;gap:14px;margin-bottom:32px;">
+              <div style="display:flex;gap:12px;align-items:flex-start;">
+                <div style="width:28px;height:28px;border-radius:6px;background:var(--primary-light);color:var(--primary);display:grid;place-items:center;flex-shrink:0;">
+                  <svg class="lucide" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                </div>
+                <div>
+                  <h4 style="font-size:1rem;color:var(--navy-deep);margin-bottom:2px;">Dạng bài linh hoạt</h4>
+                  <p style="font-size:0.875rem;color:var(--text-muted);margin:0;">Nhìn ảnh chọn tên biển hoặc đọc quy tắc chọn hình ảnh tương ứng.</p>
+                </div>
+              </div>
+
+              <div style="display:flex;gap:12px;align-items:flex-start;">
+                <div style="width:28px;height:28px;border-radius:6px;background:#fef3c7;color:#d97706;display:grid;place-items:center;flex-shrink:0;">
+                  <svg class="lucide" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+                <div>
+                  <h4 style="font-size:1rem;color:var(--navy-deep);margin-bottom:2px;">Chế độ ôn tập câu sai</h4>
+                  <p style="font-size:0.875rem;color:var(--text-muted);margin:0;">Tự động lọc những biển báo người học hay nhầm lẫn để ôn luyện trọng tâm.</p>
+                </div>
+              </div>
+
+              <div style="display:flex;gap:12px;align-items:flex-start;">
+                <div style="width:28px;height:28px;border-radius:6px;background:#dcfce7;color:#16a34a;display:grid;place-items:center;flex-shrink:0;">
+                  <svg class="lucide" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+                </div>
+                <div>
+                  <h4 style="font-size:1rem;color:var(--navy-deep);margin-bottom:2px;">Đo lường thời gian làm bài</h4>
+                  <p style="font-size:0.875rem;color:var(--text-muted);margin:0;">Rèn luyện phản xạ đọc biển báo nhanh như khi đang điều khiển phương tiện.</p>
+                </div>
+              </div>
+            </div>
+
+            <a class="btn btn-primary btn-lg" href="/app#/bai-tap">
+              <span>Bắt đầu luyện tập</span>
+              <svg class="lucide" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+            </a>
+          </div>
+
+          <!-- Cột phải: Mockup giao diện bài tập thật -->
+          <div class="reveal-item">
+            <div class="quiz-mockup-card">
+              <div class="quiz-mockup-header">
+                <span class="quiz-category-tag">Biển báo cấm (Câu 3 / 10)</span>
+                <div class="quiz-timer">
+                  <svg class="lucide" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  <span>02:45</span>
+                </div>
+              </div>
+
+              <div class="quiz-question-box">
+                <img class="quiz-sign-preview" src="/bien_chuan/P.102.png" alt="Biển P.102">
+                <div class="quiz-question-text">Biển báo này có ý nghĩa gì đối với người tham gia giao thông?</div>
+              </div>
+
+              <div class="quiz-options-list">
+                <div class="quiz-option-btn">
+                  <span class="quiz-option-marker">A</span>
+                  <span>Đường cấm mọi phương tiện lưu thông</span>
+                </div>
+                <div class="quiz-option-btn selected">
+                  <span class="quiz-option-marker">B</span>
+                  <span>Cấm đi ngược chiều (P.102)</span>
+                </div>
+                <div class="quiz-option-btn">
+                  <span class="quiz-option-marker">C</span>
+                  <span>Cấm dừng xe và đỗ xe</span>
+                </div>
+                <div class="quiz-option-btn">
+                  <span class="quiz-option-marker">D</span>
+                  <span>Dừng lại quan sát an toàn (STOP)</span>
+                </div>
+              </div>
+
+              <!-- Thanh điều hướng câu hỏi -->
+              <div class="quiz-nav-grid">
+                <div class="quiz-nav-dots">
+                  <span class="quiz-nav-dot done" title="Câu 1: Đã làm">1</span>
+                  <span class="quiz-nav-dot done" title="Câu 2: Đã làm">2</span>
+                  <span class="quiz-nav-dot current" title="Câu 3: Đang làm">3</span>
+                  <span class="quiz-nav-dot flagged" title="Câu 4: Đánh dấu">4</span>
+                  <span class="quiz-nav-dot pending" title="Câu 5">5</span>
+                  <span class="quiz-nav-dot pending" title="Câu 6">6</span>
+                </div>
+                <div style="display:flex;gap:8px;">
+                  <button class="btn btn-secondary btn-sm" type="button" style="font-size:0.75rem;padding:6px 10px;">Đánh dấu</button>
+                  <button class="btn btn-primary btn-sm" type="button" style="font-size:0.75rem;padding:6px 12px;">Câu tiếp</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         7. LEARNING ANALYTICS SHOWCASE
+         ========================================================================= -->
+    <section class="section analytics-section" id="thong-ke">
+      <div class="container">
+        <div class="analytics-container">
+          <!-- Cột trái: Mockup giao diện Thống kê học tập -->
+          <div class="reveal-item">
+            <div class="analytics-mockup-card">
+              <div class="analytics-mockup-head">
+                <div class="analytics-user-badge">
+                  <div class="analytics-avatar-icon">H</div>
+                  <div class="analytics-user-info">
+                    <h4>Lương Văn Học</h4>
+                    <span>Học viên • Đã đồng bộ Google</span>
+                  </div>
+                </div>
+                <span class="bento-tag green">Đang hoạt động</span>
+              </div>
+
+              <!-- 4 Ô KPI số liệu -->
+              <div class="analytics-kpi-grid">
+                <div class="kpi-tile">
+                  <div class="kpi-tile-label">Số bài hoàn thành</div>
+                  <div class="kpi-tile-value">18</div>
+                  <div class="kpi-tile-sub">↑ 5 bài tuần này</div>
+                </div>
+                <div class="kpi-tile">
+                  <div class="kpi-tile-label">Điểm trung bình</div>
+                  <div class="kpi-tile-value">86.5%</div>
+                  <div class="kpi-tile-sub">Đạt chuẩn khá</div>
+                </div>
+                <div class="kpi-tile">
+                  <div class="kpi-tile-label">Tỷ lệ câu đúng</div>
+                  <div class="kpi-tile-value">88.2%</div>
+                  <div class="kpi-tile-sub">158 / 180 câu</div>
+                </div>
+                <div class="kpi-tile">
+                  <div class="kpi-tile-label">Biển đã học</div>
+                  <div class="kpi-tile-value">142/352</div>
+                  <div class="kpi-tile-sub">Đạt 40.3% thư viện</div>
+                </div>
+              </div>
+
+              <!-- Biểu đồ tiến độ thu nhỏ -->
+              <div class="mockup-chart-card">
+                <div class="mockup-chart-title">
+                  <span>Tiến trình điểm số (7 ngày gần nhất)</span>
+                  <span style="color:var(--primary);font-weight:700;">+12%</span>
+                </div>
+                <div class="chart-bars-wrap">
+                  <div class="chart-bar-col"><div class="chart-bar-fill" style="height:45px;"></div><span class="chart-bar-label">T2</span></div>
+                  <div class="chart-bar-col"><div class="chart-bar-fill" style="height:50px;"></div><span class="chart-bar-label">T3</span></div>
+                  <div class="chart-bar-col"><div class="chart-bar-fill" style="height:48px;"></div><span class="chart-bar-label">T4</span></div>
+                  <div class="chart-bar-col"><div class="chart-bar-fill" style="height:58px;"></div><span class="chart-bar-label">T5</span></div>
+                  <div class="chart-bar-col"><div class="chart-bar-fill" style="height:52px;"></div><span class="chart-bar-label">T6</span></div>
+                  <div class="chart-bar-col"><div class="chart-bar-fill" style="height:62px;"></div><span class="chart-bar-label">T7</span></div>
+                  <div class="chart-bar-col"><div class="chart-bar-fill" style="height:68px;background:var(--traffic-green);"></div><span class="chart-bar-label">CN</span></div>
+                </div>
+              </div>
+
+              <div class="mockup-caption-note">
+                Minh họa giao diện bảng điều khiển kết nối cơ sở dữ liệu SQLite & tài khoản Google
+              </div>
+            </div>
+          </div>
+
+          <!-- Cột phải: Giải thích lợi ích theo dõi kết quả -->
+          <div class="reveal-item">
+            <div class="section-badge">Học tập có mục tiêu</div>
+            <h2 class="section-title">Theo dõi sự tiến bộ qua từng bài học</h2>
+            <p class="section-desc" style="margin-bottom:24px;">
+              Hệ thống tự động ghi nhận nhật ký làm bài, phân tích các nhóm biển báo bạn nắm vững và chỉ ra các biển thường xuyên chọn nhầm để nhắc nhở kịp thời.
+            </p>
+
+            <ul class="bento-list" style="border-top:none;padding-top:0;margin-bottom:32px;">
+              <li class="bento-list-item">
+                <span class="bento-list-bullet"></span>
+                <span><strong>Đồng bộ trên đám mây:</strong> Dữ liệu lưu trữ an toàn theo tài khoản Google, không lo mất khi xóa lịch sử trình duyệt.</span>
+              </li>
+              <li class="bento-list-item">
+                <span class="bento-list-bullet"></span>
+                <span><strong>Phân loại theo nhóm biển:</strong> Biết chính xác bạn đang yếu ở nhóm biển cấm, biển hiệu lệnh hay cảnh báo.</span>
+              </li>
+              <li class="bento-list-item">
+                <span class="bento-list-bullet"></span>
+                <span><strong>Xem lại chi tiết bài làm:</strong> Mở lại từng câu trong quá khứ để xem lý do giải thích đáp án.</span>
+              </li>
+            </ul>
+
+            <a class="btn btn-primary btn-lg" href="/app#/thong-ke">
+              <span>Xem thống kê học tập</span>
+              <svg class="lucide" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         8. TECHNOLOGY SECTION
+         ========================================================================= -->
+    <section class="section tech-section" id="quy-trinh">
+      <div class="container">
+        <div class="section-head reveal-item">
+          <div class="section-badge">Hạ tầng công nghệ</div>
+          <h2 class="section-title">Công nghệ đằng sau hệ thống</h2>
+          <p class="section-desc">
+            Sự kết hợp giữa các thư viện tính toán thị giác máy tính hàng đầu, mạng nơron tích chập và nền tảng web hiện đại.
+          </p>
+        </div>
+
+        <div class="tech-grid reveal-item">
+          <div class="tech-chip-card">
+            <div class="tech-icon-wrap">
+              <svg class="lucide" viewBox="0 0 24 24"><path d="M12 2v20M2 12h20"/></svg>
+            </div>
+            <div class="tech-info">
+              <h4>Python & Flask</h4>
+              <p>Máy chủ backend xử lý API, điều phối suy luận mô hình ONNX và phục vụ dữ liệu.</p>
+            </div>
+          </div>
+
+          <div class="tech-chip-card">
+            <div class="tech-icon-wrap">
+              <svg class="lucide" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m10 15 5-3-5-3v6Z"/></svg>
+            </div>
+            <div class="tech-info">
+              <h4>OpenCV</h4>
+              <p>Thu nhận luồng video, tiền xử lý không gian màu và chuẩn hóa kích thước ảnh.</p>
+            </div>
+          </div>
+
+          <div class="tech-chip-card">
+            <div class="tech-icon-wrap">
+              <svg class="lucide" viewBox="0 0 24 24"><path d="M3 8V5a2 2 0 0 1 2-2h3M16 3h3a2 2 0 0 1 2 2v3M21 16v3a2 2 0 0 1-2 2h-3M8 21H5a2 2 0 0 1-2-2v-3"/></svg>
+            </div>
+            <div class="tech-info">
+              <h4>YOLO11n</h4>
+              <p>Phát hiện đối tượng thời gian thực siêu nhẹ, tối ưu hóa suy luận CPU/GPU.</p>
+            </div>
+          </div>
+
+          <div class="tech-chip-card">
+            <div class="tech-icon-wrap">
+              <svg class="lucide" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/></svg>
+            </div>
+            <div class="tech-info">
+              <h4>Custom CNN</h4>
+              <p>Mạng nơron tích chập 2.39M tham số tự thiết kế, phân loại chính xác mã biển.</p>
+            </div>
+          </div>
+
+          <div class="tech-chip-card">
+            <div class="tech-icon-wrap">
+              <svg class="lucide" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+            <div class="tech-info">
+              <h4>SQLite Database</h4>
+              <p>Cơ sở dữ liệu cục bộ an toàn, quản lý tài khoản người học, bài nộp và khảo sát.</p>
+            </div>
+          </div>
+
+          <div class="tech-chip-card">
+            <div class="tech-icon-wrap">
+              <svg class="lucide" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="tech-info">
+              <h4>Google OAuth 2.0</h4>
+              <p>Xác thực người dùng chuẩn OpenID Connect bảo mật cao, không lưu mật khẩu.</p>
+            </div>
+          </div>
+
+          <div class="tech-chip-card">
+            <div class="tech-icon-wrap">
+              <svg class="lucide" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <div class="tech-info">
+              <h4>ONNX Runtime</h4>
+              <p>Công cụ thực thi mô hình đa nền tảng, tối ưu tốc độ phản hồi tính bằng mili-giây.</p>
+            </div>
+          </div>
+
+          <div class="tech-chip-card">
+            <div class="tech-icon-wrap">
+              <svg class="lucide" viewBox="0 0 24 24"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+            </div>
+            <div class="tech-info">
+              <h4>Modern Web SPA</h4>
+              <p>Kiến trúc Single Page Application thuần túy, tải trang siêu nhanh, không phụ thuộc nặng nề.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sơ đồ kiến trúc luồng dữ liệu -->
+        <div class="architecture-diagram-card reveal-item">
+          <div class="arch-header">
+            <h3>Sơ đồ kiến trúc luồng xử lý hệ thống</h3>
+            <p>Tương tác giữa trình duyệt người dùng, máy chủ Flask và các khối mô hình AI</p>
+          </div>
+
+          <div class="arch-flow-nodes">
+            <div class="arch-node">
+              <div class="arch-node-title">Trình duyệt (SPA)</div>
+              <div class="arch-node-desc">Giao diện người học</div>
+            </div>
+
+            <span class="arch-arrow">→</span>
+
+            <div class="arch-node">
+              <div class="arch-node-title">Flask Server</div>
+              <div class="arch-node-desc">API RESTful / Routing</div>
+            </div>
+
+            <span class="arch-arrow">→</span>
+
+            <div class="arch-node highlight">
+              <div class="arch-node-title">Tầng 1: YOLO11n</div>
+              <div class="arch-node-desc">Phát hiện vị trí (640×640)</div>
+            </div>
+
+            <span class="arch-arrow">→</span>
+
+            <div class="arch-node highlight">
+              <div class="arch-node-title">Tầng 2: CNN</div>
+              <div class="arch-node-desc">Phân loại mã biển (64×64)</div>
+            </div>
+
+            <span class="arch-arrow">→</span>
+
+            <div class="arch-node">
+              <div class="arch-node-title">Thư viện QCVN</div>
+              <div class="arch-node-desc">Ý nghĩa & Căn cứ 352 biển</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         9. GRADUATION PROJECT INFORMATION
+         ========================================================================= -->
+    <section class="section project-intro-section" id="do-an">
+      <div class="container">
+        <div class="project-card reveal-item">
+          <div class="project-text">
+            <div class="section-badge">Đồ án tốt nghiệp</div>
+            <h3>Kết hợp nghiên cứu trí tuệ nhân tạo với giáo dục an toàn giao thông</h3>
+            <p>
+              Đồ án hướng tới việc ứng dụng các mô hình học sâu (Deep Learning) mới nhất vào bài toán thực tiễn: trợ giúp học viên, người lái xe và cộng đồng nâng cao hiểu biết về hệ thống biển báo đường bộ, góp phần xây dựng văn hóa giao thông an toàn và văn minh.
+            </p>
+
+            <div class="project-meta-list">
+              <div class="project-meta-item">
+                <span class="project-meta-label">Sinh viên thực hiện</span>
+                <span class="project-meta-value">Lương Văn Học</span>
+              </div>
+              <div class="project-meta-item">
+                <span class="project-meta-label">Chuyên ngành</span>
+                <span class="project-meta-value">Kỹ thuật máy tính</span>
+              </div>
+              <div class="project-meta-item">
+                <span class="project-meta-label">Cơ sở đào tạo</span>
+                <span class="project-meta-value">Trường ĐH Kỹ thuật Công nghiệp</span>
+              </div>
+              <div class="project-meta-item">
+                <span class="project-meta-label">Giảng viên hướng dẫn</span>
+                <span class="project-meta-value">ThS. Lê Thị Lương</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-visual-box">
+            <div class="project-badge-large">
+              <svg class="lucide" viewBox="0 0 24 24" style="width:36px;height:36px;"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <div class="project-academic-title">Đại học Kỹ thuật Công nghiệp</div>
+            <div class="project-academic-sub">Khoa Công nghệ Thông tin • Khóa tốt nghiệp 2026</div>
+
+            <a class="project-repo-link" href="https://github.com/LuongHoc/bien_bao" target="_blank" rel="noopener noreferrer">
+              <svg class="lucide" viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+              <span>Mã nguồn trên GitHub</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         10. FAQ ACCORDION SECTION
+         ========================================================================= -->
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <div class="section-head reveal-item">
+          <div class="section-badge">Giải đáp thắc mắc</div>
+          <h2 class="section-title">Câu hỏi thường gặp</h2>
+          <p class="section-desc">
+            Những thông tin cần biết khi trải nghiệm và sử dụng nền tảng Biển Báo AI.
+          </p>
+        </div>
+
+        <div class="faq-list reveal-item">
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button" aria-expanded="false">
+              <span>1. Ứng dụng có thu phí người dùng không?</span>
+              <span class="faq-icon-arrow"><svg class="lucide" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </button>
+            <div class="faq-answer-pane">
+              <div class="faq-answer-inner">
+                Ứng dụng hoàn toàn <strong>miễn phí 100%</strong>, được phát triển phục vụ mục đích nghiên cứu học thuật, giáo dục cộng đồng và hỗ trợ người học lái xe tra cứu biển báo thuận tiện nhất.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button" aria-expanded="false">
+              <span>2. Tôi có bắt buộc phải đăng nhập để học biển báo không?</span>
+              <span class="faq-icon-arrow"><svg class="lucide" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </button>
+            <div class="faq-answer-pane">
+              <div class="faq-answer-inner">
+                Không bắt buộc. Bạn có thể tra cứu toàn bộ 352 biển báo, làm trắc nghiệm thử nghiệm và dùng tính năng nhận dạng AI ngay mà không cần tài khoản. Việc đăng nhập tài khoản Google chỉ cần thiết khi bạn muốn <strong>lưu trữ lịch sử bài tập, theo dõi điểm số và phân tích tiến độ cá nhân</strong>.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button" aria-expanded="false">
+              <span>3. Ứng dụng hỗ trợ nhận dạng bao nhiêu loại biển báo?</span>
+              <span class="faq-icon-arrow"><svg class="lucide" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </button>
+            <div class="faq-answer-pane">
+              <div class="faq-answer-inner">
+                Thư viện lý thuyết chứa đầy đủ <strong>352 biển báo</strong> theo Quy chuẩn QCVN 41:2024. Mô hình AI hiện được huấn luyện chuyên biệt trên tập dữ liệu thực tế gồm <strong>54 lớp</strong> (53 biển báo thông dụng nhất tại Việt Nam và 1 lớp lọc nền) để đảm bảo độ chính xác cao nhất trên môi trường thực nghiệm.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button" aria-expanded="false">
+              <span>4. Tôi có thể nhận dạng biển báo từ điện thoại thông minh không?</span>
+              <span class="faq-icon-arrow"><svg class="lucide" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </button>
+            <div class="faq-answer-pane">
+              <div class="faq-answer-inner">
+                Có. Giao diện website tương thích hoàn hảo với thiết bị di động. Bạn có thể mở website trên trình duyệt điện thoại, chụp ảnh biển báo trực tiếp từ camera hoặc tải ảnh có sẵn trong thư viện để nhận dạng ngay tức thì.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button" aria-expanded="false">
+              <span>5. Kết quả bài tập trắc nghiệm được lưu trữ như thế nào?</span>
+              <span class="faq-icon-arrow"><svg class="lucide" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </button>
+            <div class="faq-answer-pane">
+              <div class="faq-answer-inner">
+                Khi đã đăng nhập, mỗi bài nộp sẽ được máy chủ chấm điểm độc lập và lưu trữ an toàn vào cơ sở dữ liệu SQLite tại server. Điểm số, thời gian làm bài, tỷ lệ câu đúng/sai được đồng bộ bảo mật theo ID tài khoản Google của bạn.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button" aria-expanded="false">
+              <span>6. Ứng dụng sử dụng công nghệ AI gì để nhận dạng?</span>
+              <span class="faq-icon-arrow"><svg class="lucide" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </button>
+            <div class="faq-answer-pane">
+              <div class="faq-answer-inner">
+                Hệ thống áp dụng kiến trúc nhận dạng 2 tầng độc lập: Tầng 1 sử dụng mạng <strong>YOLO11n</strong> để phát hiện tọa độ khung bao của biển báo trong ảnh lớn; Tầng 2 sử dụng <strong>mạng nơron tích chập (CNN)</strong> tự xây dựng kết hợp kỹ thuật cân chỉnh nhiệt độ (Temperature Scaling) để xác định chính xác danh tính của biển báo.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         11. FINAL CTA SECTION
+         ========================================================================= -->
+    <section class="final-cta-section">
+      <div class="container">
+        <div class="final-cta-box reveal-item">
+          <h2 class="final-cta-title">Bắt đầu hành trình học biển báo cùng AI</h2>
+          <p class="final-cta-desc">
+            Học lý thuyết, luyện tập kiến thức và khám phá công nghệ nhận dạng biển báo giao thông trên một nền tảng duy nhất.
+          </p>
+          <div class="final-cta-actions">
+            <a class="btn btn-white btn-lg" href="/app#/hoc">
+              <span>Bắt đầu học ngay</span>
+              <svg class="lucide" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+            </a>
+            <a class="btn btn-outline-white btn-lg" href="/app#/nhan-dang">
+              <svg class="lucide" viewBox="0 0 24 24"><path d="M3 8V5a2 2 0 0 1 2-2h3M16 3h3a2 2 0 0 1 2 2v3M21 16v3a2 2 0 0 1-2 2h-3M8 21H5a2 2 0 0 1-2-2v-3"/><circle cx="12" cy="12" r="3.5"/></svg>
+              <span>Khám phá AI</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       12. FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container-wide">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <h4>
+            <span style="color:var(--primary);">●</span>
+            <span>Biển Báo AI</span>
+          </h4>
+          <p>
+            Ứng dụng trợ giúp người học nhận dạng biển báo giao thông đường bộ Việt Nam sử dụng mạng nơron nhân tạo và quy chuẩn QCVN 41:2024/BGTVT.
+          </p>
+          <div style="font-size:0.8125rem;color:#64748b;">
+            Đồ án tốt nghiệp ngành Kỹ thuật máy tính • ĐH Kỹ thuật Công nghiệp
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Học tập</h5>
+          <ul class="footer-links">
+            <li><a href="/app#/hoc">Thư viện biển báo</a></li>
+            <li><a href="/app#/bai-tap">Luyện tập trắc nghiệm</a></li>
+            <li><a href="/app#/thong-ke">Thống kê tiến độ</a></li>
+            <li><a href="/app#/gioi-thieu">Quy chuẩn QCVN 41</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Công nghệ AI</h5>
+          <ul class="footer-links">
+            <li><a href="/app#/nhan-dang">Nhận dạng ảnh</a></li>
+            <li><a href="/app#/nhan-dang">Nhận dạng video</a></li>
+            <li><a href="/app#/nhan-dang">Camera thời gian thực</a></li>
+            <li><a href="/app#/gioi-thieu/danh-gia">Đánh giá & Khảo sát</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Liên kết & Mã nguồn</h5>
+          <ul class="footer-links">
+            <li><a href="https://github.com/LuongHoc/bien_bao" target="_blank" rel="noopener noreferrer">GitHub Repository</a></li>
+            <li><a href="https://bienbao.luongvanhoc.io.vn/" target="_blank" rel="noopener noreferrer">Website công khai</a></li>
+            <li><a href="/login">Đăng nhập / Đăng ký</a></li>
+            <li><a href="#do-an">Thông tin tác giả</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 <strong>Biển Báo AI</strong>. Đồ án tốt nghiệp sinh viên <strong>Lương Văn Học</strong>.
+        </div>
+        <div>
+          <span>Triển khai tại: </span>
+          <a href="https://bienbao.luongvanhoc.io.vn" target="_blank" rel="noopener noreferrer">bienbao.luongvanhoc.io.vn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Landing Page Script -->
+  <script src="/landing.js" defer></script>
+</body>
+</html>

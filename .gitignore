@@ -1,6 +1,27 @@
-__pycache__/
-*.pyc
+# Thông tin bí mật
+.env
+.env.*
+!.env.example
+
+# Cơ sở dữ liệu và dữ liệu người dùng
+instance/
+*.db
+*.sqlite
+*.sqlite3
+
+# Môi trường Python
 .venv/
 venv/
-*.zip
-1_du_lieu/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# File tạm và log
+*.log
+*.tmp
+*.bak
+.DS_Store
+
+# Thư mục lưu trữ
+_luu_tru_du_an/
+backups/

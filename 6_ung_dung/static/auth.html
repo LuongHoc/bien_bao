@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng nhập & Đăng ký - Biển Báo AI</title>
+  <meta name="description" content="Đăng nhập hoặc đăng ký tài khoản Biển Báo AI để lưu trữ tiến độ học tập, lịch sử bài tập và nhận dạng biển báo giao thông.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232563EB' stroke-width='2'%3E%3Cpath d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/auth.css?v=20261112_2">
+</head>
+<body>
+  <div class="auth-page-wrapper">
+    <div class="auth-card-container">
+      
+      <!-- CỘT TRÁI: SHOWCASE GIỚI THIỆU -->
+      <aside class="auth-showcase-panel">
+        <div class="showcase-content">
+          <a href="/" class="brand-badge" title="Về trang chủ Biển Báo AI">
+            <span class="brand-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+            </span>
+            <span class="brand-text">Biển Báo AI</span>
+          </a>
+
+          <div class="showcase-hero">
+            <h2>Học biển báo thông minh hơn cùng AI</h2>
+            <p>Nền tảng EdTech kết hợp mạng nơ-ron nhân tạo YOLO11n và CNN hỗ trợ học, ôn luyện và nhận dạng biển báo giao thông chuẩn QCVN 41:2024/BGTVT.</p>
+          </div>
+
+          <ul class="feature-checklist">
+            <li>
+              <div class="feat-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div class="feat-info">
+                <strong>Nhận dạng AI tức thì</strong>
+                <span>Quét ảnh, video và camera nhận diện 53 nhóm biển báo chính xác cao.</span>
+              </div>
+            </li>
+            <li>
+              <div class="feat-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div class="feat-info">
+                <strong>Luyện thi GPLX cá nhân hóa</strong>
+                <span>339 câu hỏi phân loại theo hạng giấy phép lái xe và nhóm biển báo.</span>
+              </div>
+            </li>
+            <li>
+              <div class="feat-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div class="feat-info">
+                <strong>Đồng bộ kết quả học tập</strong>
+                <span>Theo dõi tiến độ, phân tích lỗi sai và đề xuất câu hỏi thông minh.</span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="showcase-footer">
+            <a href="/" class="back-home-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+              <span>Quay lại Trang chủ</span>
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- CỘT PHẢI: BIỂU MẪU XÁC THỰC -->
+      <main class="auth-form-panel">
+        <div class="form-inner">
+
+          <!-- Thông báo chung (Alert Box) -->
+          <div id="auth-alert" class="alert-box" style="display: none;" role="alert">
+            <span class="alert-icon" id="alert-icon"></span>
+            <div class="alert-content" id="alert-content"></div>
+          </div>
+
+          <!-- 1. KHU VỰC ĐĂNG NHẬP -->
+          <section id="login-section" class="auth-section active" role="tabpanel">
+            <div class="section-heading">
+              <h1 class="form-title">Chào mừng trở lại!</h1>
+              <p class="form-subtitle">Đăng nhập để tiếp tục hành trình học tập và làm bài tập.</p>
+            </div>
+
+            <div class="divider-line divider-line-top"><span>Đăng nhập bằng tài khoản</span></div>
+
+            <form id="form-login" novalidate>
+              <div class="form-group">
+                <label for="login-email">Tên tài khoản hoặc Email</label>
+                <div class="input-wrap">
+                  <span class="input-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  </span>
+                  <input type="text" id="login-email" name="tai_khoan" required autocomplete="username" placeholder="Nhập tên tài khoản hoặc email của bạn">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="label-row">
+                  <label for="login-password">Mật khẩu</label>
+                  <a href="#quen-mat-khau" class="forgot-link" id="btn-forgot-password">Quên mật khẩu?</a>
+                </div>
+                <div class="input-wrap">
+                  <span class="input-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                  </span>
+                  <input type="password" id="login-password" name="password" required autocomplete="current-password" placeholder="Nhập mật khẩu của bạn">
+                  <button type="button" class="btn-toggle-eye" aria-label="Hiện hoặc ẩn mật khẩu" data-target="login-password">
+                    <svg class="eye-open" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                    <svg class="eye-closed" style="display:none;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="form-row-remember">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="login-remember" name="remember" checked>
+                  <span>Ghi nhớ đăng nhập trên thiết bị này</span>
+                </label>
+              </div>
+
+              <button type="submit" class="btn-submit-primary" id="btn-submit-login">
+                <span class="btn-text">Đăng nhập</span>
+                <span class="btn-spinner" style="display:none;"></span>
+              </button>
+            </form>
+
+            
+            <div class="divider-line"><span>Hoặc tiếp tục với</span></div>
+
+            <!-- Nút Google Login -->
+            <a href="/auth/google" class="btn-google-oauth" id="google-login-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24">
+                <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+                <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.36 24 12 24z"/>
+                <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+                <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.36 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+              </svg>
+              <span>Tiếp tục với Google</span>
+            </a>
+
+            
+            <div class="switch-mode-text">
+              Chưa có tài khoản? <button type="button" class="link-btn" id="switch-to-register">Đăng ký ngay</button>
+            </div>
+          </section>
+
+          <!-- 2. KHU VỰC ĐĂNG KÝ (QUY TRÌNH 3 BƯỚC: FORM -> OTP EMAIL -> THÀNH CÔNG) -->
+          <section id="register-section" class="auth-section" role="tabpanel" style="display: none;">
+            
+            <!-- BƯỚC 1: FORM ĐĂNG KÝ -->
+            <div id="register-step-1" class="register-step-panel">
+              <div class="section-heading">
+                <h1 class="form-title">Tạo tài khoản mới</h1>
+                <p class="form-subtitle">Tham gia cộng đồng học viên nhận diện biển báo cùng AI.</p>
+              </div>
+
+              <div class="divider-line divider-line-top"><span>Đăng ký bằng tài khoản</span></div>
+
+              <form id="form-register" novalidate>
+                <div class="form-group">
+                  <label for="reg-name">Họ và tên của bạn</label>
+                  <div class="input-wrap">
+                    <span class="input-icon">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </span>
+                    <input type="text" id="reg-name" name="name" required autocomplete="name" placeholder="Ví dụ: Nguyễn Văn A" minlength="2" maxlength="50">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="reg-username">Tên tài khoản</label>
+                  <div class="input-wrap">
+                    <span class="input-icon">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"/></svg>
+                    </span>
+                    <input type="text" id="reg-username" name="username" required autocomplete="username" placeholder="Ví dụ: hocvien_ai" minlength="3" maxlength="30">
+                  </div>
+                  <div class="password-hint">Từ 3-30 ký tự, gồm chữ cái, chữ số, dấu gạch dưới (_) và dấu chấm (.).</div>
+                </div>
+
+                <div class="form-group">
+                  <label for="reg-password">Mật khẩu</label>
+                  <div class="input-wrap">
+                    <span class="input-icon">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    </span>
+                    <input type="password" id="reg-password" name="password" required autocomplete="new-password" placeholder="Tối thiểu 8 ký tự">
+                    <button type="button" class="btn-toggle-eye" aria-label="Hiện hoặc ẩn mật khẩu" data-target="reg-password">
+                      <svg class="eye-open" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                      <svg class="eye-closed" style="display:none;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+                    </button>
+                  </div>
+                  <div class="password-hint">Mật khẩu nên chứa ít nhất 8 ký tự, kết hợp chữ cái và chữ số.</div>
+                </div>
+
+                <div class="form-group">
+                  <label for="reg-confirm">Xác nhận lại mật khẩu</label>
+                  <div class="input-wrap">
+                    <span class="input-icon">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    </span>
+                    <input type="password" id="reg-confirm" name="confirm_password" required autocomplete="new-password" placeholder="Nhập lại mật khẩu phía trên">
+                    <button type="button" class="btn-toggle-eye" aria-label="Hiện hoặc ẩn mật khẩu" data-target="reg-confirm">
+                      <svg class="eye-open" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                      <svg class="eye-closed" style="display:none;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="reg-email">Địa chỉ Email <span style="font-weight: normal; color: var(--phu, #64748b); font-size: 13px;">(tùy chọn)</span></label>
+                  <div class="input-wrap">
+                    <span class="input-icon">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </span>
+                    <input type="email" id="reg-email" name="email" autocomplete="email" placeholder="email@example.com (để khôi phục mật khẩu khi cần)">
+                  </div>
+                </div>
+
+                <button type="submit" class="btn-submit-primary" id="btn-submit-register">
+                  <span class="btn-text">Tạo tài khoản học viên</span>
+                  <span class="btn-spinner" style="display:none;"></span>
+                </button>
+              </form>
+
+              <div class="divider-line"><span>Hoặc đăng ký nhanh với</span></div>
+
+              <!-- Nút Google Register -->
+              <a href="/auth/google" class="btn-google-oauth">
+                <svg width="18" height="18" viewBox="0 0 24 24">
+                  <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+                  <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.36 24 12 24z"/>
+                  <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+                  <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.36 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+                </svg>
+                <span>Đăng ký nhanh với Google</span>
+              </a>
+
+              <div class="switch-mode-text">
+                Đã có tài khoản? <button type="button" class="link-btn" id="switch-to-login">Đăng nhập</button>
+              </div>
+            </div>
+
+            <!-- BƯỚC 2: XÁC THỰC MÃ OTP KÍCH HOẠT TÀI KHOẢN -->
+            <div id="register-step-2" class="register-step-panel" style="display: none;">
+              <div class="section-heading">
+                <h1 class="form-title">Kích hoạt tài khoản</h1>
+                <p class="form-subtitle">Vui lòng nhập mã xác nhận gồm 6 chữ số đã được gửi đến email của bạn.</p>
+              </div>
+
+              <div class="otp-target-row">
+                <div class="otp-target-info">
+                  <span class="otp-target-label">Mã kích hoạt gửi tới:</span>
+                  <strong class="otp-target-email" id="reg-otp-display-email">ng***@gmail.com</strong>
+                </div>
+                <button type="button" class="link-btn-sm" id="btn-back-to-reg-form">Thay đổi thông tin</button>
+              </div>
+
+              <form id="form-verify-reg-otp" novalidate>
+                <div class="otp-inputs-wrap" id="reg-otp-inputs-wrap">
+                  <input type="text" class="otp-digit reg-otp-digit" inputmode="numeric" maxlength="1" pattern="[0-9]" data-index="0" autocomplete="one-time-code" aria-label="Số thứ 1">
+                  <input type="text" class="otp-digit reg-otp-digit" inputmode="numeric" maxlength="1" pattern="[0-9]" data-index="1" autocomplete="one-time-code" aria-label="Số thứ 2">
+                  <input type="text" class="otp-digit reg-otp-digit" inputmode="numeric" maxlength="1" pattern="[0-9]" data-index="2" autocomplete="one-time-code" aria-label="Số thứ 3">
+                  <input type="text" class="otp-digit reg-otp-digit" inputmode="numeric" maxlength="1" pattern="[0-9]" data-index="3" autocomplete="one-time-code" aria-label="Số thứ 4">
+                  <input type="text" class="otp-digit reg-otp-digit" inputmode="numeric" maxlength="1" pattern="[0-9]" data-index="4" autocomplete="one-time-code" aria-label="Số thứ 5">
+                  <input type="text" class="otp-digit reg-otp-digit" inputmode="numeric" maxlength="1" pattern="[0-9]" data-index="5" autocomplete="one-time-code" aria-label="Số thứ 6">
+                </div>
+
+                <button type="submit" class="btn-submit-primary" id="btn-submit-reg-otp">
+                  <span class="btn-text">Kích hoạt tài khoản</span>
+                  <span class="btn-spinner" style="display:none;"></span>
+                </button>
+              </form>
+
+              <div class="otp-resend-row">
+                <span>Chưa nhận được mã?</span>
+                <button type="button" class="link-btn" id="btn-resend-reg-otp" disabled>Gửi lại mã (<span id="reg-resend-countdown">60</span>s)</button>
+              </div>
+
+              <div class="switch-mode-text">
+                <button type="button" class="link-btn" id="reg-otp-back-to-login">Quay lại đăng nhập</button>
+              </div>
+            </div>
+
+            <!-- BƯỚC 3: KÍCH HOẠT THÀNH CÔNG -->
+            <div id="register-step-3" class="register-step-panel" style="display: none;">
+              <div class="success-state-panel">
+                <div class="success-icon-wrap">
+                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10" fill="#dcfce7" stroke="#16a34a"/>
+                    <polyline points="8 12 11 15 16 9" stroke="#16a34a"/>
+                  </svg>
+                </div>
+                <h2 class="success-title" id="reg-success-title">Đăng ký tài khoản thành công!</h2>
+                <p class="success-desc" id="reg-success-desc">Tài khoản của bạn đã được tạo thành công. Bây giờ bạn có thể đăng nhập để bắt đầu hành trình học tập và nhận dạng biển báo AI.</p>
+                <button type="button" class="btn-submit-primary" id="btn-reg-success-to-login">
+                  <span class="btn-text">Đăng nhập ngay</span>
+                </button>
+              </div>
+            </div>
+
+          </section>
+
+          <!-- 3. KHU VỰC QUÊN MẬT KHẨU (QUY TRÌNH 3 BƯỚC OTP QUA EMAIL + THÀNH CÔNG) -->
+          <section id="forgot-section" class="auth-section" role="tabpanel" style="display: none;">
+            
+            <!-- BƯỚC 1: NHẬP TÊN TÀI KHOẢN HOẶC EMAIL -->
+            <div id="forgot-step-1" class="forgot-step-panel">
+              <div class="section-heading">
+                <h1 class="form-title">Quên mật khẩu?</h1>
+                <p class="form-subtitle">Nhập tên tài khoản hoặc email đã đăng ký để nhận mã xác nhận đặt lại mật khẩu.</p>
+              </div>
+
+              <form id="form-forgot" novalidate>
+                <div class="form-group">
+                  <label for="forgot-email">Tên tài khoản hoặc Email</label>
+                  <div class="input-wrap">
+                    <span class="input-icon">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </span>
+                    <input type="text" id="forgot-email" name="dinh_danh" required autocomplete="username" placeholder="Nhập tên tài khoản hoặc email của bạn">
+                  </div>
+                </div>
+
+                <button type="submit" class="btn-submit-primary" id="btn-submit-forgot">
+                  <span class="btn-text">Gửi mã xác nhận</span>
+                  <span class="btn-spinner" style="display:none;"></span>
+                </button>
+              </form>
+
+              <div class="switch-mode-text">
+                <button type="button" class="link-btn" id="forgot-back-to-login">Quay lại đăng nhập</button>
+              </div>
+            </div>
+
+            <!-- BƯỚC 2: XÁC THỰC MÃ OTP -->
+            <div id="forgot-step-2" class="forgot-step-panel" style="display: none;">
+              <div class="section-heading">
+                <h1 class="form-title">Xác thực email</h1>
+                <p class="form-subtitle">Vui lòng nhập mã xác nhận gồm 6 chữ số đã được gửi đến email của bạn.</p>
+              </div>
+
+              <div class="otp-target-row">
+                <div class="otp-target-info">
+                  <span class="otp-target-label">Mã xác nhận gửi tới:</span>
+                  <strong class="otp-target-email" id="otp-display-email">ng***@gmail.com</strong>
+                </div>
+                <button type="button" class="link-btn-sm" id="btn-change-email">Thay đổi email</button>
+              </div>
+
+              <form id="form-verify-otp" novalidate>
+                <div class="otp-inputs-wrap" id="otp-inputs-wrap">
+                  <input type="text" class="otp-digit" inputmode="numeric" maxlength="1" pattern="[0-9]" data-index="0" autocomplete="one-time-code" aria-label="Số thứ 1">
+                  <input type="text" class="otp-digit" inputmode="numeric" maxlength="1" pattern="[0-9]" data-index="1" autocomplete="one-time-code" aria-label="Số thứ 2">
+                  <input type="text" class="otp-digit" inputmode="numeric" maxlength="1" pattern="[0-9]" data-index="2" autocomplete="one-time-code" aria-label="Số thứ 3">
+                  <input type="text" class="otp-digit" inputmode="numeric" maxlength="1" pattern="[0-9]" data-index="3" autocomplete="one-time-code" aria-label="Số thứ 4">
+                  <input type="text" class="otp-digit" inputmode="numeric" maxlength="1" pattern="[0-9]" data-index="4" autocomplete="one-time-code" aria-label="Số thứ 5">
+                  <input type="text" class="otp-digit" inputmode="numeric" maxlength="1" pattern="[0-9]" data-index="5" autocomplete="one-time-code" aria-label="Số thứ 6">
+                </div>
+
+                <button type="submit" class="btn-submit-primary" id="btn-submit-otp">
+                  <span class="btn-text">Xác nhận</span>
+                  <span class="btn-spinner" style="display:none;"></span>
+                </button>
+              </form>
+
+              <div class="otp-resend-row">
+                <span>Chưa nhận được mã?</span>
+                <button type="button" class="link-btn" id="btn-resend-otp" disabled>Gửi lại mã (<span id="resend-countdown">60</span>s)</button>
+              </div>
+
+              <div class="switch-mode-text">
+                <button type="button" class="link-btn" id="otp-back-to-login">Quay lại đăng nhập</button>
+              </div>
+            </div>
+
+            <!-- BƯỚC 3: ĐẶT MẬT KHẨU MỚI -->
+            <div id="forgot-step-3" class="forgot-step-panel" style="display: none;">
+              <div class="section-heading">
+                <h1 class="form-title">Đặt lại mật khẩu</h1>
+                <p class="form-subtitle">Tạo mật khẩu mới để tiếp tục sử dụng tài khoản Biển Báo AI.</p>
+              </div>
+
+              <form id="form-reset" novalidate>
+                <input type="hidden" id="reset-token" name="token" value="">
+
+                <div class="form-group">
+                  <label for="reset-password">Mật khẩu mới</label>
+                  <div class="input-wrap">
+                    <span class="input-icon">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    </span>
+                    <input type="password" id="reset-password" name="password" required autocomplete="new-password" placeholder="Tối thiểu 8 ký tự">
+                    <button type="button" class="btn-toggle-eye" aria-label="Hiện hoặc ẩn mật khẩu" data-target="reset-password">
+                      <svg class="eye-open" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                      <svg class="eye-closed" style="display:none;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+                    </button>
+                  </div>
+                  <div class="password-hint">Mật khẩu nên chứa ít nhất 8 ký tự, kết hợp chữ cái và chữ số.</div>
+                </div>
+
+                <div class="form-group">
+                  <label for="reset-confirm">Xác nhận mật khẩu mới</label>
+                  <div class="input-wrap">
+                    <span class="input-icon">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    </span>
+                    <input type="password" id="reset-confirm" name="confirm_password" required autocomplete="new-password" placeholder="Nhập lại mật khẩu mới">
+                    <button type="button" class="btn-toggle-eye" aria-label="Hiện hoặc ẩn mật khẩu" data-target="reset-confirm">
+                      <svg class="eye-open" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                      <svg class="eye-closed" style="display:none;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+                    </button>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn-submit-primary" id="btn-submit-reset">
+                  <span class="btn-text">Đổi mật khẩu</span>
+                  <span class="btn-spinner" style="display:none;"></span>
+                </button>
+              </form>
+
+              <div class="switch-mode-text">
+                <button type="button" class="link-btn" id="reset-back-to-login">Quay lại đăng nhập</button>
+              </div>
+            </div>
+
+            <!-- BƯỚC 4: THÀNH CÔNG -->
+            <div id="forgot-step-4" class="forgot-step-panel" style="display: none;">
+              <div class="success-state-panel">
+                <div class="success-icon-wrap">
+                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10" fill="#dcfce7" stroke="#16a34a"/>
+                    <polyline points="8 12 11 15 16 9" stroke="#16a34a"/>
+                  </svg>
+                </div>
+                <h2 class="form-title" style="margin-top: 14px;">Đổi mật khẩu thành công!</h2>
+                <p class="form-subtitle">Bạn có thể đăng nhập bằng mật khẩu mới.</p>
+                <button type="button" class="btn-submit-primary" id="btn-success-to-login" style="margin-top: 24px;">
+                  <span class="btn-text">Quay lại đăng nhập</span>
+                </button>
+              </div>
+            </div>
+
+          </section>
+
+          <!-- 5. HỘP THOẠI GỬI LẠI EMAIL XÁC MINH -->
+          <div id="resend-wrap" class="resend-box" style="display:none;">
+            <p>Chưa nhận được email xác nhận?</p>
+            <button type="button" class="btn-resend" id="btn-do-resend">Gửi lại email xác minh</button>
+          </div>
+
+        </div>
+      </main>
+
+    </div>
+  </div>
+
+  <script src="/auth.js?v=20261112_2"></script>
+</body>
+</html>

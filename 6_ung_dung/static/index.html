@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Biển Báo Giao Thông</title>
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/style.css?v=20261112_7">
 </head>
 <body>
   <aside class="thanh-ben">
@@ -18,12 +18,43 @@
       </button>
     </div>
     <nav id="menu" aria-label="Chức năng"></nav>
-    <a class="nguoi-hoc-nho" href="#/nguoi-hoc" data-trang="nguoi-hoc" title="Người học">
-      <span class="avatar nho"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span><span id="ten-nho">Người học</span>
+
+    <a class="nut-ve-landing"
+      href="/"
+      title="Về trang giới thiệu">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M19 12H5M11 18l-6-6 6-6"/>
+      </svg>
+      <span>Về trang giới thiệu</span>
     </a>
+
+    <a class="nguoi-hoc-nho"
+      href="#/nguoi-hoc"
+      data-trang="nguoi-hoc"
+      title="Người học">
+
+        <span class="avatar nho" id="avatar-menu">
+            <svg class="ic" viewBox="0 0 24 24"
+                aria-hidden="true">
+                <circle cx="12" cy="8" r="4"/>
+                <path d="M4 21a8 8 0 0 1 16 0"/>
+            </svg>
+        </span>
+
+        <span id="ten-nho">Người học</span>
+    </a>
+
+    <div id="auth-controls"></div>
+
+    <!-- Khu vực tài khoản Google -->
+
   </aside>
   <main id="noi-dung" tabindex="-1"></main>
   <div id="thong-bao" class="thong-bao" role="status" aria-live="polite" hidden></div>
-  <script src="/app.js"></script>
+  <script src="/learning-ui.js"></script>
+  <script src="/survey-ui.js"></script>
+  <script src="/quick-survey-ui.js"></script>
+  <script src="/app.js?v=20261112_7"></script>
+  <script src="/auth-ui.js"></script>
 </body>
 </html>

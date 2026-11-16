@@ -8,11 +8,22 @@ import os, re, sys, time, json, glob, threading, webbrowser
 from urllib.parse import quote
 import numpy as np
 import cv2
-from flask import Flask, Response, abort, jsonify, request, send_from_directory
+from flask import Flask, Response, abort, jsonify, redirect, render_template_string, request, send_from_directory, session
 
 from bo_nhan_dang import BoNhanDang
+from dotenv import load_dotenv
+from datetime import timedelta
+from admin import cau_hinh_admin
+from auth import cau_hinh_dang_nhap
+from database import DUONG_DAN_DB
+from quiz import cau_hinh_bai_tap, phien_ban_ngan_hang
+from learning import cau_hinh_thong_ke
+from survey import cau_hinh_khao_sat
 
 GOC = os.path.dirname(os.path.abspath(__file__))
+DUONG_DAN_ENV = os.path.join(GOC, ".env")
+# Nạp biến môi trường từ đường dẫn tuyệt đối với override=True
+load_dotenv(DUONG_DAN_ENV, override=True)
 MO_HINH = os.environ.get("MO_HINH", os.path.join(GOC, "..", "3_mo_hinh"))
 TINH = os.path.join(GOC, "static")
 CONG = int(os.environ.get("CONG", "5000"))
@@ -21,8 +32,33 @@ NGUONG_PHAT_HIEN = float(os.environ.get("NGUONG_PHAT_HIEN", "0.35"))
 DUOI_ANH = (".jpg", ".jpeg", ".png", ".webp", ".bmp")
 ANH_NEN = os.path.join(GOC, "anh_nen")    # anh nen trang chu: bo anh vao day, tu chuyen moi 10 giay
 
-app = Flask(__name__, static_folder=TINH, static_url_path="")
-app.config["MAX_CONTENT_LENGTH"] = 25 * 1024 * 1024      # anh toi da 25 MB
+
+app = Flask(
+    __name__,
+    static_folder=TINH,
+    static_url_path=""
+)
+
+# Gioi han dung luong anh tai len
+app.config["MAX_CONTENT_LENGTH"] = 25 * 1024 * 1024
+
+# Khoa bi mat cho Flask Session
+app.config["SECRET_KEY"] = os.environ["FLASK_SECRET_KEY"]
+
+# Cau hinh cookie dang nhap
+app.config["SESSION_COOKIE_HTTPONLY"] = True
+app.config["SESSION_COOKIE_SAMESITE"] = "Lax"
+
+# Chi de False khi chay localhost bang HTTP
+# Khi trien khai HTTPS, phai doi thanh True
+app.config["SESSION_COOKIE_SECURE"] = False
+
+# Thoi han phien dang nhap
+app.config["PERMANENT_SESSION_LIFETIME"] = timedelta(days=7)
+
+# Dang ky Google Login va SQLite
+cau_hinh_dang_nhap(app)
+
 
 try:
     nd = BoNhanDang(MO_HINH, nguong_phat_hien=NGUONG_PHAT_HIEN)
@@ -147,6 +183,12 @@ def danh_sach_bien():
 BIEN = danh_sach_bien()
 MA_HOP_LE = {b["ma"] for b in BIEN}
 
+# Cùng nguồn dữ liệu chuẩn với /api/bien; không thay đổi tạo đề phía trình duyệt.
+cau_hinh_bai_tap(app, danh_sach_bien)
+cau_hinh_thong_ke(app, danh_sach_bien)
+cau_hinh_khao_sat(app)
+cau_hinh_admin(app, lay_danh_sach_bien_func=danh_sach_bien, ma_ai_classes=nd.lop)
+
 
 def doc_ket_qua_mo_hinh():
     """Doc so lieu kiem thu cua mo hinh (neu co) de hien o trang Gioi thieu."""
@@ -168,7 +210,129 @@ def doc_ket_qua_mo_hinh():
 
 @app.get("/")
 def trang_chu():
+    return send_from_directory(TINH, "landing.html")
+
+
+@app.get("/app")
+@app.get("/app/")
+def ung_dung():
     return send_from_directory(TINH, "index.html")
+
+
+HTML_403_FORBIDDEN = """<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>403 - Quyền truy cập bị từ chối | Biển Báo AI</title>
+    <link rel="icon" type="image/png" href="/anh/icon_bien_bao.png">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #F8FAFC;
+            color: #0F172A;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 24px;
+        }
+        .error-card {
+            background: #FFFFFF;
+            border: 1px solid #E2E8F0;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.08);
+            max-width: 520px;
+            width: 100%;
+            padding: 40px 32px;
+            text-align: center;
+        }
+        .icon-shield {
+            width: 72px;
+            height: 72px;
+            margin: 0 auto 20px;
+            background: #FEE2E2;
+            color: #DC2626;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+        }
+        h1 { font-size: 24px; font-weight: 700; color: #0F172A; margin-bottom: 12px; }
+        p { color: #64748B; font-size: 15px; line-height: 1.6; margin-bottom: 24px; }
+        .user-tag {
+            background: #F1F5F9;
+            padding: 6px 14px;
+            border-radius: 8px;
+            font-weight: 600;
+            color: #334155;
+            display: inline-block;
+            margin-bottom: 24px;
+            font-size: 14px;
+        }
+        .actions {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 20px;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: none;
+        }
+        .btn-primary { background: #2563EB; color: #FFFFFF; }
+        .btn-primary:hover { background: #1D4ED8; }
+        .btn-secondary { background: #F1F5F9; color: #334155; }
+        .btn-secondary:hover { background: #E2E8F0; }
+    </style>
+</head>
+<body>
+    <div class="error-card">
+        <div class="icon-shield">🛡️</div>
+        <h1>403 - Quyền truy cập bị từ chối</h1>
+        <p>Bảng điều khiển này được bảo vệ nghiêm ngặt và chỉ dành riêng cho tài khoản Quản trị viên (Admin).</p>
+        <div class="user-tag">👤 Tài khoản: {{ user_email_or_name }} (Vai trò: Học viên)</div>
+        <div class="actions">
+            <a href="/app" class="btn btn-primary">Quay về ứng dụng học tập</a>
+            <a href="/login?next=/admin" class="btn btn-secondary">Đăng nhập tài khoản Quản trị khác</a>
+            <a href="/" class="btn btn-secondary">Về trang chủ</a>
+        </div>
+    </div>
+</body>
+</html>
+"""
+
+
+@app.get("/admin")
+@app.get("/admin/")
+def trang_admin():
+    """Giao diện Bảng điều khiển Quản trị viên (Admin Dashboard)."""
+    user_id = session.get("user_id")
+    if not user_id:
+        return redirect("/login?next=/admin")
+    import database
+    user = database.lay_nguoi_dung(user_id)
+    if not user or user.get("status") != "active":
+        return redirect("/login?next=/admin")
+    if user.get("role") != "admin":
+        return render_template_string(HTML_403_FORBIDDEN, user_email_or_name=user.get("email") or user.get("ten") or "Người học"), 403
+    return send_from_directory(TINH, "admin.html")
+
+
+@app.get("/landing")
+def landing():
+    return send_from_directory(TINH, "landing.html")
 
 
 @app.get("/anh-bo-sung/<path:ten>")
@@ -182,7 +346,7 @@ def api_bien():
     BIEN = danh_sach_bien()                    # doc lai moi lan: them anh vao bo_sung_bien chi can F5
     MA_HOP_LE = {b["ma"] for b in BIEN}
     return jsonify({"bien": BIEN, "nhom": list(dict.fromkeys(b["nhom"] for b in BIEN)),
-                    "nguong": nd.nguong})
+                    "nguong": nd.nguong, "quiz_bank_version": phien_ban_ngan_hang(BIEN)})
 
 
 @app.get("/api/gioi_thieu")
@@ -258,8 +422,9 @@ def qua_lon(_):
 
 
 if __name__ == "__main__":
-    dia_chi = f"http://127.0.0.1:{CONG}"
+    dia_chi = f"http://localhost:{CONG}"
     print(f"Mo hinh: {os.path.abspath(MO_HINH)} | {len(BIEN)} bien | nguong {nd.nguong}")
+    print(f"SQLite: {DUONG_DAN_DB} | Luu bai tap: POST /api/quiz/submit")
     print(f"Mo trinh duyet tai {dia_chi}  (Ctrl+C de tat)")
     if "--khong_mo" not in sys.argv:
         threading.Timer(1.2, lambda: webbrowser.open(dia_chi)).start()

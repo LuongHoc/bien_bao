@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng Quản Trị Hệ Thống | Biển Báo AI</title>
+    <link rel="icon" type="image/png" href="/anh/icon_bien_bao.png">
+    <link rel="stylesheet" href="/admin.css">
+</head>
+<body class="admin-body">
+    <!-- Màn hình chờ khởi tạo -->
+    <div id="admin-init-loader" class="admin-init-loader">
+        <div class="loader-spinner"></div>
+        <p class="loader-text">Đang kết nối trung tâm quản trị Biển Báo AI...</p>
+    </div>
+
+    <div class="admin-layout" id="admin-layout" style="display: none;">
+        <!-- Backdrop cho Drawer trên Tablet/Mobile -->
+        <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+
+        <!-- SIDEBAR CHÍNH -->
+        <aside class="admin-sidebar" id="admin-sidebar">
+            <div class="sidebar-brand">
+                <a href="/admin" class="brand-link">
+                    <img src="/anh/icon_bien_bao.png" alt="Logo" class="brand-logo" onerror="this.style.display='none'">
+                    <div class="brand-info">
+                        <span class="brand-title">Biển Báo AI</span>
+                        <span class="brand-badge">ADMIN PANEL</span>
+                    </div>
+                </a>
+                <button type="button" class="sidebar-close-btn" id="btn-sidebar-close" aria-label="Đóng menu">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+
+            <nav class="sidebar-nav">
+                <div class="nav-section-label">QUẢN TRỊ HỆ THỐNG</div>
+                <a href="#overview" class="nav-item active" data-route="overview">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                    <span class="nav-label">Tổng quan</span>
+                </a>
+                <a href="#users" class="nav-item" data-route="users">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    <span class="nav-label">Người dùng</span>
+                </a>
+                <a href="#quiz" class="nav-item" data-route="quiz">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect><path d="M9 14l2 2 4-4"></path></svg>
+                    <span class="nav-label">Ngân hàng câu hỏi</span>
+                </a>
+                <a href="#signs" class="nav-item" data-route="signs">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 22 22 22 12 2"></polygon><line x1="12" y1="10" x2="12" y2="14"></line><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                    <span class="nav-label">Thư viện biển báo</span>
+                </a>
+                <a href="#surveys" class="nav-item" data-route="surveys">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path><line x1="9" y1="10" x2="15" y2="10"></line></svg>
+                    <span class="nav-label">Khảo sát người học</span>
+                </a>
+                <a href="#audit-logs" class="nav-item" data-route="audit-logs">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    <span class="nav-label">Nhật ký hoạt động</span>
+                </a>
+                <a href="#settings" class="nav-item" data-route="settings">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                    <span class="nav-label">Cài đặt tài khoản</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="admin-profile-card">
+                    <div class="admin-avatar-bubble" id="sidebar-user-avatar">AD</div>
+                    <div class="admin-profile-text">
+                        <span class="admin-name" id="sidebar-user-name">Đang tải...</span>
+                        <span class="admin-badge-role" id="sidebar-user-role">Quản trị viên</span>
+                    </div>
+                </div>
+                <div class="sidebar-footer-actions">
+                    <a href="/app" class="footer-btn" title="Quay về ứng dụng người học" target="_blank">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        <span>Về ứng dụng</span>
+                    </a>
+                    <button type="button" class="footer-btn btn-logout" id="btn-sidebar-logout" title="Đăng xuất">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                        <span>Đăng xuất</span>
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- KHU VỰC NỘI DUNG CHÍNH -->
+        <div class="admin-main">
+            <!-- HEADER QUẢN TRỊ -->
+            <header class="admin-header">
+                <div class="header-left">
+                    <button type="button" class="btn-toggle-sidebar" id="btn-toggle-sidebar" aria-label="Đóng/Mở thanh điều hướng">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                    </button>
+                    <div class="header-titles">
+                        <div class="header-breadcrumb" id="header-breadcrumb">Bảng quản trị / Tổng quan</div>
+                        <h1 class="header-page-title" id="header-page-title">Tổng quan hệ thống</h1>
+                    </div>
+                </div>
+
+                <div class="header-right">
+                    <!-- Nút Tải lại dữ liệu -->
+                    <button type="button" class="header-action-btn" id="btn-refresh-data" title="Làm mới dữ liệu từ server">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
+                        <span class="btn-text">Làm mới</span>
+                    </button>
+
+                    <!-- Trạng thái phiên làm việc -->
+                    <div class="session-status-pill" id="session-status-pill" title="Phiên làm việc tự động khóa sau 30 phút không hoạt động">
+                        <span class="status-dot"></span>
+                        <span class="status-label">Phiên 30m</span>
+                    </div>
+
+                    <!-- Nút chuyển đổi Dark/Light mode -->
+                    <button type="button" class="header-action-btn btn-icon-only" id="btn-theme-toggle" title="Chuyển chế độ Giao diện Sáng/Tối">
+                        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                    </button>
+
+                    <!-- Avatar người dùng góc phải -->
+                    <div class="header-user-widget" id="header-user-widget">
+                        <div class="admin-avatar-bubble" id="header-user-avatar">AD</div>
+                        <span class="header-user-name" id="header-user-name">Admin</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- CẢNH BÁO BẢO MẬT KHI CHƯA BẬT 2FA -->
+            <div class="admin-banner-warning" id="banner-mfa-warning" style="display: none;">
+                <div class="banner-content">
+                    <span class="banner-icon">⚠️</span>
+                    <div class="banner-text">
+                        <strong>Khuyến cáo bảo mật:</strong> Tài khoản Quản trị viên của bạn chưa kích hoạt xác thực hai yếu tố (TOTP 2FA).
+                    </div>
+                </div>
+                <a href="#settings" class="btn-banner-action">Thiết lập 2FA ngay</a>
+            </div>
+
+            <!-- VÙNG NỘI DUNG CHÍNH (DYNAMIC VIEWS) -->
+            <main class="admin-content-body">
+                <!-- VIEW 1: TỔNG QUAN -->
+                <section class="admin-view active" id="view-overview">
+                    <!-- KPI Cards -->
+                    <div class="kpi-grid">
+                        <div class="kpi-card">
+                            <div class="kpi-header">
+                                <span class="kpi-title">Tổng người dùng</span>
+                                <div class="kpi-icon-wrap bg-blue-subtle">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                                </div>
+                            </div>
+                            <div class="kpi-value" id="kpi-total-users">--</div>
+                            <div class="kpi-footer">
+                                <span class="badge-success" id="kpi-active-users">-- hoạt động</span>
+                                <span class="text-subtle" id="kpi-locked-users">-- bị khóa</span>
+                            </div>
+                        </div>
+
+                        <div class="kpi-card">
+                            <div class="kpi-header">
+                                <span class="kpi-title">Bài tập hoàn thành</span>
+                                <div class="kpi-icon-wrap bg-green-subtle">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                                </div>
+                            </div>
+                            <div class="kpi-value" id="kpi-total-quizzes">--</div>
+                            <div class="kpi-footer">
+                                <span class="text-subtle" id="kpi-quiz-participants">-- người tham gia</span>
+                            </div>
+                        </div>
+
+                        <div class="kpi-card">
+                            <div class="kpi-header">
+                                <span class="kpi-title">Điểm bài tập trung bình</span>
+                                <div class="kpi-icon-wrap bg-purple-subtle">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                                </div>
+                            </div>
+                            <div class="kpi-value" id="kpi-avg-score">-- / 10</div>
+                            <div class="kpi-footer">
+                                <span class="text-subtle" id="kpi-total-answers">-- câu hỏi đã trả lời</span>
+                            </div>
+                        </div>
+
+                        <div class="kpi-card">
+                            <div class="kpi-header">
+                                <span class="kpi-title">Phản hồi khảo sát</span>
+                                <div class="kpi-icon-wrap bg-amber-subtle">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                </div>
+                            </div>
+                            <div class="kpi-value" id="kpi-total-surveys">--</div>
+                            <div class="kpi-footer">
+                                <span class="text-subtle" id="kpi-survey-breakdown">-- đầy đủ | -- nhanh</span>
+                            </div>
+                        </div>
+
+                        <div class="kpi-card">
+                            <div class="kpi-header">
+                                <span class="kpi-title">Ngân hàng câu hỏi</span>
+                                <div class="kpi-icon-wrap bg-indigo-subtle">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6366F1" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                                </div>
+                            </div>
+                            <div class="kpi-value" id="kpi-bank-questions">--</div>
+                            <div class="kpi-footer">
+                                <span class="text-subtle">Sinh tự động theo 2 dạng đề</span>
+                            </div>
+                        </div>
+
+                        <div class="kpi-card">
+                            <div class="kpi-header">
+                                <span class="kpi-title">Trạng thái bảo mật AI</span>
+                                <div class="kpi-icon-wrap bg-emerald-subtle">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                                </div>
+                            </div>
+                            <div class="kpi-value-sm">Privacy by Design</div>
+                            <div class="kpi-footer">
+                                <span class="badge-success">Lưu cục bộ tại Client</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Khu vực Bộ lọc thời gian cho Biểu đồ -->
+                    <div class="charts-toolbar">
+                        <div class="toolbar-title">
+                            <h3>Trực quan hóa Dữ liệu Học tập</h3>
+                            <p>Số liệu tổng hợp thực tế từ cơ sở dữ liệu SQLite</p>
+                        </div>
+                        <div class="time-filter-buttons" id="time-filter-buttons">
+                            <button type="button" class="btn-time-filter" data-range="7">7 ngày</button>
+                            <button type="button" class="btn-time-filter active" data-range="30">30 ngày</button>
+                            <button type="button" class="btn-time-filter" data-range="90">90 ngày</button>
+                            <button type="button" class="btn-time-filter" data-range="all">Toàn bộ</button>
+                        </div>
+                    </div>
+
+                    <!-- Lưới Biểu đồ (4 biểu đồ) -->
+                    <div class="charts-grid">
+                        <div class="chart-card">
+                            <div class="chart-header">
+                                <h4>Lượt làm bài tập theo thời gian</h4>
+                                <span class="chart-subtitle">Số bài tập nộp thành công mỗi ngày</span>
+                            </div>
+                            <div class="chart-canvas-container">
+                                <canvas id="chart-daily-quizzes" height="240"></canvas>
+                            </div>
+                        </div>
+
+                        <div class="chart-card">
+                            <div class="chart-header">
+                                <h4>Tài khoản đăng ký theo thời gian</h4>
+                                <span class="chart-subtitle">Học viên mới tham gia hệ thống</span>
+                            </div>
+                            <div class="chart-canvas-container">
+                                <canvas id="chart-daily-users" height="240"></canvas>
+                            </div>
+                        </div>
+
+                        <div class="chart-card">
+                            <div class="chart-header">
+                                <h4>Phân bố điểm số bài tập</h4>
+                                <span class="chart-subtitle">Tỷ lệ các thang điểm (0 - 10)</span>
+                            </div>
+                            <div class="chart-canvas-container">
+                                <canvas id="chart-score-dist" height="240"></canvas>
+                            </div>
+                        </div>
+
+                        <div class="chart-card">
+                            <div class="chart-header">
+                                <h4>Phân bố mức độ hài lòng khảo sát</h4>
+                                <span class="chart-subtitle">Tổng hợp đánh giá 1 sao đến 5 sao</span>
+                            </div>
+                            <div class="chart-canvas-container">
+                                <canvas id="chart-survey-ratings" height="240"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Thẻ giải thích lưu trữ AI & Hoạt động gần đây -->
+                    <div class="overview-bottom-grid">
+                        <div class="panel-card">
+                            <div class="panel-header">
+                                <h4>Kiến trúc Nhận dạng Biển báo AI</h4>
+                                <span class="badge-neutral">Mô hình YOLO11n + CNN</span>
+                            </div>
+                            <div class="privacy-notice-box">
+                                <div class="notice-icon">🛡️</div>
+                                <div class="notice-text">
+                                    <strong>Chính sách Bảo vệ Quyền riêng tư (Privacy by Design):</strong>
+                                    <p>Hệ thống không lưu trữ hình ảnh hoặc video camera của học viên lên máy chủ backend. Chức năng nhận dạng hình ảnh xử lý trực tiếp qua API inference và trả về bounding boxes; nhật ký nhận dạng được lưu an toàn tại bộ nhớ trình duyệt người học (Client localStorage).</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel-card">
+                            <div class="panel-header">
+                                <h4>Hoạt động Quản trị gần đây</h4>
+                                <a href="#audit-logs" class="btn-link-action">Xem toàn bộ nhật ký &rarr;</a>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="admin-table table-compact" id="table-overview-recent-logs">
+                                    <thead>
+                                        <tr>
+                                            <th>Thời gian</th>
+                                            <th>Admin</th>
+                                            <th>Hành động</th>
+                                            <th>Đối tượng</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tbody-overview-recent-logs">
+                                        <tr><td colspan="4" class="text-center">Đang tải nhật ký...</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- VIEW 2: QUẢN LÝ NGƯỜI DÙNG -->
+                <section class="admin-view" id="view-users">
+                    <div class="view-header">
+                        <div class="view-titles">
+                            <h2>Quản lý Người dùng</h2>
+                            <p>Danh sách học viên và quản trị viên trong cơ sở dữ liệu SQLite</p>
+                        </div>
+                    </div>
+
+                    <!-- Bộ lọc & Tìm kiếm -->
+                    <div class="filter-card">
+                        <div class="filter-row">
+                            <div class="search-input-wrap">
+                                <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                                <input type="text" id="users-search-input" placeholder="Tìm kiếm theo tên hoặc email..." class="form-control">
+                            </div>
+                            <div class="filter-controls">
+                                <select id="users-filter-status" class="form-control">
+                                    <option value="">Tất cả trạng thái</option>
+                                    <option value="active">Đang hoạt động (active)</option>
+                                    <option value="suspended">Tạm đình chỉ (suspended)</option>
+                                    <option value="locked">Bị khóa (locked)</option>
+                                </select>
+                                <select id="users-filter-role" class="form-control">
+                                    <option value="">Tất cả vai trò</option>
+                                    <option value="user">Học viên (user)</option>
+                                    <option value="admin">Quản trị viên (admin)</option>
+                                </select>
+                                <button type="button" class="btn btn-secondary" id="btn-users-reset-filter">Đặt lại</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bảng dữ liệu người dùng -->
+                    <div class="data-card">
+                        <div class="table-responsive">
+                            <table class="admin-table">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Người dùng</th>
+                                        <th>Phương thức</th>
+                                        <th>Vai trò</th>
+                                        <th>Trạng thái</th>
+                                        <th>Đã xác minh</th>
+                                        <th>Ngày tham gia</th>
+                                        <th class="text-right">Thao tác</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody-users">
+                                    <tr><td colspan="8" class="text-center">Đang tải danh sách người dùng...</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="pagination-footer" id="users-pagination">
+                            <!-- Điều khiển phân trang chèn bằng JS -->
+                        </div>
+                    </div>
+                </section>
+
+                <!-- VIEW 3: NGÂN HÀNG CÂU HỎI -->
+                <section class="admin-view" id="view-quiz">
+                    <div class="view-header">
+                        <div class="view-titles">
+                            <h2>Ngân hàng Câu hỏi Trắc nghiệm</h2>
+                            <p>Quản lý cấu hình prompt, lời giải thích và trạng thái ẩn/hiện câu hỏi</p>
+                        </div>
+                    </div>
+
+                    <div class="filter-card">
+                        <div class="filter-row">
+                            <div class="search-input-wrap">
+                                <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                                <input type="text" id="quiz-search-input" placeholder="Tìm theo mã biển, tên biển, câu hỏi..." class="form-control">
+                            </div>
+                            <div class="filter-controls">
+                                <select id="quiz-filter-kieu" class="form-control">
+                                    <option value="">Tất cả dạng câu</option>
+                                    <option value="nhin-anh">Nhìn ảnh đoán tên</option>
+                                    <option value="doc-ten">Đọc tên đoán biển</option>
+                                </select>
+                                <select id="quiz-filter-nhom" class="form-control">
+                                    <option value="">Tất cả nhóm biển</option>
+                                    <option value="p">Biển báo cấm (P)</option>
+                                    <option value="w">Biển báo nguy hiểm (W)</option>
+                                    <option value="r">Biển hiệu lệnh (R)</option>
+                                    <option value="i">Biển chỉ dẫn (I)</option>
+                                    <option value="s">Biển phụ (S)</option>
+                                </select>
+                                <button type="button" class="btn btn-secondary" id="btn-quiz-reset-filter">Đặt lại</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="data-card">
+                        <div class="table-responsive">
+                            <table class="admin-table">
+                                <thead>
+                                    <tr>
+                                        <th>Ảnh</th>
+                                        <th>Mã biển</th>
+                                        <th>Tên biển & Nhóm</th>
+                                        <th>Dạng đề</th>
+                                        <th>Câu hỏi (Prompt)</th>
+                                        <th>Trạng thái</th>
+                                        <th class="text-right">Thao tác</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody-quiz-questions">
+                                    <tr><td colspan="7" class="text-center">Đang tải danh sách câu hỏi...</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="pagination-footer" id="quiz-pagination"></div>
+                    </div>
+                </section>
+
+                <!-- VIEW 4: THƯ VIỆN BIỂN BÁO -->
+                <section class="admin-view" id="view-signs">
+                    <div class="view-header">
+                        <div class="view-titles">
+                            <h2>Quản lý Thư viện Biển báo</h2>
+                            <p>Tùy chỉnh thông tin hiển thị học tập (bảo toàn 100% lớp phân loại YOLO/CNN)</p>
+                        </div>
+                    </div>
+
+                    <div class="filter-card">
+                        <div class="filter-row">
+                            <div class="search-input-wrap">
+                                <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                                <input type="text" id="signs-search-input" placeholder="Tìm theo mã biển hoặc tên biển..." class="form-control">
+                            </div>
+                            <div class="filter-controls">
+                                <select id="signs-filter-nhom" class="form-control">
+                                    <option value="">Tất cả nhóm biển</option>
+                                    <option value="cấm">Biển báo cấm</option>
+                                    <option value="nguy hiểm">Biển báo nguy hiểm</option>
+                                    <option value="hiệu lệnh">Biển hiệu lệnh</option>
+                                    <option value="chỉ dẫn">Biển chỉ dẫn</option>
+                                    <option value="phụ">Biển phụ</option>
+                                </select>
+                                <button type="button" class="btn btn-secondary" id="btn-signs-reset-filter">Đặt lại</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="data-card">
+                        <div class="signs-grid-container" id="signs-grid-container">
+                            <!-- Cards danh sách biển báo chèn bằng JS -->
+                        </div>
+                        <div class="pagination-footer" id="signs-pagination"></div>
+                    </div>
+                </section>
+
+                <!-- VIEW 5: KHẢO SÁT NGƯỜI HỌC -->
+                <section class="admin-view" id="view-surveys">
+                    <div class="view-header">
+                        <div class="view-titles">
+                            <h2>Khảo sát & Đóng góp Ý kiến</h2>
+                            <p>Phân tích đánh giá từ Khảo sát đầy đủ (6 câu) và Khảo sát nhanh sau bài tập</p>
+                        </div>
+                    </div>
+
+                    <!-- 2 Hàng Cards Tóm tắt Khảo sát -->
+                    <div class="survey-summary-grid">
+                        <div class="panel-card">
+                            <div class="panel-header">
+                                <h4>Khảo sát Đầy đủ (Thang đo Likert 1-5)</h4>
+                                <span class="badge-neutral" id="survey-full-count">-- lượt gửi</span>
+                            </div>
+                            <div class="survey-score-big">
+                                <span class="score-number" id="survey-full-avg">--</span>
+                                <span class="score-scale">/ 5.0</span>
+                            </div>
+                            <div class="likert-categories-list" id="likert-categories-list">
+                                <!-- Các mục câu hỏi Likert chèn bằng JS -->
+                            </div>
+                        </div>
+
+                        <div class="panel-card">
+                            <div class="panel-header">
+                                <h4>Khảo sát Nhanh sau bài tập đầu tiên</h4>
+                                <span class="badge-neutral" id="survey-quick-count">-- lượt gửi</span>
+                            </div>
+                            <div class="survey-score-big">
+                                <span class="score-number" id="survey-quick-avg">--</span>
+                                <span class="score-scale">/ 5.0 ⭐</span>
+                            </div>
+                            <div class="quick-survey-tags-wrap" id="quick-survey-tags-wrap">
+                                <!-- Tags phản hồi phổ biến chèn bằng JS -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bảng ý kiến góp ý của người học -->
+                    <div class="data-card" style="margin-top: 24px;">
+                        <div class="panel-header">
+                            <h4>Danh sách Ý kiến Đóng góp của Học viên</h4>
+                            <span class="text-subtle">Chế độ xem chỉ đọc (Read-only)</span>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="admin-table">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 160px;">Thời gian</th>
+                                        <th style="width: 130px;">Nguồn</th>
+                                        <th style="width: 100px;">Đánh giá</th>
+                                        <th>Nội dung góp ý</th>
+                                        <th>Nhãn</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody-survey-feedbacks">
+                                    <tr><td colspan="5" class="text-center">Đang tải phản hồi...</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="pagination-footer" id="feedbacks-pagination"></div>
+                    </div>
+                </section>
+
+                <!-- VIEW 6: NHẬT KÝ HOẠT ĐỘNG (AUDIT LOGS) -->
+                <section class="admin-view" id="view-audit-logs">
+                    <div class="view-header">
+                        <div class="view-titles">
+                            <h2>Nhật ký Hoạt động Quản trị (Audit Logs)</h2>
+                            <p>Lịch sử các thao tác quan trọng: khóa tài khoản, chỉnh sửa câu hỏi, cập nhật biển báo, cấu hình 2FA</p>
+                        </div>
+                    </div>
+
+                    <div class="filter-card">
+                        <div class="filter-row">
+                            <select id="logs-filter-action" class="form-control" style="max-width: 280px;">
+                                <option value="">Tất cả loại hành động</option>
+                                <option value="change_user_status">Khóa / Mở khóa người dùng</option>
+                                <option value="update_quiz_question">Tùy chỉnh câu hỏi trắc nghiệm</option>
+                                <option value="update_sign_metadata">Tùy chỉnh thư viện biển báo</option>
+                                <option value="setup_mfa_initiated">Khởi tạo thiết lập MFA</option>
+                                <option value="verify_mfa_success">Xác thực MFA thành công</option>
+                                <option value="promote_admin">Cấp quyền Quản trị viên</option>
+                                <option value="demote_admin">Hạ quyền Quản trị viên</option>
+                            </select>
+                            <button type="button" class="btn btn-secondary" id="btn-logs-reset-filter">Đặt lại</button>
+                        </div>
+                    </div>
+
+                    <div class="data-card">
+                        <div class="table-responsive">
+                            <table class="admin-table">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 160px;">Thời gian</th>
+                                        <th style="width: 120px;">Admin</th>
+                                        <th>Hành động</th>
+                                        <th>Đối tượng</th>
+                                        <th>Chi tiết thao tác</th>
+                                        <th style="width: 110px;">Địa chỉ IP</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody-audit-logs">
+                                    <tr><td colspan="6" class="text-center">Đang tải nhật ký...</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="pagination-footer" id="logs-pagination"></div>
+                    </div>
+                </section>
+
+                <!-- VIEW 7: CÀI ĐẶT TÀI KHOẢN ADMIN -->
+                <section class="admin-view" id="view-settings">
+                    <div class="view-header">
+                        <div class="view-titles">
+                            <h2>Cài đặt Tài khoản Quản trị</h2>
+                            <p>Hồ sơ cá nhân, cấu hình xác thực hai yếu tố (TOTP 2FA) và bảo mật phiên</p>
+                        </div>
+                    </div>
+
+                    <div class="settings-grid">
+                        <!-- Card Hồ sơ Admin -->
+                        <div class="settings-card">
+                            <div class="card-header-styled">
+                                <h3>Thông tin Quản trị viên</h3>
+                                <p>Thông tin định danh của phiên hiện tại</p>
+                            </div>
+                            <div class="profile-details-list">
+                                <div class="detail-row">
+                                    <span class="detail-label">Họ và tên:</span>
+                                    <strong class="detail-val" id="settings-user-name">--</strong>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">Email:</span>
+                                    <strong class="detail-val" id="settings-user-email">--</strong>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">Vai trò:</span>
+                                    <span class="badge-role-admin">Quản trị viên (admin)</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">Trạng thái:</span>
+                                    <span class="badge-success">Đang hoạt động</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="detail-label">Phương thức đăng nhập:</span>
+                                    <span class="detail-val" id="settings-user-providers">--</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card Bảo mật 2 lớp (MFA) -->
+                        <div class="settings-card">
+                            <div class="card-header-styled">
+                                <h3>Bảo vệ Hai Lớp (TOTP 2FA)</h3>
+                                <p>Sử dụng Google Authenticator hoặc Microsoft Authenticator</p>
+                            </div>
+                            <div class="mfa-status-block">
+                                <div class="mfa-indicator-row">
+                                    <span class="mfa-badge" id="settings-mfa-badge">Kiểm tra trạng thái...</span>
+                                </div>
+                                <p class="mfa-description">
+                                    Xác thực 2 lớp bảo vệ phiên quản trị bằng mã OTP 6 số ngẫu nhiên đổi mới mỗi 30 giây theo tiêu chuẩn quốc tế RFC 6238.
+                                </p>
+                                <button type="button" class="btn btn-primary" id="btn-open-mfa-setup">
+                                    Thiết lập / Cập nhật 2FA
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Card Đổi Mật khẩu -->
+                        <div class="settings-card">
+                            <div class="card-header-styled">
+                                <h3>Đổi Mật khẩu</h3>
+                                <p>Cập nhật mật khẩu đăng nhập an toàn (băm chuẩn scrypt)</p>
+                            </div>
+                            <form id="form-change-password" class="styled-form">
+                                <div class="form-group">
+                                    <label for="pwd-current">Mật khẩu hiện tại</label>
+                                    <input type="password" id="pwd-current" class="form-control" required placeholder="Nhập mật khẩu hiện tại...">
+                                </div>
+                                <div class="form-group">
+                                    <label for="pwd-new">Mật khẩu mới</label>
+                                    <input type="password" id="pwd-new" class="form-control" required minlength="8" placeholder="Tối thiểu 8 ký tự...">
+                                </div>
+                                <div class="form-group">
+                                    <label for="pwd-confirm">Xác nhận mật khẩu mới</label>
+                                    <input type="password" id="pwd-confirm" class="form-control" required minlength="8" placeholder="Nhập lại mật khẩu mới...">
+                                </div>
+                                <button type="submit" class="btn btn-primary" id="btn-submit-change-pwd">Đổi mật khẩu</button>
+                            </form>
+                        </div>
+
+                        <!-- Card Phiên làm việc & Đăng xuất -->
+                        <div class="settings-card">
+                            <div class="card-header-styled">
+                                <h3>Phiên Làm việc & Thoát</h3>
+                                <p>Quản lý an toàn phiên đăng nhập hiện tại</p>
+                            </div>
+                            <div class="session-info-block">
+                                <div class="info-alert">
+                                    <p>🛡️ <strong>Chính sách bảo mật phiên:</strong> Phiên quản trị tự động hết hạn và yêu cầu đăng nhập lại sau <strong>30 phút không hoạt động</strong> để ngăn ngừa rủi ro bị truy cập trái phép trên máy tính công cộng.</p>
+                                </div>
+                                <button type="button" class="btn btn-danger" id="btn-settings-logout">
+                                    Đăng xuất phiên Quản trị
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <!-- TOAST CONTAINER -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- MODAL OVERLAY CHUNG -->
+    <div class="modal-backdrop" id="modal-backdrop" style="display: none;">
+        <!-- Modal: Xem Chi tiết Người dùng -->
+        <div class="modal-dialog" id="modal-user-detail" style="display: none;">
+            <div class="modal-header">
+                <h3 class="modal-title">Hồ sơ Chi tiết Người dùng</h3>
+                <button type="button" class="modal-close-btn" data-close-modal>&times;</button>
+            </div>
+            <div class="modal-body" id="modal-user-detail-body">
+                <div class="text-center">Đang tải thông tin...</div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-close-modal>Đóng</button>
+            </div>
+        </div>
+
+        <!-- Modal: Đổi Trạng thái Người dùng (Khóa / Mở khóa) -->
+        <div class="modal-dialog" id="modal-user-status" style="display: none;">
+            <div class="modal-header">
+                <h3 class="modal-title">Cập nhật Trạng thái Tài khoản</h3>
+                <button type="button" class="modal-close-btn" data-close-modal>&times;</button>
+            </div>
+            <div class="modal-body">
+                <p id="modal-status-user-info" class="modal-intro">Đang chọn người dùng...</p>
+                <div class="form-group">
+                    <label for="select-new-status">Trạng thái mới</label>
+                    <select id="select-new-status" class="form-control">
+                        <option value="active">🟢 Đang hoạt động (active)</option>
+                        <option value="suspended">🟡 Tạm đình chỉ (suspended)</option>
+                        <option value="locked">🔴 Khóa tài khoản (locked)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="textarea-status-reason">Lý do thay đổi <span class="text-danger">*</span></label>
+                    <textarea id="textarea-status-reason" class="form-control" rows="3" placeholder="Nhập lý do thực hiện thao tác (tối thiểu 3 ký tự)..." required></textarea>
+                </div>
+                <div class="alert-warning-box" id="modal-status-warning" style="display: none;"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-close-modal>Hủy</button>
+                <button type="button" class="btn btn-primary" id="btn-confirm-status-update">Xác nhận cập nhật</button>
+            </div>
+        </div>
+
+        <!-- Modal: Tùy chỉnh Câu hỏi Trắc nghiệm -->
+        <div class="modal-dialog" id="modal-edit-question" style="display: none;">
+            <div class="modal-header">
+                <h3 class="modal-title">Tùy chỉnh Câu hỏi Trắc nghiệm</h3>
+                <button type="button" class="modal-close-btn" data-close-modal>&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="question-preview-box" id="modal-question-preview">
+                    <!-- Preview biển báo và dạng câu -->
+                </div>
+                <div class="form-group checkbox-group">
+                    <label>
+                        <input type="checkbox" id="check-question-active">
+                        <span>Kích hoạt câu hỏi này trong đề thi</span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="input-custom-prompt">Câu hỏi tùy chỉnh (Prompt)</label>
+                    <input type="text" id="input-custom-prompt" class="form-control" placeholder="Để trống nếu muốn sử dụng câu hỏi mặc định của hệ thống...">
+                </div>
+                <div class="form-group">
+                    <label for="textarea-custom-explanation">Lời giải thích chi tiết khi trả lời</label>
+                    <textarea id="textarea-custom-explanation" class="form-control" rows="3" placeholder="Giải thích ý nghĩa biển báo và căn cứ quy định giao thông..."></textarea>
+                </div>
+                <div class="note-box">
+                    ℹ️ <em>Lưu ý: Thay đổi này chỉ áp dụng cho các đề thi mới, bảo toàn 100% dữ liệu bài làm trong quá khứ của học viên.</em>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-close-modal>Hủy</button>
+                <button type="button" class="btn btn-primary" id="btn-save-question-edit">Lưu thay đổi</button>
+            </div>
+        </div>
+
+        <!-- Modal: Tùy chỉnh Thông tin Biển báo -->
+        <div class="modal-dialog" id="modal-edit-sign" style="display: none;">
+            <div class="modal-header">
+                <h3 class="modal-title">Tùy chỉnh Thông tin Học tập Biển báo</h3>
+                <button type="button" class="modal-close-btn" data-close-modal>&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="sign-preview-box" id="modal-sign-preview"></div>
+                <div class="warning-box-styled">
+                    🛡️ <strong>Bảo toàn Trí tuệ Nhân tạo:</strong> Thao tác này chỉ tùy chỉnh nội dung văn bản hiển thị cho người học. Tuyệt đối không can thiệp hay làm thay đổi nhãn lớp nhận dạng của mô hình YOLO11n / CNN.
+                </div>
+                <div class="form-group checkbox-group">
+                    <label>
+                        <input type="checkbox" id="check-sign-active">
+                        <span>Hiển thị biển báo này trong Thư viện học tập</span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="input-custom-sign-name">Tên hiển thị tùy chỉnh</label>
+                    <input type="text" id="input-custom-sign-name" class="form-control" placeholder="Tên theo chuẩn quy chuẩn QCVN 41:2024...">
+                </div>
+                <div class="form-group">
+                    <label for="textarea-custom-sign-meaning">Ý nghĩa & Hướng dẫn thi hành tùy chỉnh</label>
+                    <textarea id="textarea-custom-sign-meaning" class="form-control" rows="3" placeholder="Nội dung ý nghĩa hiển thị khi người học tra cứu..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="textarea-custom-sign-note">Ghi chú bổ sung</label>
+                    <textarea id="textarea-custom-sign-note" class="form-control" rows="2" placeholder="Lưu ý đặc biệt khi gặp biển báo này..."></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-close-modal>Hủy</button>
+                <button type="button" class="btn btn-primary" id="btn-save-sign-edit">Lưu thông tin</button>
+            </div>
+        </div>
+
+        <!-- Modal: Xem Chi tiết Nhật ký JSON -->
+        <div class="modal-dialog" id="modal-log-detail" style="display: none;">
+            <div class="modal-header">
+                <h3 class="modal-title">Chi tiết Nhật ký Hoạt động</h3>
+                <button type="button" class="modal-close-btn" data-close-modal>&times;</button>
+            </div>
+            <div class="modal-body">
+                <pre class="json-code-box" id="modal-log-json-content">--</pre>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-close-modal>Đóng</button>
+            </div>
+        </div>
+
+        <!-- Modal: Thiết lập 2FA (Setup TOTP MFA) -->
+        <div class="modal-dialog" id="modal-setup-mfa" style="display: none;">
+            <div class="modal-header">
+                <h3 class="modal-title">Thiết lập Xác thực Hai Yếu tố (2FA)</h3>
+                <button type="button" class="modal-close-btn" data-close-modal>&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="mfa-step-instruction">
+                    <h4>Bước 1: Quét mã hoặc nhập khóa bí mật</h4>
+                    <p>Mở ứng dụng <strong>Google Authenticator</strong> hoặc <strong>Microsoft Authenticator</strong> trên điện thoại và thêm tài khoản bằng khóa bí mật dưới đây:</p>
+                    <div class="mfa-secret-box">
+                        <code id="mfa-secret-text">ĐANG_TẠO_SECRET...</code>
+                        <button type="button" class="btn-copy-secret" id="btn-copy-mfa-secret" title="Sao chép khóa bí mật">Sao chép</button>
+                    </div>
+                </div>
+
+                <div class="mfa-step-instruction">
+                    <h4>Bước 2: Lưu lại 5 mã dự phòng (Backup Codes)</h4>
+                    <p>Lưu danh sách mã này ở nơi an toàn để truy cập khi không mang điện thoại:</p>
+                    <div class="backup-codes-grid" id="mfa-backup-codes-list"></div>
+                </div>
+
+                <div class="mfa-step-instruction">
+                    <h4>Bước 3: Nhập mã OTP 6 số để kích hoạt</h4>
+                    <div class="otp-input-group">
+                        <input type="text" id="input-mfa-setup-code" maxlength="6" class="form-control otp-input-field" placeholder="123456" autocomplete="one-time-code">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-close-modal>Hủy</button>
+                <button type="button" class="btn btn-primary" id="btn-confirm-mfa-setup">Kích hoạt 2FA</button>
+            </div>
+        </div>
+
+        <!-- Modal: Thách thức OTP MFA khi Đăng nhập (MFA Challenge Gate) -->
+        <div class="modal-dialog modal-narrow" id="modal-mfa-gate" style="display: none;">
+            <div class="modal-header text-center">
+                <h3 class="modal-title">Xác thực Hai Yếu tố (2FA)</h3>
+            </div>
+            <div class="modal-body">
+                <div class="mfa-gate-intro">
+                    <div class="shield-circle">🛡️</div>
+                    <p>Tài khoản Quản trị viên của bạn đã bật bảo vệ 2 lớp. Vui lòng nhập mã OTP 6 chữ số từ ứng dụng xác thực trên điện thoại của bạn (hoặc mã dự phòng backup code) để tiếp tục.</p>
+                </div>
+                <div class="form-group text-center">
+                    <input type="text" id="input-mfa-gate-code" class="form-control otp-input-field text-center" placeholder="123456" maxlength="8" autofocus>
+                </div>
+                <div class="text-danger-box" id="mfa-gate-error" style="display: none;"></div>
+            </div>
+            <div class="modal-footer">
+                <a href="/login" class="btn btn-secondary">Đăng nhập tài khoản khác</a>
+                <button type="button" class="btn btn-primary" id="btn-submit-mfa-gate">Xác thực & Vào Bảng quản trị</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script điều khiển Dashboard -->
+    <script src="/admin.js" defer></script>
+</body>
+</html>
